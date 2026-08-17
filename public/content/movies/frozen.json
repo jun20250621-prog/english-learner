@@ -1,0 +1,19 @@
+{
+  "id": "frozen",
+  "title": "冰雪奇緣",
+  "titleEn": "Frozen",
+  "level": "A1",
+  "description": "迪士尼經典動畫，艾莎與安娜的冒險故事",
+  "image": "❄️",
+  "keywords": ["snow", "ice", "queen", "sister"],
+  "sentences": [
+    { "id": 1, "en": "Let it go!", "zh": "放開它吧！", "words": [{"en": "let it go", "zh": "放開"}] },
+    { "id": 2, "en": "The cold never bothered me anyway.", "zh": "寒冷從來沒有困擾過我。", "words": [{"en": "cold", "zh": "寒冷"}, {"en": "bothered", "zh": "困擾"}] },
+    { "id": 3, "en": "Do you want to build a snowman?", "zh": "你想堆雪人嗎？", "words": [{"en": "snowman", "zh": "雪人"}] },
+    { "id": 4, "en": "Some people are worth melting for.", "zh": "有些人值得為他融化。", "words": [{"en": "melting", "zh": "融化"}] },
+    { "id": 5, "en": "Love is putting someone else's needs before yours.", "zh": "愛是把別人的需求放在你之前。", "words": [{"en": "needs", "zh": "需求"}, {"en": "before", "zh": "之前"}] },
+    { "id": 6, "en": "Be the good one. Be the better one.", "zh": "做好的那一個。做更好的那一個。", "words": [{"en": "better", "zh": "更好的"}] },
+    { "id": 7, "en": "We finish each other's sandwiches.", "zh": "我們吃完對方的三明治。", "words": [{"en": "finish", "zh": "完成"}, {"en": "sandwiches", "zh": "三明治"}] },
+    { "id": 8, "en": "I never knew what I was until I met you.", "zh": "遇到你之前我不知道自己是誰。", "words": [{"en": "met", "zh": "遇見"}] }
+  ]
+}

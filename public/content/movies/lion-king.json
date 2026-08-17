@@ -1,0 +1,21 @@
+{
+  "id": "lion-king",
+  "title": "獅子王",
+  "titleEn": "The Lion King",
+  "level": "A1-A2",
+  "description": "迪士尼經典動畫，辛巴的成長故事",
+  "image": "🦁",
+  "keywords": ["lion", "king", "sunset", "africa"],
+  "sentences": [
+    { "id": 1, "en": "Hakuna Matata!", "zh": "哈庫拉瑪塔塔！無憂無慮！", "words": [{"en": "Hakuna Matata", "zh": "無憂無慮"}, {"en": "no worries", "zh": "無憂"}] },
+    { "id": 2, "en": "It's a wonderful life.", "zh": "這是美好的人生。", "words": [{"en": "wonderful", "zh": "美好的"}, {"en": "life", "zh": "人生"}] },
+    { "id": 3, "en": "Remember who you are.", "zh": "記住你是誰。", "words": [{"en": "remember", "zh": "記住"}, {"en": "who you are", "zh": "你是誰"}] },
+    { "id": 4, "en": "The sun will rise again tomorrow.", "zh": "太陽明天會再次升起。", "words": [{"en": "rise", "zh": "升起"}, {"en": "tomorrow", "zh": "明天"}] },
+    { "id": 5, "en": "Everything you see exists together in a delicate balance.", "zh": "你看到的一切都在一起維持著微妙的平衡。", "words": [{"en": "exists", "zh": "存在"}, {"en": "together", "zh": "一起"}, {"en": "balance", "zh": "平衡"}] },
+    { "id": 6, "en": "I am the king.", "zh": "我是國王。", "words": [{"en": "king", "zh": "國王"}] },
+    { "id": 7, "en": "There is more to see than can be seen.", "zh": "看到的不只是表面。", "words": [{"en": "more to see", "zh": "更多可看"}] },
+    { "id": 8, "en": "We are all connected.", "zh": "我們都是相連的。", "words": [{"en": "connected", "zh": "相連的"}] },
+    { "id": 9, "en": "The past can hurt. But you can either run from it or learn from it.", "zh": "過去會傷害你。但你可以逃避它或從中學習。", "words": [{"en": "past", "zh": "過去"}, {"en": "learn", "zh": "學習"}] },
+    { "id": 10, "en": "Change is good.", "zh": "改變是好的。", "words": [{"en": "change", "zh": "改變"}] }
+  ]
+}
