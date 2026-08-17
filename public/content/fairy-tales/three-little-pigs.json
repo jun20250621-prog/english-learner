@@ -1,0 +1,208 @@
+{
+  "id": "three-little-pigs",
+  "title": "三隻小豬",
+  "titleEn": "The Three Little Pigs",
+  "level": "A1",
+  "description": "經典童話故事，三隻小豬建造房子的故事",
+  "image": "🐷",
+  "sentences": [
+    {
+      "id": 1,
+      "en": "Once upon a time, there were three little pigs.",
+      "zh": "從前有三隻小豬。",
+      "words": [
+        {"en": "once upon a time", "zh": "從前"},
+        {"en": "there were", "zh": "有..."},
+        {"en": "little", "zh": "小的"}
+      ]
+    },
+    {
+      "id": 2,
+      "en": "They left home to seek their fortune.",
+      "zh": "他們離開家去尋找運氣。",
+      "words": [
+        {"en": "left", "zh": "離開"},
+        {"en": "home", "zh": "家"},
+        {"en": "seek", "zh": "尋找"},
+        {"en": "fortune", "zh": "運氣"}
+      ]
+    },
+    {
+      "id": 3,
+      "en": "The first pig built a house of straw.",
+      "zh": "第一隻小豬用稻草建造房子。",
+      "words": [
+        {"en": "first", "zh": "第一"},
+        {"en": "built", "zh": "建造"},
+        {"en": "house", "zh": "房子"},
+        {"en": "straw", "zh": "稻草"}
+      ]
+    },
+    {
+      "id": 4,
+      "en": "The second pig built a house of sticks.",
+      "zh": "第二隻小豬用樹枝建造房子。",
+      "words": [
+        {"en": "second", "zh": "第二"},
+        {"en": "sticks", "zh": "樹枝"}
+      ]
+    },
+    {
+      "id": 5,
+      "en": "The third pig built a house of bricks.",
+      "zh": "第三隻小豬用磚塊建造房子。",
+      "words": [
+        {"en": "third", "zh": "第三"},
+        {"en": "bricks", "zh": "磚塊"}
+      ]
+    },
+    {
+      "id": 6,
+      "en": "A big bad wolf came to the first house.",
+      "zh": "一隻大野狼來到第一間房子。",
+      "words": [
+        {"en": "big bad wolf", "zh": "大野狼"},
+        {"en": "came", "zh": "來"}
+      ]
+    },
+    {
+      "id": 7,
+      "en": "Little pig, little pig, let me come in!",
+      "zh": "小豬，小豬，讓我進去！",
+      "words": [
+        {"en": "let me", "zh": "讓我"},
+        {"en": "come in", "zh": "進來"}
+      ]
+    },
+    {
+      "id": 8,
+      "en": "Not by the hair of my chinny chin chin!",
+      "zh": "休想！絕對不讓你進來！",
+      "words": [
+        {"en": "not by the hair", "zh": "休想"},
+        {"en": "chin", "zh": "下巴"}
+      ]
+    },
+    {
+      "id": 9,
+      "en": "Then I'll huff, and I'll puff, and I'll blow your house down!",
+      "zh": "那我要用力吹，把你的房子吹倒！",
+      "words": [
+        {"en": "huff", "zh": "用力吹"},
+        {"en": "puff", "zh": "吹"},
+        {"en": "blow down", "zh": "吹倒"}
+      ]
+    },
+    {
+      "id": 10,
+      "en": "The wolf blew down the straw house.",
+      "zh": "野狼把稻草屋吹倒了。",
+      "words": [
+        {"en": "blew down", "zh": "吹倒"}
+      ]
+    },
+    {
+      "id": 11,
+      "en": "The first pig ran to the second pig's house.",
+      "zh": "第一隻小豬跑到第二隻小豬的房子。",
+      "words": [
+        {"en": "ran", "zh": "跑"},
+        {"en": "to", "zh": "到"}
+      ]
+    },
+    {
+      "id": 12,
+      "en": "The wolf came there too.",
+      "zh": "野狼也追到那裡。",
+      "words": [
+        {"en": "too", "zh": "也"}
+      ]
+    },
+    {
+      "id": 13,
+      "en": "Little pigs, little pigs, let me come in!",
+      "zh": "小豬們，小豬們，讓我進去！",
+      "words": []
+    },
+    {
+      "id": 14,
+      "en": "Not by the hair of our chinny chin chin!",
+      "zh": "休想！絕對不讓你進來！",
+      "words": []
+    },
+    {
+      "id": 15,
+      "en": "Then I'll huff, and I'll puff, and I'll blow your house down!",
+      "zh": "那我要用力吹，把你們的房子吹倒！",
+      "words": []
+    },
+    {
+      "id": 16,
+      "en": "The wolf blew down the stick house.",
+      "zh": "野狼把樹枝屋吹倒了。",
+      "words": []
+    },
+    {
+      "id": 17,
+      "en": "Both pigs ran to the brick house.",
+      "zh": "兩隻小豬都跑到磚塊房子。",
+      "words": [
+        {"en": "both", "zh": "兩隻"}
+      ]
+    },
+    {
+      "id": 18,
+      "en": "The wolf tried to blow down the brick house.",
+      "zh": "野狼試著吹倒磚塊房子。",
+      "words": [
+        {"en": "tried", "zh": "試著"}
+      ]
+    },
+    {
+      "id": 19,
+      "en": "But he could not blow it down.",
+      "zh": "但是他吹不倒。",
+      "words": [
+        {"en": "but", "zh": "但是"},
+        {"en": "could not", "zh": "不能"}
+      ]
+    },
+    {
+      "id": 20,
+      "en": "The wolf went down the chimney.",
+      "zh": "野狼從煙囪爬下去。",
+      "words": [
+        {"en": "chimney", "zh": "煙囪"}
+      ]
+    },
+    {
+      "id": 21,
+      "en": "The clever pig had a pot of hot water ready.",
+      "zh": "聰明的小豬準備了一鍋熱水。",
+      "words": [
+        {"en": "clever", "zh": "聰明的"},
+        {"en": "pot", "zh": "鍋"},
+        {"en": "hot water", "zh": "熱水"},
+        {"en": "ready", "zh": "準備好了"}
+      ]
+    },
+    {
+      "id": 22,
+      "en": "The wolf ran away and never came back.",
+      "zh": "野狼跑走了，再也沒有回來。",
+      "words": [
+        {"en": "ran away", "zh": "跑走"},
+        {"en": "never", "zh": "從不"},
+        {"en": "came back", "zh": "回來"}
+      ]
+    },
+    {
+      "id": 23,
+      "en": "The three pigs lived happily ever after.",
+      "zh": "三隻小豬從此過著幸福快樂的生活。",
+      "words": [
+        {"en": "happily ever after", "zh": "從此過著幸福快樂的日子"}
+      ]
+    }
+  ]
+}

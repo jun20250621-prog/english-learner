@@ -1,0 +1,223 @@
+{
+  "id": "little-mermaid",
+  "title": "小美人魚",
+  "titleEn": "The Little Mermaid",
+  "level": "A1-A2",
+  "description": "迪士尼經典動畫，小美人魚愛麗兒的故事",
+  "image": "🧜‍♀️",
+  "sentences": [
+    {
+      "id": 1,
+      "en": "Far out in the sea, there lived a mermaid.",
+      "zh": "在遠遠的海裡，住著一條美人魚。",
+      "words": [
+        {"en": "far out", "zh": "遠遠地"},
+        {"en": "sea", "zh": "海"},
+        {"en": "mermaid", "zh": "美人魚"}
+      ]
+    },
+    {
+      "id": 2,
+      "en": "She was the youngest of six sisters.",
+      "zh": "她是六個姐妹中最小的。",
+      "words": [
+        {"en": "youngest", "zh": "最年輕的"},
+        {"en": "six", "zh": "六"},
+        {"en": "sisters", "zh": "姐妹"}
+      ]
+    },
+    {
+      "id": 3,
+      "en": "On her fifteenth birthday, she could go to the surface.",
+      "zh": "在她十五歲生日時，她可以浮出水面。",
+      "words": [
+        {"en": "fifteenth", "zh": "十五歲"},
+        "birthday", "zh": "生日"},
+        {"en": "surface", "zh": "水面"}
+      ]
+    },
+    {
+      "id": 4,
+      "en": "She saw a ship on the ocean.",
+      "zh": "她看到海面上有一艘船。",
+      "words": [
+        {"en": "ship", "zh": "船"},
+        {"en": "ocean", "zh": "海洋"}
+      ]
+    },
+    {
+      "id": 5,
+      "en": "There was a prince on the ship.",
+      "zh": "船上有一位王子。",
+      "words": [
+        {"en": "prince", "zh": "王子"}
+      ]
+    },
+    {
+      "id": 6,
+      "en": "A big storm came and the ship sank.",
+      "zh": "一場大風暴來了，船沉了。",
+      "words": [
+        {"en": "storm", "zh": "風暴"},
+        {"en": "sank", "zh": "沉沒"}
+      ]
+    },
+    {
+      "id": 7,
+      "en": "The mermaid saved the prince.",
+      "zh": "美人魚救了王子。",
+      "words": [
+        {"en": "saved", "zh": "救了"}
+      ]
+    },
+    {
+      "id": 8,
+      "en": "She brought him to the shore.",
+      "zh": "她把他帶到岸邊。",
+      "words": [
+        {"en": "shore", "zh": "岸邊"}
+      ]
+    },
+    {
+      "id": 9,
+      "en": "She wanted to have legs so she could be with him.",
+      "zh": "她想要有一雙腿，這樣就能和他在一起了。",
+      "words": [
+        {"en": "legs", "zh": "腿"},
+        {"en": "be with", "zh": "在一起"}
+      ]
+    },
+    {
+      "id": 10,
+      "en": "She went to the sea witch.",
+      "zh": "她去見海巫婆。",
+      "words": [
+        {"en": "witch", "zh": "巫婆"}
+      ]
+    },
+    {
+      "id": 11,
+      "en": "The witch gave her a potion.",
+      "zh": "巫婆給她一瓶藥水。",
+      "words": [
+        {"en": "potion", "zh": "藥水"}
+      ]
+    },
+    {
+      "id": 12,
+      "en": "It would give her legs, but it would hurt.",
+      "zh": "藥水會給她一雙腿，但會很痛。",
+      "words": [
+        {"en": "hurt", "zh": "痛"}
+      ]
+    },
+    {
+      "id": 13,
+      "en": "The mermaid drank the potion.",
+      "zh": "美人魚喝了藥水。",
+      "words": [
+        {"en": "drank", "zh": "喝"}
+      ]
+    },
+    {
+      "id": 14,
+      "en": "She woke up with legs.",
+      "zh": "她醒來時有了腿。",
+      "words": [
+        {"en": "woke up", "zh": "醒來"}
+      ]
+    },
+    {
+      "id": 15,
+      "en": "She could not speak, only sing.",
+      "zh": "她不能說話，只能唱歌。",
+      "words": [
+        {"en": "speak", "zh": "說話"},
+        {"en": "sing", "zh": "唱歌"}
+      ]
+    },
+    {
+      "id": 16,
+      "en": "The prince found her on the beach.",
+      "zh": "王子在海灘找到她。",
+      "words": [
+        {"en": "beach", "zh": "海灘"}
+      ]
+    },
+    {
+      "id": 17,
+      "en": "He took her to his palace.",
+      "zh": "他帶她回皇宮。",
+      "words": [
+        {"en": "palace", "zh": "皇宮"}
+      ]
+    },
+    {
+      "id": 18,
+      "en": "The prince liked her singing.",
+      "zh": "王子喜歡她的歌聲。",
+      "words": [
+        {"en": "liked", "zh": "喜歡"},
+        {"en": "singing", "zh": "歌聲"}
+      ]
+    },
+    {
+      "id": 19,
+      "en": "But the prince loved another girl.",
+      "zh": "但是王子愛上了另一個女孩。",
+      "words": [
+        {"en": "loved", "zh": "愛"},
+        {"en": "another", "zh": "另一個"}
+      ]
+    },
+    {
+      "id": 20,
+      "en": "The mermaid's sisters brought her a knife.",
+      "zh": "美人魚的姐妹給她一把刀。",
+      "words": [
+        {"en": "sisters", "zh": "姐妹"},
+        {"en": "knife", "zh": "刀"}
+      ]
+    },
+    {
+      "id": 21,
+      "en": "If she killed the prince, she could return to the sea.",
+      "zh": "如果她殺了王子，她就能回到海裡。",
+      "words": [
+        {"en": "killed", "zh": "殺"},
+        {"en": "return", "zh": "回到"}
+      ]
+    },
+    {
+      "id": 22,
+      "en": "But she could not do it.",
+      "zh": "但她做不到。",
+      "words": []
+    },
+    {
+      "id": 23,
+      "en": "She became foam on the sea.",
+      "zh": "她變成了海上的泡沫。",
+      "words": [
+        {"en": "foam", "zh": "泡沫"}
+      ]
+    },
+    {
+      "id": 24,
+      "en": "But the sea gave her a second chance.",
+      "zh": "但是海洋給了她第二次機會。",
+      "words": [
+        {"en": "second chance", "zh": "第二次機會"}
+      ]
+    },
+    {
+      "id": 25,
+      "en": "She became a spirit in the sky.",
+      "zh": "她變成了天空中的精靈。",
+      "words": [
+        {"en": "spirit", "zh": "精靈"},
+        {"en": "sky", "zh": "天空"}
+      ]
+    }
+  ]
+}

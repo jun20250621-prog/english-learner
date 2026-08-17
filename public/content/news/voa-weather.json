@@ -1,0 +1,86 @@
+{
+  "id": "voa-weather",
+  "title": "天氣報導",
+  "titleEn": "Weather Report",
+  "source": "VOA Learning English",
+  "level": "A1",
+  "description": "簡單的天氣報導，非常適合初學者",
+  "duration": "2 minutes",
+  "segments": [
+    {
+      "title": "預習單字",
+      "words": [
+        {"en": "weather", "zh": "天氣", "pronunciation": "WETH-er"},
+        {"en": "sunny", "zh": "晴天", "pronunciation": "SUN-ee"},
+        {"en": "rainy", "zh": "下雨", "pronunciation": "RAY-nee"},
+        {"en": "cold", "zh": "冷", "pronunciation": "kohld"},
+        {"en": "hot", "zh": "熱", "pronunciation": "hot"}
+      ]
+    },
+    {
+      "title": "第一段",
+      "startTime": 0,
+      "endTime": 40,
+      "sentences": [
+        {
+          "en": "Today is a beautiful day.",
+          "zh": "今天是好天氣。"
+        },
+        {
+          "en": "The sun is shining.",
+          "zh": "太陽正在照耀。"
+        },
+        {
+          "en": "It is warm outside.",
+          "zh": "外面很溫暖。"
+        }
+      ]
+    },
+    {
+      "title": "第二段",
+      "startTime": 40,
+      "endTime": 80,
+      "sentences": [
+        {
+          "en": "The temperature is 25 degrees.",
+          "zh": "溫度是25度。"
+        },
+        {
+          "en": "It is not too hot.",
+          "zh": "不會太熱。"
+        },
+        {
+          "en": "It is not too cold.",
+          "zh": "不會太冷。"
+        },
+        {
+          "en": "It is just right.",
+          "zh": "剛剛好。"
+        }
+      ]
+    },
+    {
+      "title": "第三段",
+      "startTime": 80,
+      "endTime": 120,
+      "sentences": [
+        {
+          "en": "There is a light breeze.",
+          "zh": "有輕微的微風。"
+        },
+        {
+          "en": "It is a perfect day.",
+          "zh": "這是完美的一天。"
+        },
+        {
+          "en": "You can go outside and enjoy the weather.",
+          "zh": "你可以出去享受好天氣。"
+        },
+        {
+          "en": "Have a great day!",
+          "zh": "祝你有美好的一天！"
+        }
+      ]
+    }
+  ]
+}

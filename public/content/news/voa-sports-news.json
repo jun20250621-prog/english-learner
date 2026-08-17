@@ -1,0 +1,86 @@
+{
+  "id": "voa-sports-news",
+  "title": "籃球新聞",
+  "titleEn": "Basketball News",
+  "source": "VOA Learning English",
+  "level": "A2",
+  "description": "簡單的運動新聞，適合初學者",
+  "duration": "2 minutes",
+  "segments": [
+    {
+      "title": "預習單字",
+      "words": [
+        {"en": "basketball", "zh": "籃球", "pronunciation": "BAS-kit-bawl"},
+        {"en": "team", "zh": "球隊", "pronunciation": "teem"},
+        {"en": "player", "zh": "球員", "pronunciation": "PLAY-er"},
+        {"en": "win", "zh": "贏", "pronunciation": "win"},
+        {"en": "game", "zh": "比賽", "pronunciation": "gaym"}
+      ]
+    },
+    {
+      "title": "第一段",
+      "startTime": 0,
+      "endTime": 40,
+      "sentences": [
+        {
+          "en": "Basketball is a popular sport in the United States.",
+          "zh": "籃球在美國是一項受歡迎的運動。"
+        },
+        {
+          "en": "Many people play basketball for fun.",
+          "zh": "許多人為了好玩而打籃球。"
+        },
+        {
+          "en": "Some people play basketball professionally.",
+          "zh": "有些人打職業籃球。"
+        }
+      ]
+    },
+    {
+      "title": "第二段",
+      "startTime": 40,
+      "endTime": 80,
+      "sentences": [
+        {
+          "en": "There are two teams in a basketball game.",
+          "zh": "一場籃球比賽有兩支球隊。"
+        },
+        {
+          "en": "Each team has five players.",
+          "zh": "每支球隊有五名球員。"
+        },
+        {
+          "en": "The teams try to score points.",
+          "zh": "球隊嘗試得分。"
+        },
+        {
+          "en": "They throw the ball into a hoop.",
+          "zh": "他們把球投進籃框。"
+        }
+      ]
+    },
+    {
+      "title": "第三段",
+      "startTime": 80,
+      "endTime": 120,
+      "sentences": [
+        {
+          "en": "The team with the most points wins.",
+          "zh": "得分最多的球隊獲勝。"
+        },
+        {
+          "en": "Basketball games are exciting to watch.",
+          "zh": "籃球比賽觀看起來很刺激。"
+        },
+        {
+          "en": "Fans cheer for their favorite teams.",
+          "zh": "球迷為他們喜歡的球隊加油。"
+        },
+        {
+          "en": "Would you like to play basketball?",
+          "zh": "你想打籃球嗎？"
+        }
+      ]
+    }
+  ]
+}

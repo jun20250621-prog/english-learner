@@ -1,0 +1,42 @@
+{
+  "fairyTales": [
+    {
+      "id": "three-little-pigs",
+      "title": "三隻小豬",
+      "titleEn": "The Three Little Pigs",
+      "level": "A1",
+      "description": "經典童話，三隻小豬建造房子的故事",
+      "image": "🐷",
+      "sentencesCount": 23
+    },
+    {
+      "id": "little-mermaid",
+      "title": "小美人魚",
+      "titleEn": "The Little Mermaid",
+      "level": "A1-A2",
+      "description": "迪士尼經典，小美人魚愛麗兒的故事",
+      "image": "🧜‍♀️",
+      "sentencesCount": 25
+    }
+  ],
+  "news": [
+    {
+      "id": "voa-sports-news",
+      "title": "籃球新聞",
+      "titleEn": "Basketball News",
+      "source": "VOA Learning English",
+      "level": "A2",
+      "description": "簡單的運動新聞",
+      "duration": "2 min"
+    },
+    {
+      "id": "voa-weather",
+      "title": "天氣報導",
+      "titleEn": "Weather Report",
+      "source": "VOA Learning English",
+      "level": "A1",
+      "description": "簡單的天氣報導",
+      "duration": "2 min"
+    }
+  ]
+}
