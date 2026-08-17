@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { sentences } from './data/sentences';
 import { WordTooltip, SpeedControl } from './components/WordTooltip';
 import { ContentPlayer } from './components/ContentPlayer';
+import { ContentAdmin } from './components/ContentAdmin';
 import { Dashboard } from './components/Dashboard';
 
 const getStoredData = (key, defaultValue) => { try { const stored = localStorage.getItem(key); return stored ? JSON.parse(stored) : defaultValue; } catch { return defaultValue; } };
@@ -25,6 +26,7 @@ function App() {
   const [favorites, setFavorites] = useState(() => getStoredData('favorites', []));
   const [showFavorites, setShowFavorites] = useState(false);
   const [showDashboard, setShowDashboard] = useState(false);
+  const [showAdmin, setShowAdmin] = useState(false);
   
   const [showQuiz, setShowQuiz] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
@@ -156,7 +158,7 @@ function App() {
   return (
     <div style={styles.container}>
       <header style={styles.header}>
-        <h1 style={styles.title}>📚 English Learner</h1>
+        <h1 style={styles.title} onClick={() => setShowAdmin(true)} title="點擊新增內容">📚 English Learner</h1>
         <div style={styles.headerButtons}>
           <button style={styles.iconBtn} onClick={() => setDarkMode(!darkMode)}>{darkMode ? '☀️' : '🌙'}</button>
           <button style={styles.iconBtn} onClick={() => setShowDashboard(true)}>📊</button>
@@ -164,6 +166,7 @@ function App() {
       </header>
 
       {showDashboard && <Dashboard progress={progress} darkMode={darkMode} onClose={() => setShowDashboard(false)} />}
+      {showAdmin && <ContentAdmin darkMode={darkMode} onClose={() => setShowAdmin(false)} />}
 
       <nav style={styles.nav}>
         <button style={showQuiz ? styles.activeTab : (showFavorites ? styles.activeTab : styles.tab)} onClick={() => { setShowFavorites(!showFavorites); setShowDashboard(false); setShowQuiz(false); setCurrentIndex(0); }}>{showFavorites ? '⭐ Favorites' : '❤️ My Favorites'}</button>
@@ -227,7 +230,22 @@ function App() {
         </div>
       )}
 
-      <footer style={styles.footer}><p>200 Sentences for English Learning</p></footer>
+      <footer style={styles.footer}>
+        <p>200 Sentences for English Learning</p>
+        <button onClick={() => setShowAdmin(true)} style={{ 
+          background: theme.cardBg, 
+          border: `1px solid ${theme.border}`, 
+          borderRadius: '20px',
+          padding: '8px 16px', 
+          color: theme.accent, 
+          cursor: 'pointer', 
+          fontSize: '14px',
+          marginTop: '15px',
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '5px'
+        }}>➕ 新增內容</button>
+      </footer>
     </div>
   );
 }

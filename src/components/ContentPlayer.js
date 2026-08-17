@@ -23,6 +23,16 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
     speechSynthesis.speak(u); 
   }, []);
 
+  // 當前句子變化時自動朗讀
+  useEffect(() => {
+    if (autoPlay && current && !isWordList) {
+      const enText = isNews ? (current.sentences?.map(s => s.en).join(' ')) : current.en;
+      if (enText) {
+        setTimeout(() => speak(enText), 300);
+      }
+    }
+  }, [index, autoPlay, current, isWordList, isNews, speak]);
+
   // 獲取圖片
   useEffect(() => {
     if (!current || isWordList) {
@@ -31,16 +41,16 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
     }
 
     const loadImage = async () => {
+      if (!showImage) return;
+      
       setImageLoading(true);
       
-      // 從 content 獲取關鍵詞
       const keywords = content.keywords || current.keywords || [];
       
       if (keywords.length > 0) {
         const url = await fetchImage(keywords, darkMode);
         setImageUrl(url || getFallbackImage(keywords[0]));
       } else {
-        // 從句子中提取關鍵詞（簡單實現）
         const words = current.en?.split(' ').slice(0, 3) || [];
         const url = await fetchImage(words, darkMode);
         setImageUrl(url || getFallbackImage('default'));
@@ -49,24 +59,28 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
       setImageLoading(false);
     };
 
-    loadImage();
-  }, [current, content, darkMode, isWordList]);
+    if (showImage) {
+      loadImage();
+    } else {
+      setImageUrl(null);
+    }
+  }, [current, content, darkMode, isWordList, showImage]);
 
-  // 自動播放邏輯
+  // 自動播放邏輯（不自動切換，只朗讀）
   useEffect(() => {
-    if (!autoPlay || !current || isWordList) return;
+    if (!autoPlay || !current || isWordList) {
+      if (timerRef.current) clearTimeout(timerRef.current);
+      return;
+    }
     
     const enText = isNews ? (current.sentences?.map(s => s.en).join(' ')) : current.en;
     
+    // 流程：朗讀 → 停 → 顯示翻譯 → 停 → 重複朗讀（不切換）
     const steps = [
-      { delay: 500, action: () => setShowImage(true) },  // 先顯示圖片
-      { delay: 1200, action: () => speak(enText) },      // 朗讀
-      { delay: 3500, action: () => setShowTranslation(true) }, // 顯示翻譯
-      { delay: 5000, action: () => { 
-        setIndex(prev => (prev + 1) % segments.length); 
-        setShowTranslation(false); 
-        setShowImage(false);
-      }}
+      { delay: 500, action: () => speak(enText) },
+      { delay: 3500, action: () => setShowTranslation(true) },
+      { delay: 6000, action: () => setShowTranslation(false) },
+      { delay: 7000, action: () => speak(enText) }, // 再次朗讀
     ];
 
     steps.forEach(step => { 
@@ -74,7 +88,7 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
     });
     
     return () => { if (timerRef.current) clearTimeout(timerRef.current); };
-  }, [autoPlay, index, current, isWordList, segments.length, speak, isNews]);
+  }, [autoPlay, index, current, isWordList, speak, isNews]);
 
   const theme = darkMode ? 
     { bg: '#121212', cardBg: '#1e1e1e', text: '#e0e0e0', textSecondary: '#aaa', accent: '#4CAF50', accentBg: '#1b5e20', button: '#2196F3', border: '#333' } : 
@@ -108,7 +122,7 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
         <button onClick={onBack} style={{ background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: theme.text }}>←</button>
         <h2 style={{ margin: 0, fontSize: '16px' }}>{content.image || '📰'} {content.title}</h2>
         <button onClick={() => setShowImage(!showImage)} style={{ background: showImage ? theme.accent : theme.cardBg, border: `1px solid ${theme.border}`, borderRadius: '20px', padding: '8px 16px', cursor: 'pointer', color: showImage ? 'white' : theme.text, fontSize: '14px' }}>
-          🖼️ {showImage ? '隱藏圖片' : '顯示圖片'}
+          🖼️ {showImage ? '隱藏' : '圖片'}
         </button>
       </div>
 
@@ -165,12 +179,14 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
 
         <div style={{ textAlign: 'center', color: theme.textSecondary, marginBottom: '15px' }}>{index + 1} / {segments.length}</div>
         
-        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
-          <button onClick={() => { setIndex(Math.max(0, index - 1)); setShowTranslation(false); setShowImage(false); setAutoPlay(false); }} style={{ padding: '12px 24px', backgroundColor: theme.button, color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer', fontSize: '16px' }}>◀️ 上一個</button>
+        <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <button onClick={() => { setIndex(Math.max(0, index - 1)); setShowTranslation(false); }} style={{ padding: '12px 24px', backgroundColor: theme.button, color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer', fontSize: '16px' }}>◀️ 上一句</button>
+          
           <button onClick={() => setAutoPlay(!autoPlay)} style={{ padding: '12px 24px', backgroundColor: autoPlay ? theme.accent : theme.cardBg, border: `1px solid ${theme.border}`, borderRadius: '8px', cursor: 'pointer', fontSize: '16px', color: autoPlay ? 'white' : theme.text }}>
-            {autoPlay ? '⏸️ 暫停' : '▶️ 自動播放'}
+            {autoPlay ? '⏹️ 停止' : '▶️ 自動朗讀'}
           </button>
-          <button onClick={() => { setIndex(Math.min(segments.length - 1, index + 1)); setShowTranslation(false); }} style={{ padding: '12px 24px', backgroundColor: theme.button, color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer', fontSize: '16px' }}>下一個 ▶️</button>
+          
+          <button onClick={() => { setIndex(Math.min(segments.length - 1, index + 1)); setShowTranslation(false); }} style={{ padding: '12px 24px', backgroundColor: theme.button, color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer', fontSize: '16px' }}>下一句 ▶️</button>
         </div>
       </div>
       
