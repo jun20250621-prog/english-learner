@@ -21,33 +21,6 @@
   ],
   "news": [
     {
-      "id": "voa-daily-routine",
-      "title": "日常生活",
-      "titleEn": "Daily Routine",
-      "source": "VOA Learning English",
-      "level": "A1",
-      "description": "學習描述日常生活用語",
-      "image": "📅"
-    },
-    {
-      "id": "voa-shopping",
-      "title": "購物英語",
-      "titleEn": "Shopping English",
-      "source": "VOA Learning English",
-      "level": "A1-A2",
-      "description": "購物時的常用英語",
-      "image": "🛒"
-    },
-    {
-      "id": "voa-travel",
-      "title": "旅行英語",
-      "titleEn": "Travel English",
-      "source": "VOA Learning English",
-      "level": "A2",
-      "description": "出國旅行常用英語",
-      "image": "✈️"
-    },
-    {
       "id": "voa-sports-news",
       "title": "籃球新聞",
       "titleEn": "Basketball News",
