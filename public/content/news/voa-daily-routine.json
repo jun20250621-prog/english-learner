@@ -1,0 +1,52 @@
+{
+  "id": "voa-daily-routine",
+  "title": "日常生活",
+  "titleEn": "Daily Routine",
+  "source": "VOA Learning English",
+  "level": "A1",
+  "description": "學習描述日常生活用語",
+  "image": "📅",
+  "keywords": ["morning", "daily", "routine"],
+  "segments": [
+    {
+      "title": "預習單字",
+      "words": [
+        {"en": "wake up", "zh": "醒來", "pronunciation": "weyk up"},
+        {"en": "morning", "zh": "早晨", "pronunciation": "mor-ning"},
+        {"en": "breakfast", "zh": "早餐", "pronunciation": "brek-fust"},
+        {"en": "lunch", "zh": "午餐", "pronunciation": "lunch"},
+        {"en": "dinner", "zh": "晚餐", "pronunciation": "di-ner"}
+      ]
+    },
+    {
+      "title": "第一段",
+      "startTime": 0,
+      "endTime": 40,
+      "sentences": [
+        {"en": "I wake up at six o'clock every morning.", "zh": "我每天早上六點起床。"},
+        {"en": "I brush my teeth after waking up.", "zh": "起床後我刷牙。"},
+        {"en": "Then I take a shower.", "zh": "然後我洗澡。"}
+      ]
+    },
+    {
+      "title": "第二段",
+      "startTime": 40,
+      "endTime": 80,
+      "sentences": [
+        {"en": "I eat breakfast at seven o'clock.", "zh": "我七點吃早餐。"},
+        {"en": "I usually have eggs and bread.", "zh": "我通常吃蛋和麵包。"},
+        {"en": "I drink coffee every morning.", "zh": "我每天早上喝咖啡。"}
+      ]
+    },
+    {
+      "title": "第三段",
+      "startTime": 80,
+      "endTime": 120,
+      "sentences": [
+        {"en": "I go to work at eight o'clock.", "zh": "我八點去上班。"},
+        {"en": "I have lunch at noon.", "zh": "我中午吃午餐。"},
+        {"en": "I eat dinner at seven in the evening.", "zh": "我晚上七點吃晚餐。"}
+      ]
+    }
+  ]
+}

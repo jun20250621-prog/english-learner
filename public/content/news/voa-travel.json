@@ -1,0 +1,52 @@
+{
+  "id": "voa-travel",
+  "title": "旅行英語",
+  "titleEn": "Travel English",
+  "source": "VOA Learning English",
+  "level": "A2",
+  "description": "出國旅行常用英語",
+  "image": "✈️",
+  "keywords": ["travel", "airport", "hotel"],
+  "segments": [
+    {
+      "title": "預習單字",
+      "words": [
+        {"en": "airport", "zh": "機場", "pronunciation": "air-port"},
+        {"en": "hotel", "zh": "飯店", "pronunciation": "ho-tel"},
+        {"en": "ticket", "zh": "機票", "pronunciation": "ti-kit"},
+        {"en": "passport", "zh": "護照", "pronunciation": "pass-port"},
+        {"en": "reservation", "zh": "預訂", "pronunciation": "rez-er-vay-shun"}
+      ]
+    },
+    {
+      "title": "第一段",
+      "startTime": 0,
+      "endTime": 40,
+      "sentences": [
+        {"en": "Where is the airport?", "zh": "機場在哪裡？"},
+        {"en": "I need a taxi to the hotel.", "zh": "我需要計程車去飯店。"},
+        {"en": "Here is my passport.", "zh": "這是我的護照。"}
+      ]
+    },
+    {
+      "title": "第二段",
+      "startTime": 40,
+      "endTime": 80,
+      "sentences": [
+        {"en": "I have a reservation.", "zh": "我有預訂。"},
+        {"en": "What time is checkout?", "zh": "退房時間是幾點？"},
+        {"en": "Can I have the key, please?", "zh": "請給我鑰匙好嗎？"}
+      ]
+    },
+    {
+      "title": "第三段",
+      "startTime": 80,
+      "endTime": 120,
+      "sentences": [
+        {"en": "Where is the train station?", "zh": "火車站在哪裡？"},
+        {"en": "How much is a ticket to the city center?", "zh": "去市中心一張票多少錢？"},
+        {"en": "Thank you for your help.", "zh": "謝謝你的幫助。"}
+      ]
+    }
+  ]
+}
