@@ -14,7 +14,7 @@
     { "id": 5, "en": "I'm not a smart man, but I know what love is.", "zh": "我不聰明，但我知道什麼是愛。", "words": [{"en": "smart", "zh": "聰明的"}, {"en": "love", "zh": "愛"}] },
     { "id": 6, "en": "Run, Forrest! Run!", "zh": "跑啊！阿甘！跑啊！", "words": [{"en": "run", "zh": "跑"}] },
     { "id": 7, "en": "There's only so much of a person you can love before you can't anymore.", "zh": "一個人能愛的有限，愛過之後就不能再愛了。", "words": [{"en": "anymore", "zh": "再"}] },
-    { "id": 8, "en": "I don't know if we each have a destiny.", "zh": "我不知道我們每個人是否有命運。", "words": [{"en": "destiny", "zh": "命運"}] },
+    { "id": 8, "en": "I don't know if we each have a destiny, or if we're all just floating around.", "zh": "我不知道我們每個人是否有命運，或者我們只是隨波逐流。", "words": [{"en": "destiny", "zh": "命運"}, {"en": "floating", "zh": "漂浮"}] },
     { "id": 9, "en": "It was the best thing that ever happened to me.", "zh": "那是我身上發生的最好的事。", "words": [{"en": "happened", "zh": "發生"}] },
     { "id": 10, "en": "We have to see the good in each other.", "zh": "我們必須看到彼此的好。", "words": [{"en": "each other", "zh": "彼此"}] }
   ]
