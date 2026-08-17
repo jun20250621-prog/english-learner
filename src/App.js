@@ -183,6 +183,15 @@ function App() {
         </div>
       )}
 
+      {contentList.movies && contentList.movies.length > 0 && !showQuiz && !showFavorites && category === 'all' && (
+        <div style={styles.contentSection}>
+          <div style={styles.contentTitle}>🎬 經典電影</div>
+          <div style={styles.contentGrid}>
+            {contentList.movies.map(movie => <div key={movie.id} onClick={() => loadContent('movies', movie.id)} style={styles.contentCard}><div style={styles.contentEmoji}>{movie.image}</div><div style={styles.contentCardTitle}>{movie.title}</div><span style={styles.contentLevel}>{movie.level}</span></div>)}
+          </div>
+        </div>
+      )}
+
       {contentList.news.length > 0 && !showQuiz && !showFavorites && category === 'all' && (
         <div style={styles.contentSection}>
           <div style={styles.contentTitle}>📰 慢速英語新聞</div>

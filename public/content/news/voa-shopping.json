@@ -1,0 +1,46 @@
+{
+  "id": "voa-shopping",
+  "title": "購物英語",
+  "titleEn": "Shopping English",
+  "source": "VOA Learning English",
+  "level": "A1-A2",
+  "description": "購物時的常用英語",
+  "image": "🛒",
+  "keywords": ["shop", "buy", "price"],
+  "segments": [
+    {
+      "title": "預習單字",
+      "words": [
+        {"en": "price", "zh": "價格", "pronunciation": "prys"},
+        {"en": "size", "zh": "尺寸", "pronunciation": "syz"},
+        {"en": "discount", "zh": "折扣", "pronunciation": "dis-kount"},
+        {"en": "cash", "zh": "現金", "pronunciation": "kash"},
+        {"en": "receipt", "zh": "收據", "pronunciation": "ri-seet"}
+      ]
+    },
+    {
+      "title": "第一段",
+      "sentences": [
+        {"en": "How much does this shirt cost?", "zh": "這件襯衫多少錢？"},
+        {"en": "It costs twenty dollars.", "zh": "二十美元。"},
+        {"en": "Do you have a smaller size?", "zh": "你有更小的尺寸嗎？"}
+      ]
+    },
+    {
+      "title": "第二段",
+      "sentences": [
+        {"en": "Can I pay by credit card?", "zh": "我可以刷卡嗎？"},
+        {"en": "Yes, we accept all major credit cards.", "zh": "是的，我們接受所有主要信用卡。"},
+        {"en": "Is there a discount today?", "zh": "今天有折扣嗎？"}
+      ]
+    },
+    {
+      "title": "第三段",
+      "sentences": [
+        {"en": "Can I have a receipt, please?", "zh": "請給我收據好嗎？"},
+        {"en": "Of course. Here you go.", "zh": "當然可以，給你。"},
+        {"en": "Thank you for shopping with us!", "zh": "謝謝惠顧！"}
+      ]
+    }
+  ]
+}
