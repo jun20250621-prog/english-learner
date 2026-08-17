@@ -4,7 +4,7 @@
   "titleEn": "Shopping English",
   "source": "VOA Learning English",
   "level": "A1-A2",
-  "description": "購物時的常用英語",
+  "description": "學習購物時的常用英語",
   "image": "🛒",
   "keywords": ["shop", "buy", "price"],
   "segments": [
@@ -20,6 +20,8 @@
     },
     {
       "title": "第一段",
+      "startTime": 0,
+      "endTime": 40,
       "sentences": [
         {"en": "How much does this shirt cost?", "zh": "這件襯衫多少錢？"},
         {"en": "It costs twenty dollars.", "zh": "二十美元。"},
@@ -28,6 +30,8 @@
     },
     {
       "title": "第二段",
+      "startTime": 40,
+      "endTime": 80,
       "sentences": [
         {"en": "Can I pay by credit card?", "zh": "我可以刷卡嗎？"},
         {"en": "Yes, we accept all major credit cards.", "zh": "是的，我們接受所有主要信用卡。"},
@@ -36,6 +40,8 @@
     },
     {
       "title": "第三段",
+      "startTime": 80,
+      "endTime": 120,
       "sentences": [
         {"en": "Can I have a receipt, please?", "zh": "請給我收據好嗎？"},
         {"en": "Of course. Here you go.", "zh": "當然可以，給你。"},

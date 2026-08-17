@@ -19,35 +19,6 @@
       "sentencesCount": 25
     }
   ],
-  "movies": [
-    {
-      "id": "lion-king",
-      "title": "獅子王",
-      "titleEn": "The Lion King",
-      "level": "A1-A2",
-      "description": "迪士尼經典，辛巴的成長故事",
-      "image": "🦁",
-      "sentencesCount": 10
-    },
-    {
-      "id": "frozen",
-      "title": "冰雪奇緣",
-      "titleEn": "Frozen",
-      "level": "A1",
-      "description": "迪士尼經典，艾莎與安娜的冒險",
-      "image": "❄️",
-      "sentencesCount": 8
-    },
-    {
-      "id": "forest-gump",
-      "title": "阿甘正傳",
-      "titleEn": "Forrest Gump",
-      "level": "A2-B1",
-      "description": "經典勵志電影，阿甘的奇妙人生",
-      "image": "🏃",
-      "sentencesCount": 10
-    }
-  ],
   "news": [
     {
       "id": "voa-daily-routine",
@@ -82,7 +53,8 @@
       "titleEn": "Basketball News",
       "source": "VOA Learning English",
       "level": "A2",
-      "description": "簡單的運動新聞"
+      "description": "簡單的運動新聞",
+      "duration": "2 min"
     },
     {
       "id": "voa-weather",
@@ -90,7 +62,8 @@
       "titleEn": "Weather Report",
       "source": "VOA Learning English",
       "level": "A1",
-      "description": "簡單的天氣報導"
+      "description": "簡單的天氣報導",
+      "duration": "2 min"
     }
   ]
 }

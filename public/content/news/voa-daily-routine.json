@@ -20,6 +20,8 @@
     },
     {
       "title": "第一段",
+      "startTime": 0,
+      "endTime": 40,
       "sentences": [
         {"en": "I wake up at six o'clock every morning.", "zh": "我每天早上六點起床。"},
         {"en": "I brush my teeth after waking up.", "zh": "起床後我刷牙。"},
@@ -28,6 +30,8 @@
     },
     {
       "title": "第二段",
+      "startTime": 40,
+      "endTime": 80,
       "sentences": [
         {"en": "I eat breakfast at seven o'clock.", "zh": "我七點吃早餐。"},
         {"en": "I usually have eggs and bread.", "zh": "我通常吃蛋和麵包。"},
@@ -36,6 +40,8 @@
     },
     {
       "title": "第三段",
+      "startTime": 80,
+      "endTime": 120,
       "sentences": [
         {"en": "I go to work at eight o'clock.", "zh": "我八點去上班。"},
         {"en": "I have lunch at noon.", "zh": "我中午吃午餐。"},

@@ -20,6 +20,8 @@
     },
     {
       "title": "第一段",
+      "startTime": 0,
+      "endTime": 40,
       "sentences": [
         {"en": "Where is the airport?", "zh": "機場在哪裡？"},
         {"en": "I need a taxi to the hotel.", "zh": "我需要計程車去飯店。"},
@@ -28,6 +30,8 @@
     },
     {
       "title": "第二段",
+      "startTime": 40,
+      "endTime": 80,
       "sentences": [
         {"en": "I have a reservation.", "zh": "我有預訂。"},
         {"en": "What time is checkout?", "zh": "退房時間是幾點？"},
@@ -36,6 +40,8 @@
     },
     {
       "title": "第三段",
+      "startTime": 80,
+      "endTime": 120,
       "sentences": [
         {"en": "Where is the train station?", "zh": "火車站在哪裡？"},
         {"en": "How much is a ticket to the city center?", "zh": "去市中心一張票多少錢？"},
