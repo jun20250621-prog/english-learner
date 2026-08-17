@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { sentences } from './data/sentences';
+import { WordTooltip, SpeedControl } from './components/WordTooltip';
+import { ContentPlayer } from './components/ContentPlayer';
+import { Dashboard } from './components/Dashboard';
 
 const getStoredData = (key, defaultValue) => { try { const stored = localStorage.getItem(key); return stored ? JSON.parse(stored) : defaultValue; } catch { return defaultValue; } };
 const saveData = (key, value) => localStorage.setItem(key, JSON.stringify(value));
@@ -9,88 +12,9 @@ const initializeProgress = () => {
   const today = getToday();
   const stored = getStoredData('learningProgress', null);
   if (stored) return stored;
-  const initial = { startDate: today, lastStudyDate: today, totalDays: 1, totalLearned: 0, quizCorrect: 0, quizTotal: 0, streak: 1, dailyHistory: { [today]: 0 } };
+  const initial = { startDate: today, lastStudyDate: today, totalDays: 1, totalLearned: 0, quizCorrect: 0, quizTotal: 0, streak: 1, dailyGoal: 10, dailyHistory: { [today]: 0 }, categoryStats: {} };
   saveData('learningProgress', initial);
   return initial;
-};
-
-const ClickableWord = ({ word, onSpeak, darkMode }) => {
-  const theme = darkMode ? { bg: '#333', hover: '#444' } : { bg: '#e8f5e9', hover: '#c8e6c9' };
-  return <span style={{ display: 'inline-block', padding: '2px 6px', margin: '2px', borderRadius: '4px', cursor: 'pointer', backgroundColor: theme.bg, transition: 'all 0.2s' }} onClick={(e) => { e.stopPropagation(); onSpeak(word); }} onMouseEnter={(e) => e.target.style.backgroundColor = theme.hover} onMouseLeave={(e) => e.target.style.backgroundColor = theme.bg} title="點擊發音">{word}</span>;
-};
-
-const SpeedControl = ({ rate, onRateChange, darkMode }) => {
-  const speeds = [{ value: 0.5, label: '0.5x' }, { value: 0.7, label: '0.7x' }, { value: 1.0, label: '1.0x' }];
-  const theme = darkMode ? { active: '#4CAF50', inactive: '#333' } : { active: '#4CAF50', inactive: '#e0e0e0' };
-  return <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', marginBottom: '15px' }}>{speeds.map(s => <button key={s.value} style={{ padding: '8px 16px', border: 'none', borderRadius: '20px', cursor: 'pointer', fontSize: '14px', fontWeight: rate === s.value ? 'bold' : 'normal', backgroundColor: rate === s.value ? theme.active : theme.inactive, color: rate === s.value ? 'white' : (darkMode ? '#aaa' : '#666') }} onClick={() => onRateChange(s.value)}>{s.label}</button>)}</div>;
-};
-
-const ContentPlayer = ({ content, type, onBack, darkMode }) => {
-  const [index, setIndex] = useState(0);
-  const [showTranslation, setShowTranslation] = useState(false);
-  const isNews = type === 'news';
-  const segments = isNews ? content.segments : content.sentences;
-  const current = segments[index];
-  const isWordList = isNews && current && current.title === '預習單字';
-
-  const speak = (text) => { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.7; speechSynthesis.speak(u); };
-  const theme = darkMode ? { bg: '#121212', cardBg: '#1e1e1e', text: '#e0e0e0', textSecondary: '#aaa', accent: '#4CAF50', accentBg: '#1b5e20', button: '#2196F3', border: '#333' } : { bg: '#f5f5f5', cardBg: 'white', text: '#333', textSecondary: '#666', accent: '#4CAF50', accentBg: '#e8f5e9', button: '#2196F3', border: '#ddd' };
-
-  const renderWords = (text) => text.split(/(\s+)/).filter(Boolean).map((word, idx) => (word.trim() === '' || /^[^\w\s]+$/.test(word.trim())) ? <span key={idx}>{word}</span> : <ClickableWord key={idx} word={word.trim()} onSpeak={(w) => { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(w); u.lang = 'en-US'; u.rate = 0.5; speechSynthesis.speak(u); }} darkMode={darkMode} />);
-
-  const styles = {
-    container: { maxWidth: '600px', margin: '0 auto', padding: '20px', backgroundColor: theme.bg, minHeight: '100vh', color: theme.text },
-    header: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' },
-    backBtn: { background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: theme.text },
-    title: { margin: 0, fontSize: '16px' },
-    card: { backgroundColor: theme.cardBg, borderRadius: '16px', padding: '30px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' },
-    label: { backgroundColor: theme.accentBg, color: theme.accent, padding: '4px 12px', borderRadius: '12px', fontSize: '12px', display: 'inline-block', marginBottom: '15px' },
-    sentence: { fontSize: '20px', lineHeight: '1.8', marginBottom: '20px', wordBreak: 'break-word' },
-    btnRow: { display: 'flex', gap: '10px', justifyContent: 'center', marginBottom: '20px' },
-    speakBtn: { padding: '12px 24px', border: 'none', borderRadius: '25px', backgroundColor: theme.accent, color: 'white', fontSize: '16px', cursor: 'pointer', fontWeight: 'bold' },
-    transBtn: { display: 'block', margin: '0 auto 15px', padding: '10px 20px', backgroundColor: 'transparent', border: `2px solid ${theme.border}`, borderRadius: '25px', color: theme.textSecondary, cursor: 'pointer' },
-    chinese: { color: theme.textSecondary, fontSize: '18px', padding: '15px', backgroundColor: theme.bg, borderRadius: '8px', marginBottom: '20px', textAlign: 'center' },
-    nav: { display: 'flex', gap: '10px', justifyContent: 'center' },
-    navBtn: { padding: '12px 24px', backgroundColor: theme.button, color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer', fontSize: '16px' },
-    progress: { textAlign: 'center', color: theme.textSecondary, marginBottom: '15px' },
-    progressBar: { height: '8px', backgroundColor: theme.border, borderRadius: '4px', marginTop: '20px', overflow: 'hidden' },
-    progressFill: { height: '100%', backgroundColor: theme.accent, width: `${((index + 1) / segments.length) * 100}%`, transition: 'width 0.3s' },
-  };
-
-  if (!current) return <div style={styles.container}>載入中...</div>;
-
-  const words = !isNews && current.words ? current.words : [];
-  const enText = isNews ? (isWordList ? '' : current.sentences?.map(s => s.en).join(' ')) : current.en;
-  const zhText = isNews ? (isWordList ? '' : current.sentences?.map(s => s.zh).join(' ')) : current.zh;
-
-  return (
-    <div style={styles.container}>
-      <div style={styles.header}>
-        <button style={styles.backBtn} onClick={onBack}>←</button>
-        <h2 style={styles.title}>{content.image || '📰'} {content.title}</h2>
-        <button style={{...styles.backBtn, opacity: 0}}>←</button>
-      </div>
-      <div style={styles.card}>
-        <span style={styles.label}>{isNews ? (isWordList ? '📖 預習單字' : current.title) : `句子 ${index + 1} / ${segments.length}`}</span>
-        {isWordList ? (
-          <div>{current.words && current.words.map((w, i) => <button key={i} onClick={() => speak(w.en)} style={{display: 'block', width: '100%', padding: '15px', marginBottom: '10px', borderRadius: '12px', border: `1px solid ${theme.border}`, backgroundColor: theme.bg, color: theme.text, cursor: 'pointer', textAlign: 'left'}}><span style={{fontSize: '18px', marginRight: '10px'}}>🔊</span><strong>{w.en}</strong> = {w.zh}</button>)}</div>
-        ) : (
-          <>
-            <div style={styles.sentence}>{!isNews ? renderWords(current.en) : current.sentences && current.sentences.map((s, i) => <div key={i} style={{marginBottom: '15px', padding: '12px', backgroundColor: theme.bg, borderRadius: '8px'}}><div style={{marginBottom: '8px'}}>{s.en}</div><button onClick={() => speak(s.en)} style={{backgroundColor: theme.accent, color: 'white', border: 'none', borderRadius: '15px', padding: '4px 10px', fontSize: '12px', cursor: 'pointer'}}>🔊</button></div>)}</div>
-            <div style={styles.btnRow}><button style={styles.speakBtn} onClick={() => speak(enText)}>🔊 朗讀</button></div>
-            <button style={styles.transBtn} onClick={() => setShowTranslation(!showTranslation)}>{showTranslation ? '🙈 隱藏翻譯' : '👁️ 顯示翻譯'}</button>
-            {showTranslation && <div style={styles.chinese}>{zhText}</div>}
-          </>
-        )}
-        <div style={styles.progress}>{index + 1} / {segments.length}</div>
-        <div style={styles.nav}>
-          <button style={styles.navBtn} onClick={() => setIndex(Math.max(0, index - 1))}>◀️ 上一個</button>
-          <button style={styles.navBtn} onClick={() => setIndex(Math.min(segments.length - 1, index + 1))}>下一個 ▶️</button>
-        </div>
-      </div>
-      <div style={styles.progressBar}><div style={styles.progressFill} /></div>
-    </div>
-  );
 };
 
 function App() {
@@ -100,7 +24,8 @@ function App() {
   const [category, setCategory] = useState('all');
   const [favorites, setFavorites] = useState(() => getStoredData('favorites', []));
   const [showFavorites, setShowFavorites] = useState(false);
-  const [showStats, setShowStats] = useState(false);
+  const [showDashboard, setShowDashboard] = useState(false);
+  
   const [showQuiz, setShowQuiz] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
   const [currentPage, setCurrentPage] = useState('main');
@@ -162,7 +87,7 @@ function App() {
     updateProgress(isCorrect);
   };
 
-  const renderClickableWords = (text) => text.split(/(\s+)/).filter(Boolean).map((word, idx) => (word.trim() === '' || /^[^\w\s]+$/.test(word.trim())) ? <span key={idx}>{word}</span> : <ClickableWord key={idx} word={word.trim()} onSpeak={speakWord} darkMode={darkMode} />);
+  const renderClickableWords = (text) => text.split(/(\s+)/).filter(Boolean).map((word, idx) => (word.trim() === '' || /^[^\w\s]+$/.test(word.trim())) ? <span key={idx}>{word}</span> : <WordTooltip key={idx} word={word.trim()} onSpeak={speakWord} darkMode={darkMode} />);
 
   const loadContent = async (type, id) => {
     try {
@@ -234,26 +159,16 @@ function App() {
         <h1 style={styles.title}>📚 English Learner</h1>
         <div style={styles.headerButtons}>
           <button style={styles.iconBtn} onClick={() => setDarkMode(!darkMode)}>{darkMode ? '☀️' : '🌙'}</button>
-          <button style={styles.iconBtn} onClick={() => { setShowStats(!showStats); setShowQuiz(false); }}>📊</button>
+          <button style={styles.iconBtn} onClick={() => setShowDashboard(true)}>📊</button>
         </div>
       </header>
 
-      {showStats && (
-        <div style={styles.statsCard}>
-          <h2 style={{textAlign: 'center', marginBottom: '20px'}}>📈 學習統計</h2>
-          <div style={styles.statsGrid}>
-            <div style={styles.statsItem}><div style={styles.statsValue}>{progress.totalLearned}</div><div style={styles.statsLabel}>總學習次數</div></div>
-            <div style={styles.statsItem}><div style={styles.statsValue}>{progress.streak} 🔥</div><div style={styles.statsLabel}>連續天數</div></div>
-            <div style={styles.statsItem}><div style={styles.statsValue}>{progress.totalDays}</div><div style={styles.statsLabel}>學習天數</div></div>
-            <div style={styles.statsItem}><div style={styles.statsValue}>{progress.quizTotal > 0 ? Math.round((progress.quizCorrect / progress.quizTotal) * 100) : 0}%</div><div style={styles.statsLabel}>測驗正確率</div></div>
-          </div>
-        </div>
-      )}
+      {showDashboard && <Dashboard progress={progress} darkMode={darkMode} onClose={() => setShowDashboard(false)} />}
 
       <nav style={styles.nav}>
-        <button style={showQuiz ? styles.activeTab : (showFavorites ? styles.activeTab : styles.tab)} onClick={() => { setShowFavorites(!showFavorites); setShowStats(false); setShowQuiz(false); setCurrentIndex(0); }}>{showFavorites ? '⭐ Favorites' : '❤️ My Favorites'}</button>
-        <button style={showQuiz ? styles.activeTab : styles.tab} onClick={() => { setShowQuiz(!showQuiz); setShowStats(false); if (!showQuiz) startQuiz(); }}>📝 Quiz</button>
-        {!showFavorites && !showQuiz && categories.map(cat => <button key={cat} style={category === cat ? styles.activeTab : styles.tab} onClick={() => { setCategory(cat); setCurrentIndex(0); setShowStats(false); }}>{cat === 'all' ? '📋 All' : cat === 'greeting' ? '👋 Greeting' : cat === 'daily' ? '💬 Daily' : cat === 'work' ? '💼 Work' : cat === 'tech' ? '🔧 Tech' : '🤝 Business'}</button>)}
+        <button style={showQuiz ? styles.activeTab : (showFavorites ? styles.activeTab : styles.tab)} onClick={() => { setShowFavorites(!showFavorites); setShowDashboard(false); setShowQuiz(false); setCurrentIndex(0); }}>{showFavorites ? '⭐ Favorites' : '❤️ My Favorites'}</button>
+        <button style={showQuiz ? styles.activeTab : styles.tab} onClick={() => { setShowQuiz(!showQuiz); setShowDashboard(false); if (!showQuiz) startQuiz(); }}>📝 Quiz</button>
+        {!showFavorites && !showQuiz && categories.map(cat => <button key={cat} style={category === cat ? styles.activeTab : styles.tab} onClick={() => { setCategory(cat); setCurrentIndex(0); setShowDashboard(false); }}>{cat === 'all' ? '📋 All' : cat === 'greeting' ? '👋 Greeting' : cat === 'daily' ? '💬 Daily' : cat === 'work' ? '💼 Work' : cat === 'tech' ? '🔧 Tech' : '🤝 Business'}</button>)}
       </nav>
 
       {contentList.fairyTales.length > 0 && !showQuiz && !showFavorites && category === 'all' && (
@@ -297,7 +212,7 @@ function App() {
         </div>
       ))}
 
-      {showQuiz && !showStats && (
+      {showQuiz && (
         <div style={styles.quizOverlay}>
           <button style={styles.quizCloseBtn} onClick={() => setShowQuiz(false)}>✕</button>
           <div style={styles.quizCard}>
