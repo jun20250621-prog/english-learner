@@ -112,5 +112,31 @@
       "description": "雅思聽力與閱讀練習",
       "image": "🎓"
     }
+  ],
+  "oral": [
+    {
+      "id": "contractions",
+      "title": "口語縮寫",
+      "titleEn": "Spoken Contractions",
+      "level": "A2-B1",
+      "description": "gonna, wanna, gotta 等口語縮寫",
+      "image": "🗣️"
+    },
+    {
+      "id": "connected-speech",
+      "title": "連音練習",
+      "titleEn": "Connected Speech",
+      "level": "B1-B2",
+      "description": "練習連讀技巧，讓口語更自然",
+      "image": "🔗"
+    },
+    {
+      "id": "scenarios",
+      "title": "情境對話",
+      "titleEn": "Real-life Scenarios",
+      "level": "A1-B1",
+      "description": "餐廳、購物、問路等實際對話",
+      "image": "🎭"
+    }
   ]
 }

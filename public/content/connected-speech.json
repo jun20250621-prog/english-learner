@@ -1,0 +1,178 @@
+{
+  "title": "連音練習",
+  "titleEn": "Connected Speech",
+  "description": "練習英語連讀技巧，讓你的口語更自然",
+  "level": "B1-B2",
+  "image": "🔗",
+  "rules": [
+    {
+      "id": "link-1",
+      "name": "輔音 + 元音連讀",
+      "description": "當一個單字以輔音結尾，下一個單字以元音開頭時，連在一起讀",
+      "examples": [
+        {
+          "words": "look at",
+          "pronunciation": "loo-kat",
+          "example": "Look at me.",
+          "exampleZh": "看我。"
+        },
+        {
+          "words": "turn off",
+          "pronunciation": "turn-off",
+          "example": "Turn off the light.",
+          "exampleZh": "關掉燈。"
+        },
+        {
+          "words": "pick it up",
+          "pronunciation": "pickitup",
+          "example": "Pick it up.",
+          "exampleZh": "把它撿起來。"
+        },
+        {
+          "words": "not at all",
+          "pronunciation": "notatall",
+          "example": "Not at all!",
+          "exampleZh": "不客氣！"
+        }
+      ]
+    },
+    {
+      "id": "link-2",
+      "name": "相同輔音連讀",
+      "description": "兩個相同的輔音在一起，只發一次音",
+      "examples": [
+        {
+          "words": "big girl",
+          "pronunciation": "bi-gir-l",
+          "example": "She's a big girl now.",
+          "exampleZh": "她現在是大女孩了。"
+        },
+        {
+          "words": "bad dog",
+          "pronunciation": "ba-dog",
+          "example": "That bad dog.",
+          "exampleZh": "那隻壞狗狗。"
+        },
+        {
+          "words": "hot tea",
+          "pronunciation": "ho-tea",
+          "example": "Want some hot tea?",
+          "exampleZh": "要喝熱茶嗎？"
+        }
+      ]
+    },
+    {
+      "id": "link-3",
+      "name": "輔音 + /j/ 連讀",
+      "description": "輔音結尾 + /j/ 音，會產生結合音",
+      "examples": [
+        {
+          "words": "did you",
+          "pronunciation": "didju",
+          "example": "Did you eat?",
+          "exampleZh": "你吃了嗎？"
+        },
+        {
+          "words": "would you",
+          "pronunciation": "wouldju",
+          "example": "Would you like some?",
+          "exampleZh": "你想要一些嗎？"
+        },
+        {
+          "words": "can't you",
+          "pronunciation": "cantyew",
+          "example": "Can't you see?",
+          "exampleZh": "你看不到嗎？"
+        },
+        {
+          "words": "don't you",
+          "pronunciation": "dontcha",
+          "example": "Don't you worry!",
+          "exampleZh": "別擔心！"
+        }
+      ]
+    },
+    {
+      "id": "link-4",
+      "name": "輔音 + /w/ 連讀",
+      "description": "輔音結尾 + /w/ 音，會產生結合音",
+      "examples": [
+        {
+          "words": "how would",
+          "pronunciation": "how-would",
+          "example": "How would you do it?",
+          "exampleZh": "你會怎麼做？"
+        },
+        {
+          "words": "quite well",
+          "pronunciation": "quite-well",
+          "example": "He speaks quite well.",
+          "exampleZh": "他說得很好。"
+        },
+        {
+          "words": "go west",
+          "pronunciation": "gowest",
+          "example": "Let's go west.",
+          "exampleZh": "我們去西部吧。"
+        }
+      ]
+    },
+    {
+      "id": "link-5",
+      "name": "省略 /t/ 和 /d/",
+      "description": "在兩個輔音之間，/t/ 和 /d/ 常常被省略",
+      "examples": [
+        {
+          "words": "just now",
+          "pronunciation": "jus-now",
+          "example": "I saw him just now.",
+          "exampleZh": "我剛才看到他。"
+        },
+        {
+          "words": "next time",
+          "pronunciation": "nex-time",
+          "example": "Next time, okay?",
+          "exampleZh": "下次，好嗎？"
+        },
+        {
+          "words": "good morning",
+          "pronunciation": "goo-morning",
+          "example": "Good morning!",
+          "exampleZh": "早安！"
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "id": "p1",
+      "sentence": "What are you doing?",
+      "spoken": "Whaddya doin?",
+      "tips": "what + are = whaddya, you + doing = ya doin"
+    },
+    {
+      "id": "p2",
+      "sentence": "I've got to go now.",
+      "spoken": "I gotta go now.",
+      "tips": "got to = gotta"
+    },
+    {
+      "id": "p3",
+      "sentence": "Let me think about it.",
+      "spoken": "Lemme think bout it.",
+      "tips": "let me = lemme, about = bout"
+    },
+    {
+      "id": "p4",
+      "sentence": "I don't know what to do.",
+      "spoken": "I dunno whatta do.",
+      "tips": "don't know = dunno, what to = whatta"
+    },
+    {
+      "id": "p5",
+      "sentence": "Could you please repeat that?",
+      "spoken": "Coujuh pleez repeat that?",
+      "tips": "could you = coujuh, please = pleez"
+    }
+  ]
+}

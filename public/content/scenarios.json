@@ -1,0 +1,414 @@
+{
+  "title": "情境對話",
+  "titleEn": "Real-life Scenarios",
+  "description": "模擬真實生活中的英語對話場景",
+  "level": "A1-B1",
+  "image": "🎭",
+  "scenarios": [
+    {
+      "id": "restaurant",
+      "name": "餐廳點餐",
+      "icon": "🍽️",
+      "dialogues": [
+        {
+          "role": "waiter",
+          "text": "Hi, welcome to Joe's Diner! How many people?",
+          "textZh": "嗨，歡迎來到喬的餐廳！請問幾位？"
+        },
+        {
+          "role": "customer",
+          "text": "Table for two, please.",
+          "textZh": "兩位，謝謝。"
+        },
+        {
+          "role": "waiter",
+          "text": "Sure, right this way. Here's the menu.",
+          "textZh": "好的，這邊請。給您菜單。"
+        },
+        {
+          "role": "customer",
+          "text": "Can I see the menu, please?",
+          "textZh": "請給我菜單好嗎？"
+        },
+        {
+          "role": "waiter",
+          "text": "Are you ready to order?",
+          "textZh": "準備好點餐了嗎？"
+        },
+        {
+          "role": "customer",
+          "text": "Yes, I'll have the steak, please.",
+          "textZh": "是的，我想要牛排。"
+        },
+        {
+          "role": "waiter",
+          "text": "How would you like your steak? Rare, medium, or well-done?",
+          "textZh": "您的牛排要幾分熟？一分熟、五分熟還是全熟？"
+        },
+        {
+          "role": "customer",
+          "text": "Medium, please. And a side of mashed potatoes.",
+          "textZh": "五分熟。还要一份馬鈴薯泥。"
+        },
+        {
+          "role": "waiter",
+          "text": "Would you like anything to drink?",
+          "textZh": "請問要喝什麼？"
+        },
+        {
+          "role": "customer",
+          "text": "I'll have a glass of red wine.",
+          "textZh": "我要一杯紅酒。"
+        },
+        {
+          "role": "waiter",
+          "text": "Great. That'll be all?",
+          "textZh": "好的，這樣就夠了嗎？"
+        },
+        {
+          "role": "customer",
+          "text": "Yes, that's all. Thank you.",
+          "textZh": "是的，就這樣。謝謝。"
+        },
+        {
+          "role": "waiter",
+          "text": "Here you go. Enjoy your meal!",
+          "textZh": "請慢用！"
+        },
+        {
+          "role": "customer",
+          "text": "The check, please.",
+          "textZh": "請給我帳單。"
+        },
+        {
+          "role": "waiter",
+          "text": "Here you are. That'll be $45.50.",
+          "textZh": "一共 45.50 美元。"
+        },
+        {
+          "role": "customer",
+          "text": "Keep the change. Thank you!",
+          "textZh": "不用找了，謝謝！"
+        }
+      ],
+      "keyPhrases": [
+        "Table for two, please.",
+        "I'm ready to order.",
+        "I'll have...",
+        "How would you like...?",
+        "That'll be all.",
+        "The check, please.",
+        "Keep the change."
+      ]
+    },
+    {
+      "id": "phone",
+      "name": "電話禮貌",
+      "icon": "📞",
+      "dialogues": [
+        {
+          "role": "caller",
+          "text": "Hello, may I speak to Mr. Smith, please?",
+          "textZh": "您好，請問史密斯先生在嗎？"
+        },
+        {
+          "role": "receiver",
+          "text": "This is he. Who's this?",
+          "textZh": "我就是。請問你是？"
+        },
+        {
+          "role": "caller",
+          "text": "This is John from ABC Company. Is he available?",
+          "textZh": "我是 ABC 公司的約翰。請問他有空嗎？"
+        },
+        {
+          "role": "receiver",
+          "text": "May I ask who's calling?",
+          "textZh": "請問你是哪位？"
+        },
+        {
+          "role": "caller",
+          "text": "This is John. It's regarding the meeting tomorrow.",
+          "textZh": "我是約翰。關於明天會議的事。"
+        },
+        {
+          "role": "receiver",
+          "text": "One moment, please. I'll transfer you.",
+          "textZh": "請稍候，我幫您轉接。"
+        },
+        {
+          "role": "caller",
+          "text": "Thank you very much.",
+          "textZh": "非常感謝。"
+        },
+        {
+          "role": "receiver",
+          "text": "I'm sorry, the line is busy. Can I take a message?",
+          "textZh": "抱歉，線路忙中。可以留言嗎？"
+        },
+        {
+          "role": "caller",
+          "text": "Yes, please tell him John called. He can reach me at 0912-345-678.",
+          "textZh": "好的，請告訴他約翰打過電話。可以打 0912-345-678 給我。"
+        },
+        {
+          "role": "receiver",
+          "text": "Got it. I'll make sure he gets the message.",
+          "textZh": "收到了，我會確保他收到訊息。"
+        },
+        {
+          "role": "caller",
+          "text": "Thank you. Have a nice day!",
+          "textZh": "謝謝，祝您愉快！"
+        },
+        {
+          "role": "receiver",
+          "text": "You too. Goodbye!",
+          "textZh": "您也是，再見！"
+        }
+      ],
+      "keyPhrases": [
+        "May I speak to...?",
+        "This is...",
+        "Who's this?",
+        "One moment, please.",
+        "I'll transfer you.",
+        "Can I take a message?",
+        "I'll have him call you back."
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "購物情境",
+      "icon": "🛍️",
+      "dialogues": [
+        {
+          "role": "shopper",
+          "text": "Excuse me, how much is this?",
+          "textZh": "請問這個多少錢？"
+        },
+        {
+          "role": "clerk",
+          "text": "That's $29.99.",
+          "textZh": "29.99 美元。"
+        },
+        {
+          "role": "shopper",
+          "text": "Do you have this in other colors?",
+          "textZh": "請問有其他顏色嗎？"
+        },
+        {
+          "role": "clerk",
+          "text": "Yes, we have it in blue, red, and black.",
+          "textZh": "有藍色、紅色和黑色。"
+        },
+        {
+          "role": "shopper",
+          "text": "Can I try this on?",
+          "textZh": "我可以試穿嗎？"
+        },
+        {
+          "role": "clerk",
+          "text": "Of course. The fitting room is over there.",
+          "textZh": "當然可以。更衣室在那邊。"
+        },
+        {
+          "role": "shopper",
+          "text": "This fits great! I'll take it.",
+          "textZh": "這件很合身！我要了。"
+        },
+        {
+          "role": "clerk",
+          "text": "Great! Would you like a bag?",
+          "textZh": "太好了！需要袋子嗎？"
+        },
+        {
+          "role": "shopper",
+          "text": "Yes, please. Do you accept credit cards?",
+          "textZh": "要的。請問接受信用卡嗎？"
+        },
+        {
+          "role": "clerk",
+          "text": "Yes, we take all major credit cards.",
+          "textZh": "接受所有主要信用卡。"
+        },
+        {
+          "role": "shopper",
+          "text": "Is there a discount if I pay cash?",
+          "textZh": "現金付款有折扣嗎？"
+        },
+        {
+          "role": "clerk",
+          "text": "Sorry, we don't offer cash discounts.",
+          "textZh": "抱歉，現金沒有折扣。"
+        },
+        {
+          "role": "shopper",
+          "text": "No problem. I'll pay by card.",
+          "textZh": "沒關係，我用卡支付。"
+        },
+        {
+          "role": "clerk",
+          "text": "Please sign here. Here's your receipt.",
+          "textZh": "請在這裡簽名。這是您的收據。"
+        },
+        {
+          "role": "shopper",
+          "text": "Thank you! Have a nice day!",
+          "textZh": "謝謝！祝您愉快！"
+        }
+      ],
+      "keyPhrases": [
+        "How much is this?",
+        "Do you have...?",
+        "Can I try this on?",
+        "I'll take it.",
+        "Do you accept credit cards?",
+        "Is there a discount?",
+        "Here's your receipt."
+      ]
+    },
+    {
+      "id": "smalltalk",
+      "name": "社交閒聊",
+      "icon": "💬",
+      "dialogues": [
+        {
+          "role": "personA",
+          "text": "Hi there! Nice to meet you. I'm Sarah.",
+          "textZh": "嗨！很高興認識你，我是莎拉。"
+        },
+        {
+          "role": "personB",
+          "text": "Nice to meet you too, Sarah. I'm John.",
+          "textZh": "也很高興認識你，莎拉。我是約翰。"
+        },
+        {
+          "role": "personA",
+          "text": "So, what do you do for a living?",
+          "textZh": "所以，你從事什麼行業？"
+        },
+        {
+          "role": "personB",
+          "text": "I'm a software engineer. How about you?",
+          "textZh": "我是軟體工程師。你呢？"
+        },
+        {
+          "role": "personA",
+          "text": "I work in marketing. It's pretty exciting!",
+          "textZh": "我在行銷部門工作，很刺激！"
+        },
+        {
+          "role": "personB",
+          "text": "That sounds interesting! How long have you been doing that?",
+          "textZh": "聽起來很有趣！你做這行多久了？"
+        },
+        {
+          "role": "personA",
+          "text": "About 5 years now. Time flies!",
+          "textZh": "大概 5 年了。時間過得真快！"
+        },
+        {
+          "role": "personB",
+          "text": "I hear that. So, how do you like working here?",
+          "textZh": "說得也是。你在這裡工作得怎麼樣？"
+        },
+        {
+          "role": "personA",
+          "text": "It's great! The people are really friendly.",
+          "textZh": "很好！這裡的人都非常友善。"
+        },
+        {
+          "role": "personB",
+          "text": "That's awesome! Hey, it was great talking to you.",
+          "textZh": "太棒了！嘿，很高興和你聊天。"
+        },
+        {
+          "role": "personA",
+          "text": "Likewise! Let's grab coffee sometime.",
+          "textZh": "我也是！找時間一起喝咖啡吧。"
+        },
+        {
+          "role": "personB",
+          "text": "Sounds good! Here's my card. Give me a call.",
+          "textZh": "好啊！這是我的名片，打給我。"
+        }
+      ],
+      "keyPhrases": [
+        "Nice to meet you.",
+        "What do you do for a living?",
+        "How long have you been...?",
+        "How do you like...?",
+        "It's great talking to you.",
+        "Let's grab coffee sometime.",
+        "Here's my card."
+      ]
+    },
+    {
+      "id": "directions",
+      "name": "問路",
+      "icon": "🗺️",
+      "dialogues": [
+        {
+          "role": "tourist",
+          "text": "Excuse me, could you help me?",
+          "textZh": "不好意思，你能幫我嗎？"
+        },
+        {
+          "role": "local",
+          "text": "Sure, what do you need?",
+          "textZh": "當然，你需要什麼？"
+        },
+        {
+          "role": "tourist",
+          "text": "I'm looking for the train station. Is it far from here?",
+          "textZh": "我在找火車站。離這裡遠嗎？"
+        },
+        {
+          "role": "local",
+          "text": "Not really. It's just a 5-minute walk.",
+          "textZh": "不遠，走 5 分鐘就到了。"
+        },
+        {
+          "role": "tourist",
+          "text": "Great! Which way should I go?",
+          "textZh": "太好了！請問怎麼走？"
+        },
+        {
+          "role": "local",
+          "text": "Go straight down this street, then turn left at the second traffic light.",
+          "textZh": "沿著這條街直走，然後在第二個紅綠燈左轉。"
+        },
+        {
+          "role": "tourist",
+          "text": "Turn left at the second light. Got it!",
+          "textZh": "第二個紅綠燈左轉，知道了！"
+        },
+        {
+          "role": "local",
+          "text": "You'll see it on your right. You can't miss it.",
+          "textZh": "你會在右手邊看到，不會錯過的。"
+        },
+        {
+          "role": "tourist",
+          "text": "Thank you so much!",
+          "textZh": "非常感謝！"
+        },
+        {
+          "role": "local",
+          "text": "No problem. Have a nice day!",
+          "textZh": "不客氣，祝您愉快！"
+        }
+      ],
+      "keyPhrases": [
+        "Excuse me, could you help me?",
+        "I'm looking for...",
+        "Is it far from here?",
+        "Which way should I go?",
+        "Go straight...",
+        "Turn left/right at...",
+        "You can't miss it."
+      ]
+    }
+  ]
+}

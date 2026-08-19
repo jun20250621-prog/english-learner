@@ -1,0 +1,168 @@
+{
+  "title": "口語縮寫",
+  "titleEn": "Spoken English Contractions",
+  "description": "學習日常口語中的常見縮寫",
+  "level": "A2-B1",
+  "image": "🗣️",
+  "categories": [
+    {
+      "name": "常見縮寫 (gonna, wanna, gotta)",
+      "items": [
+        {
+          "id": "cont-1",
+          "spoken": "gonna",
+          "full": "going to",
+          "example": "I'm gonna go to the store.",
+          "exampleZh": "我要去商店。",
+          "pronunciation": "/ˈɡɒnə/"
+        },
+        {
+          "id": "cont-2",
+          "spoken": "wanna",
+          "full": "want to",
+          "example": "I wanna learn English.",
+          "exampleZh": "我想學英文。",
+          "pronunciation": "/ˈwɒnə/"
+        },
+        {
+          "id": "cont-3",
+          "spoken": "gotta",
+          "full": "got to / have to",
+          "example": "I gotta go now.",
+          "exampleZh": "我必須現在走了。",
+          "pronunciation": "/ˈɡɒtə/"
+        },
+        {
+          "id": "cont-4",
+          "spoken": "kinda",
+          "full": "kind of",
+          "example": "I'm kinda tired.",
+          "exampleZh": "我有點累了。",
+          "pronunciation": "/ˈkaɪndə/"
+        },
+        {
+          "id": "cont-5",
+          "spoken": "sorta",
+          "full": "sort of",
+          "example": "I gotta work today, kinda.",
+          "exampleZh": "我今天要工作，有點。",
+          "pronunciation": "/ˈsɔːrtə/"
+        },
+        {
+          "id": "cont-6",
+          "spoken": "outta",
+          "full": "out of",
+          "example": "Get outta here!",
+          "exampleZh": "滾出去！",
+          "pronunciation": "/ˈaʊtə/"
+        },
+        {
+          "id": "cont-7",
+          "spoken": "lemme",
+          "full": "let me",
+          "example": "Lemme help you.",
+          "exampleZh": "讓我幫你。",
+          "pronunciation": "/ˈlɛmi/"
+        },
+        {
+          "id": "cont-8",
+          "spoken": "gimme",
+          "full": "give me",
+          "example": "Gimme a break!",
+          "exampleZh": "饒了我吧！",
+          "pronunciation": "/ˈɡɪmi/"
+        }
+      ]
+    },
+    {
+      "name": "常見弱化",
+      "items": [
+        {
+          "id": "weak-1",
+          "spoken": "dunno",
+          "full": "don't know",
+          "example": "I dunno what to do.",
+          "exampleZh": "我不知道該怎麼辦。",
+          "pronunciation": "/dəˈnoʊ/"
+        },
+        {
+          "id": "weak-2",
+          "spoken": "gonna",
+          "full": "going to",
+          "example": "It's gonna be fun!",
+          "exampleZh": "一定會很有趣！",
+          "pronunciation": "/ˈɡɒnə/"
+        },
+        {
+          "id": "weak-3",
+          "spoken": "shoulda",
+          "full": "should have",
+          "example": "You shoulda told me!",
+          "exampleZh": "你應該告訴我的！",
+          "pronunciation": "/ˈʃʊdə/"
+        },
+        {
+          "id": "weak-4",
+          "spoken": "coulda",
+          "full": "could have",
+          "example": "You coulda done it.",
+          "exampleZh": "你可以做到的。",
+          "pronunciation": "/ˈkʊdə/"
+        },
+        {
+          "id": "weak-5",
+          "spoken": "woulda",
+          "full": "would have",
+          "example": "I woulda gone if I knew.",
+          "exampleZh": "如果我知道我就去了。",
+          "pronunciation": "/ˈwʊdə/"
+        },
+        {
+          "id": "weak-6",
+          "spoken": "mighta",
+          "full": "might have",
+          "example": "He mighta left already.",
+          "exampleZh": "他可能已經離開了。",
+          "pronunciation": "/ˈmaɪtə/"
+        }
+      ]
+    },
+    {
+      "name": "常見問答縮寫",
+      "items": [
+        {
+          "id": "qa-1",
+          "spoken": "Whatcha",
+          "full": "What are you",
+          "example": "Whatcha doing?",
+          "exampleZh": "你在做什麼？",
+          "pronunciation": "/ˈwɒtʃə/"
+        },
+        {
+          "id": "qa-2",
+          "spoken": "Where ya",
+          "full": "Where are you",
+          "example": "Where ya going?",
+          "exampleZh": "你要去哪？",
+          "pronunciation": "/wɛər jə/"
+        },
+        {
+          "id": "qa-3",
+          "spoken": "How come",
+          "full": "why (問原因)",
+          "example": "How come you're late?",
+          "exampleZh": "你怎麼遲到了？",
+          "pronunciation": "/haʊ kʌm/"
+        },
+        {
+          "id": "qa-4",
+          "spoken": "Whadya",
+          "full": "What do you",
+          "example": "Whadya think?",
+          "exampleZh": "你怎麼想？",
+          "pronunciation": "/ˈwɒdjə/"
+        }
+      ]
+    }
+  ]
+}

@@ -36,7 +36,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState('main');
   const [selectedContent, setSelectedContent] = useState(null);
   const [contentType, setContentType] = useState(null);
-  const [contentList, setContentList] = useState({ fairyTales: [], news: [], movies: [], exams: [] });
+  const [contentList, setContentList] = useState({ fairyTales: [], news: [], movies: [], exams: [], oral: [] });
   const [quizMode, setQuizMode] = useState('choice');
   const [quizSentence, setQuizSentence] = useState(null);
   const [quizOptions, setQuizOptions] = useState([]);
@@ -103,8 +103,8 @@ function App() {
   const loadContent = async (type, id) => {
     try {
       let url = `/content/${type}/${id}.json`;
-      // 考試題庫直接用 id 作為檔名
-      if (type === 'exams') {
+      // 考試題庫和口語練習直接用 id 作為檔名
+      if (type === 'exams' || type === 'oral') {
         url = `/content/${id}.json`;
       }
       const res = await fetch(url);
@@ -220,6 +220,15 @@ function App() {
           <div style={styles.contentTitle}>📝 考試題庫</div>
           <div style={styles.contentGrid}>
             {contentList.exams.map(exam => <div key={exam.id} onClick={() => loadContent('exams', exam.id)} style={styles.contentCard}><div style={styles.contentEmoji}>{exam.image}</div><div style={styles.contentCardTitle}>{exam.title}</div><span style={styles.contentLevel}>{exam.level}</span></div>)}
+          </div>
+        </div>
+      )}
+
+      {contentList.oral && contentList.oral.length > 0 && !showQuiz && !showFavorites && category === 'all' && (
+        <div style={styles.contentSection}>
+          <div style={styles.contentTitle}>🗣️ 口語練習</div>
+          <div style={styles.contentGrid}>
+            {contentList.oral.map(item => <div key={item.id} onClick={() => loadContent('oral', item.id)} style={styles.contentCard}><div style={styles.contentEmoji}>{item.image}</div><div style={styles.contentCardTitle}>{item.title}</div><span style={styles.contentLevel}>{item.level}</span></div>)}
           </div>
         </div>
       )}
