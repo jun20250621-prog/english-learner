@@ -7,6 +7,7 @@ import { Dashboard } from './components/Dashboard';
 import { AIChatbot } from './components/AIChatbot';
 import { PronunciationPractice } from './components/PronunciationPractice';
 import { GrammarAnalyzer } from './components/GrammarAnalyzer';
+import { FillInBlank, Dictation, Flashcard } from './components/LearningTools';
 
 const getStoredData = (key, defaultValue) => { try { const stored = localStorage.getItem(key); return stored ? JSON.parse(stored) : defaultValue; } catch { return defaultValue; } };
 const saveData = (key, value) => localStorage.setItem(key, JSON.stringify(value));
@@ -48,6 +49,9 @@ function App() {
   const [showAIChat, setShowAIChat] = useState(false);
   const [showPronunciation, setShowPronunciation] = useState(false);
   const [showGrammar, setShowGrammar] = useState(false);
+  const [showFillInBlank, setShowFillInBlank] = useState(false);
+  const [showDictation, setShowDictation] = useState(false);
+  const [showFlashcard, setShowFlashcard] = useState(false);
   
   const categories = ['all', 'greeting', 'daily', 'work', 'tech', 'business'];
 
@@ -261,6 +265,25 @@ function App() {
         </div>
       </div>
 
+      {/* 學習工具 */}
+      <div style={styles.contentSection}>
+        <div style={styles.contentTitle}>📝 學習工具</div>
+        <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(3, 1fr)'}}>
+          <div onClick={() => current && setShowFillInBlank(true)} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>📝</div>
+            <div style={styles.contentCardTitle}>克漏字</div>
+          </div>
+          <div onClick={() => current && setShowDictation(true)} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>🎧</div>
+            <div style={styles.contentCardTitle}>聽寫</div>
+          </div>
+          <div onClick={() => selectedContent && setShowFlashcard(true)} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>📇</div>
+            <div style={styles.contentCardTitle}>單字卡</div>
+          </div>
+        </div>
+      </div>
+
       {!showQuiz && (filteredSentences.length === 0 ? <div style={{ textAlign: 'center', padding: '40px', color: theme.textSecondary }}>No favorites yet! ❤️ Click heart to add.</div> : (
         <div style={styles.card}>
           <div style={styles.cardHeader}>
@@ -320,6 +343,9 @@ function App() {
       {showAIChat && <AIChatbot darkMode={darkMode} onClose={() => setShowAIChat(false)} />}
       {showPronunciation && current && <PronunciationPractice sentence={current} darkMode={darkMode} onClose={() => setShowPronunciation(false)} />}
       {showGrammar && current && <GrammarAnalyzer sentence={current} darkMode={darkMode} onClose={() => setShowGrammar(false)} />}
+      {showFillInBlank && current && <FillInBlank sentence={current} darkMode={darkMode} onClose={() => setShowFillInBlank(false)} />}
+      {showDictation && current && <Dictation sentence={current} darkMode={darkMode} onClose={() => setShowDictation(false)} />}
+      {showFlashcard && selectedContent && <Flashcard content={selectedContent} darkMode={darkMode} onClose={() => setShowFlashcard(false)} />}
     </div>
   );
 }
