@@ -17,7 +17,17 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
   const isExam = type === 'exams';
   
   // 不同類型使用不同的數據結構
-  const segments = isNews ? content.segments : content.sentences || content.categories || content.sections || content.rules || [];
+  let segments = [];
+  if (isExam && content.sections) {
+    // 考試題庫：sections 包含多個 Part，每個 Part 有 questions
+    segments = content.sections;
+  } else if (isNews) {
+    segments = content.segments;
+  } else if (isOral) {
+    segments = content.categories || content.rules || content.scenarios || [];
+  } else {
+    segments = content.sentences || [];
+  }
   const current = segments[index];
   const isWordList = isNews && current && current.title === '預考單字';
 
@@ -336,6 +346,66 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
 
   // 判斷要渲染哪種內容
   const renderContent = () => {
+    if (isExam && content.sections) {
+      // 考試題庫渲染
+      const section = content.sections[index];
+      if (!section) return null;
+      
+      return (
+        <div style={{ padding: '20px' }}>
+          <h3 style={{ color: theme.text, marginBottom: '15px', fontSize: '20px' }}>
+            📝 {section.name}
+          </h3>
+          
+          <div style={{ marginBottom: '15px', padding: '12px', backgroundColor: theme.accentBg, borderRadius: '8px' }}>
+            <span style={{ color: theme.accent, fontSize: '14px' }}>題型: {section.type === 'listening' ? '👂 聽力' : '📖 閱讀'}</span>
+          </div>
+          
+          {section.questions && section.questions.map((q, idx) => (
+            <div key={idx} style={{ 
+              backgroundColor: theme.cardBg, 
+              borderRadius: '12px', 
+              padding: '15px', 
+              marginBottom: '15px',
+              border: `1px solid ${theme.border}`
+            }}>
+              <div style={{ color: theme.text, fontSize: '16px', marginBottom: '12px', fontWeight: 'bold' }}>
+                {q.image && <span style={{ marginRight: '8px' }}>{q.image}</span>}
+                {q.question && <span>{q.question}</span>}
+                {q.dialogue && (
+                  <div style={{ whiteSpace: 'pre-line', marginTop: '10px', padding: '10px', backgroundColor: theme.bg, borderRadius: '8px', fontSize: '14px' }}>
+                    {q.dialogue}
+                  </div>
+                )}
+              </div>
+              
+              {q.options && q.options.map((opt, optIdx) => (
+                <div 
+                  key={optIdx}
+                  style={{ 
+                    padding: '10px', 
+                    marginBottom: '8px', 
+                    backgroundColor: theme.bg, 
+                    borderRadius: '8px',
+                    color: theme.text,
+                    fontSize: '14px'
+                  }}
+                >
+                  {opt}
+                </div>
+              ))}
+              
+              {q.explanation && (
+                <div style={{ marginTop: '10px', padding: '10px', backgroundColor: theme.accentBg, borderRadius: '8px', fontSize: '13px', color: theme.accent }}>
+                  💡 解答: {q.explanation}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      );
+    }
+    
     if (isOral) {
       // 根據 ID 判斷具體類型
       if (content.id === 'contractions' || content.categories) {
