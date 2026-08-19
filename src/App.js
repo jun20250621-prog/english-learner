@@ -62,7 +62,13 @@ function App() {
   useEffect(() => { fetch('/content/content-index.json').then(res => res.json()).then(data => setContentList(data)).catch(err => console.log('載入內容失敗', err)); }, []);
 
   const filteredSentences = showFavorites ? sentences.filter(s => favorites.includes(s.id)) : category === 'all' ? sentences : sentences.filter(s => s.category === category);
-  const current = filteredSentences[currentIndex];
+  const current = filteredSentences[currentIndex] || filteredSentences[0];
+
+  useEffect(() => { 
+    if (!current && filteredSentences.length > 0) {
+      setCurrentIndex(0);
+    }
+  }, [current, filteredSentences.length]);
 
   useEffect(() => saveData('favorites', favorites), [favorites]);
   useEffect(() => saveData('darkMode', darkMode), [darkMode]);
@@ -282,7 +288,7 @@ function App() {
             <div style={styles.contentEmoji}>🎧</div>
             <div style={styles.contentCardTitle}>聽寫</div>
           </div>
-          <div onClick={() => selectedContent && setShowFlashcard(true)} style={styles.contentCard}>
+          <div onClick={() => (selectedContent || current) && setShowFlashcard(true)} style={styles.contentCard}>
             <div style={styles.contentEmoji}>📇</div>
             <div style={styles.contentCardTitle}>單字卡</div>
           </div>
@@ -354,7 +360,7 @@ function App() {
       {showGrammar && current && <GrammarAnalyzer sentence={current} darkMode={darkMode} onClose={() => setShowGrammar(false)} />}
       {showFillInBlank && current && <FillInBlank sentence={current} darkMode={darkMode} onClose={() => setShowFillInBlank(false)} />}
       {showDictation && current && <Dictation sentence={current} darkMode={darkMode} onClose={() => setShowDictation(false)} />}
-      {showFlashcard && selectedContent && <Flashcard content={selectedContent} darkMode={darkMode} onClose={() => setShowFlashcard(false)} />}
+      {showFlashcard && <Flashcard content={selectedContent || { title: '基本句子', sentences: filteredSentences.map(s => ({ en: s.en, zh: s.zh, words: s.en.split(' ').map(w => ({ en: w, zh: '' })) })) }} darkMode={darkMode} onClose={() => setShowFlashcard(false)} />}
       {showEnhancedPronunciation && current && <EnhancedPronunciation sentence={current} darkMode={darkMode} onClose={() => setShowEnhancedPronunciation(false)} />}
       {showCommunity && <Community darkMode={darkMode} onClose={() => setShowCommunity(false)} />}
     </div>
