@@ -1,0 +1,151 @@
+{
+  "title": "多益測驗",
+  "titleEn": "TOEIC Practice",
+  "description": "模擬多益聽力與閱讀題型",
+  "level": "B1-B2",
+  "image": "📝",
+  "sections": [
+    {
+      "id": "part1",
+      "name": "Part 1 看圖說故事",
+      "type": "listening",
+      "questions": [
+        {
+          "id": "toeic-p1-1",
+          "image": "🏢",
+          "options": ["(A) People are walking in an office building", "(B) A meeting is starting in the conference room", "(C) Employees are working at their desks", "(D) Someone is presenting to a group"],
+          "correct": "A",
+          "explanation": "圖片中顯示人們在辦公大樓走動。"
+        },
+        {
+          "id": "toeic-p1-2",
+          "image": "✈️",
+          "options": ["(A) The plane is arriving at the gate", "(B) Passengers are boarding the aircraft", "(C) Luggage is being loaded onto the plane", "(D) The airport is closing"],
+          "correct": "C",
+          "explanation": "圖片中顯示行李正在被裝載到飛機上。"
+        }
+      ]
+    },
+    {
+      "id": "part2",
+      "name": "Part 2 應答問題",
+      "type": "listening",
+      "questions": [
+        {
+          "id": "toeic-p2-1",
+          "question": "Could you please send me the report by Friday?",
+          "options": ["(A) Sure, I'll send it tomorrow", "(B) Yes, I received it", "(C) The report is on the desk", "(D) I don't need it"],
+          "correct": "A",
+          "explanation": "這是一個請求問題，正確回應應該是接受或拒絕請求。"
+        },
+        {
+          "id": "toeic-p2-2",
+          "question": "Where is the marketing department?",
+          "options": ["(A) It's on the third floor", "(B) She works in marketing", "(C) Yes, I know", "(D) It's very important"],
+          "correct": "A",
+          "explanation": "詢問地點，應該回答具體位置。"
+        }
+      ]
+    },
+    {
+      "id": "part3",
+      "name": "Part 3 簡短對話",
+      "type": "listening",
+      "questions": [
+        {
+          "id": "toeic-p3-1",
+          "dialogue": "M: Hi Sarah, did you finish the presentation?\nW: Almost, I need to add some charts to make it more convincing.\nM: Great, let me know when it's ready.",
+          "question": "What does the man want Sarah to do?",
+          "options": ["(A) Add more slides", "(B) Finish the presentation", "(C) Create charts", "(D) Review the slides"],
+          "correct": "B",
+          "explanation": "男子想知道 Sarah 何時完成簡報。"
+        }
+      ]
+    },
+    {
+      "id": "part4",
+      "name": "Part 4 簡短獨白",
+      "type": "listening",
+      "questions": [
+        {
+          "id": "toeic-p4-1",
+          "dialogue": "Welcome to City Library. Our hours are from 9 AM to 9 PM on weekdays, and 10 AM to 6 PM on weekends. Please note that the computer lab will be closed for maintenance next Monday.",
+          "question": "When will the computer lab be closed?",
+          "options": ["(A) This Monday", "(B) Next Monday", "(C) Next weekend", "(D) Tomorrow"],
+          "correct": "B",
+          "explanation": "獨白提到 'next Monday' 下週一。"
+        }
+      ]
+    },
+    {
+      "id": "part5",
+      "name": "Part 5 句子填空",
+      "type": "reading",
+      "questions": [
+        {
+          "id": "toeic-p5-1",
+          "question": "Please let me know if you ____ any questions.",
+          "options": ["have", "having", "had", "has"],
+          "correct": "have",
+          "explanation": "if 引導的條件句，使用現在式。"
+        },
+        {
+          "id": "toeic-p5-2",
+          "question": "The meeting ____ scheduled for 3 PM.",
+          "options": ["is", "are", "was", "were"],
+          "correct": "is",
+          "explanation": "主詞是 'meeting'，第三人稱單數，使用 is。"
+        },
+        {
+          "id": "toeic-p5-3",
+          "question": "She ____ working here since 2020.",
+          "options": ["is", "has been", "had been", "will be"],
+          "correct": "has been",
+          "explanation": "since + 時間點，使用完成式 'has been'。"
+        }
+      ]
+    },
+    {
+      "id": "part6",
+      "name": "Part 6 段落填空",
+      "type": "reading",
+      "questions": [
+        {
+          "id": "toeic-p6-1",
+          "dialogue": "Dear Mr. Smith,\n\nThank you for your inquiry about our products. I ____ (1) pleased to provide you with the information you requested.\n\nOur company ____ (2) established in 1995. We specialize in manufacturing high-quality electronics.",
+          "questions": [
+            {"id": "1", "options": ["am", "are", "is", "was"], "correct": "am"},
+            {"id": "2", "options": ["was", "were", "is", "are"], "correct": "was"}
+          ],
+          "explanation": "第一題主詞是 I，用 am。第二題描述過去成立的公司，用 was。"
+        }
+      ]
+    },
+    {
+      "id": "part7",
+      "name": "Part 7 閱讀理解",
+      "type": "reading",
+      "questions": [
+        {
+          "id": "toeic-p7-1",
+          "dialogue": "From: John Davis <john.davis@company.com>\nTo: All Employees\nSubject: Office Relocation\n\nDear Colleagues,\n\nOur office will be moving to a new location on December 1st. Please pack your belongings by November 25th. The new address will be 123 Business Park, Suite 500.\n\nBest regards,\nJohn Davis",
+          "questions": [
+            {
+              "id": "1",
+              "question": "When must employees pack their belongings?",
+              "options": ["(A) December 1st", "(B) November 25th", "(C) Immediately", "(D) Before the move"],
+              "correct": "B"
+            },
+            {
+              "id": "2",
+              "question": "What is the purpose of this email?",
+              "options": ["(A) To announce a new hire", "(B) To inform about office relocation", "(C) To schedule a meeting", "(D) To apologize for delay"],
+              "correct": "B"
+            }
+          ],
+          "explanation": "這是一封辦公室搬遷通知郵件。"
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,9 @@ import { WordTooltip, SpeedControl } from './components/WordTooltip';
 import { ContentPlayer } from './components/ContentPlayer';
 import { ContentAdmin } from './components/ContentAdmin';
 import { Dashboard } from './components/Dashboard';
+import { AIChatbot } from './components/AIChatbot';
+import { PronunciationPractice } from './components/PronunciationPractice';
+import { GrammarAnalyzer } from './components/GrammarAnalyzer';
 
 const getStoredData = (key, defaultValue) => { try { const stored = localStorage.getItem(key); return stored ? JSON.parse(stored) : defaultValue; } catch { return defaultValue; } };
 const saveData = (key, value) => localStorage.setItem(key, JSON.stringify(value));
@@ -33,13 +36,19 @@ function App() {
   const [currentPage, setCurrentPage] = useState('main');
   const [selectedContent, setSelectedContent] = useState(null);
   const [contentType, setContentType] = useState(null);
-  const [contentList, setContentList] = useState({ fairyTales: [], news: [] });
+  const [contentList, setContentList] = useState({ fairyTales: [], news: [], movies: [], exams: [] });
   const [quizMode, setQuizMode] = useState('choice');
   const [quizSentence, setQuizSentence] = useState(null);
   const [quizOptions, setQuizOptions] = useState([]);
   const [userAnswer, setUserAnswer] = useState('');
   const [quizResult, setQuizResult] = useState(null);
   const [progress, setProgress] = useState(initializeProgress);
+  
+  // 新功能狀態
+  const [showAIChat, setShowAIChat] = useState(false);
+  const [showPronunciation, setShowPronunciation] = useState(false);
+  const [showGrammar, setShowGrammar] = useState(false);
+  
   const categories = ['all', 'greeting', 'daily', 'work', 'tech', 'business'];
 
   useEffect(() => { fetch('/content/content-index.json').then(res => res.json()).then(data => setContentList(data)).catch(err => console.log('載入內容失敗', err)); }, []);
@@ -93,7 +102,12 @@ function App() {
 
   const loadContent = async (type, id) => {
     try {
-      const res = await fetch(`/content/${type}/${id}.json`);
+      let url = `/content/${type}/${id}.json`;
+      // 考試題庫直接用 id 作為檔名
+      if (type === 'exams') {
+        url = `/content/${id}.json`;
+      }
+      const res = await fetch(url);
       const data = await res.json();
       setSelectedContent(data);
       setContentType(type);
@@ -201,6 +215,34 @@ function App() {
         </div>
       )}
 
+      {contentList.exams && contentList.exams.length > 0 && !showQuiz && !showFavorites && category === 'all' && (
+        <div style={styles.contentSection}>
+          <div style={styles.contentTitle}>📝 考試題庫</div>
+          <div style={styles.contentGrid}>
+            {contentList.exams.map(exam => <div key={exam.id} onClick={() => loadContent('exams', exam.id)} style={styles.contentCard}><div style={styles.contentEmoji}>{exam.image}</div><div style={styles.contentCardTitle}>{exam.title}</div><span style={styles.contentLevel}>{exam.level}</span></div>)}
+          </div>
+        </div>
+      )}
+
+      {/* 新功能快捷鍵 */}
+      <div style={styles.contentSection}>
+        <div style={styles.contentTitle}>🚀 進階功能</div>
+        <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(3, 1fr)'}}>
+          <div onClick={() => setShowAIChat(true)} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>🤖</div>
+            <div style={styles.contentCardTitle}>AI 對話</div>
+          </div>
+          <div onClick={() => setShowPronunciation(true)} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>🎤</div>
+            <div style={styles.contentCardTitle}>發音練習</div>
+          </div>
+          <div onClick={() => setShowGrammar(true)} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>📖</div>
+            <div style={styles.contentCardTitle}>文法解析</div>
+          </div>
+        </div>
+      </div>
+
       {!showQuiz && (filteredSentences.length === 0 ? <div style={{ textAlign: 'center', padding: '40px', color: theme.textSecondary }}>No favorites yet! ❤️ Click heart to add.</div> : (
         <div style={styles.card}>
           <div style={styles.cardHeader}>
@@ -255,6 +297,11 @@ function App() {
           gap: '5px'
         }}>➕ 新增內容</button>
       </footer>
+
+      {/* 新功能組件 */}
+      {showAIChat && <AIChatbot darkMode={darkMode} onClose={() => setShowAIChat(false)} />}
+      {showPronunciation && current && <PronunciationPractice sentence={current} darkMode={darkMode} onClose={() => setShowPronunciation(false)} />}
+      {showGrammar && current && <GrammarAnalyzer sentence={current} darkMode={darkMode} onClose={() => setShowGrammar(false)} />}
     </div>
   );
 }

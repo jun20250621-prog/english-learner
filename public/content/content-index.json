@@ -94,5 +94,23 @@
       "description": "簡單的天氣報導",
       "duration": "2 min"
     }
+  ],
+  "exams": [
+    {
+      "id": "toeic",
+      "title": "多益測驗",
+      "titleEn": "TOEIC Practice",
+      "level": "B1-B2",
+      "description": "模擬多益聽力與閱讀題型",
+      "image": "📝"
+    },
+    {
+      "id": "ielts",
+      "title": "雅思測驗",
+      "titleEn": "IELTS Practice",
+      "level": "B2-C1",
+      "description": "雅思聽力與閱讀練習",
+      "image": "🎓"
+    }
   ]
 }

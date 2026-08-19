@@ -1,0 +1,85 @@
+{
+  "title": "雅思測驗",
+  "titleEn": "IELTS Practice",
+  "description": "雅思聽力與閱讀練習",
+  "level": "B2-C1",
+  "image": "🎓",
+  "sections": [
+    {
+      "id": "listening",
+      "name": "Listening 聽力",
+      "questions": [
+        {
+          "id": "ielts-l-1",
+          "type": "complete",
+          "dialogue": "Welcome to the City Museum. Our guided tours run every hour, starting at 10 AM. The first tour today is fully booked, but there are still spots available for the 11 AM and 12 PM tours. Please meet at the information desk 10 minutes before your tour begins.",
+          "questions": [
+            {"id": "1", "question": "When does the first tour start?", "answer": "10 AM"},
+            {"id": "2", "question": "Where should visitors meet?", "answer": "information desk"},
+            {"id": "3", "question": "How early should they arrive?", "answer": "10 minutes before"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "name": "Reading 閱讀",
+      "questions": [
+        {
+          "id": "ielts-r-1",
+          "type": "passage",
+          "title": "The Impact of Technology on Education",
+          "passage": "Technology has dramatically transformed the way we learn. In recent years, online education has become increasingly popular, especially after the COVID-19 pandemic. Students can now access quality education from anywhere in the world through online platforms. However, some argue that traditional classroom learning still offers benefits that online learning cannot fully replicate, such as social interaction and hands-on experience.",
+          "questions": [
+            {
+              "id": "1",
+              "question": "When did online education become more popular?",
+              "options": ["(A) Before COVID-19", "(B) During COVID-19", "(C) After COVID-19", "(D) Never"],
+              "correct": "C"
+            },
+            {
+              "id": "2",
+              "question": "What is one advantage of traditional classroom learning?",
+              "options": ["(A) Lower cost", "(B) More flexibility", "(C) Social interaction", "(D) Better technology"],
+              "correct": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "name": "Grammar 文法",
+      "questions": [
+        {
+          "id": "ielts-g-1",
+          "question": "If it ____ tomorrow, we will cancel the outdoor event.",
+          "options": ["rains", "will rain", "rained", "is raining"],
+          "correct": "rains",
+          "explanation": "真實條件句：if + 現在式，未來用 will。"
+        },
+        {
+          "id": "ielts-g-2",
+          "question": "By next year, she ____ here for five years.",
+          "options": ["will have worked", "will work", "has worked", "worked"],
+          "correct": "will have worked",
+          "explanation": "未來完成式：by + 未來時間，用 will have + p.p."
+        },
+        {
+          "id": "ielts-g-3",
+          "question": "The book ____ on the table is mine.",
+          "options": ["lying", "lies", "lay", "lied"],
+          "correct": "lying",
+          "explanation": "分詞結構：the book lying = which is lying。"
+        },
+        {
+          "id": "ielts-g-4",
+          "question": "No sooner ____ arrived than the meeting started.",
+          "options": ["he had", "had he", "he has", "has he"],
+          "correct": "had he",
+          "explanation": "倒裝句：No sooner + had + 主詞 + p.p."
+        }
+      ]
+    }
+  ]
+}
