@@ -1,0 +1,22 @@
+{
+  "id": "ugly-duckling",
+  "title": "醜小鴨",
+  "titleEn": "The Ugly Duckling",
+  "level": "A1",
+  "description": "經典童話，醜小鴨變天鵝的故事",
+  "image": "🦢",
+  "sentences": [
+    {"id": 1, "en": "A mother duck sat on her eggs.", "zh": "一隻母鴨坐在她的蛋上。", "words": [{"en": "sat", "zh": "坐"}, {"en": "eggs", "zh": "蛋"}]},
+    {"id": 2, "en": "The eggs hatched into ducklings.", "zh": "蛋孵出了小鴨。", "words": [{"en": "hatched", "zh": "孵出"}, {"en": "ducklings", "zh": "小鴨"}]},
+    {"id": 3, "en": "One egg was bigger than the others.", "zh": "一顆蛋比其他的大。", "words": [{"en": "bigger", "zh": "更大的"}, {"en": "others", "zh": "其他的"}]},
+    {"id": 4, "en": "The big egg hatched into an ugly duckling.", "zh": "大蛋孵出了一隻醜小鴨。", "words": [{"en": "ugly", "zh": "醜的"}, {"en": "duckling", "zh": "小鴨"}]},
+    {"id": 5, "en": "The other ducks made fun of him.", "zh": "其他鸭子取笑他。", "words": [{"en": "made fun of", "zh": "取笑"}]},
+    {"id": 6, "en": "The ugly duckling was sad.", "zh": "醜小鴨很傷心。", "words": [{"en": "sad", "zh": "傷心的"}]},
+    {"id": 7, "en": "He ran away from home.", "zh": "他離家出走。", "words": [{"en": "ran away", "zh": "離家出走"}]},
+    {"id": 8, "en": "He met some beautiful swans.", "zh": "他遇到了一些美麗的天鵝。", "words": [{"en": "swans", "zh": "天鵝"}]},
+    {"id": 9, "en": "He was actually a beautiful swan!", "zh": "他其實是一隻美麗的天鵝！", "words": [{"en": "actually", "zh": "其實"}, {"en": "beautiful", "zh": "美麗的"}]},
+    {"id": 10, "en": "The other swans welcomed him.", "zh": "其他天鵝歡迎他。", "words": [{"en": "welcomed", "zh": "歡迎"}]},
+    {"id": 11, "en": "He was no longer ugly.", "zh": "他不再醜了。", "words": [{"en": "no longer", "zh": "不再"}]},
+    {"id": 12, "en": "He was the most beautiful of all.", "zh": "他是所有中最美麗的。", "words": [{"en": "most beautiful", "zh": "最美的"}]}
+  ]
+}

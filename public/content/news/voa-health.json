@@ -1,0 +1,21 @@
+{
+  "id": "voa-health",
+  "title": "健康新聞",
+  "titleEn": "Health News",
+  "source": "VOA Learning English",
+  "level": "A2",
+  "description": "簡單的健康新聞報導",
+  "image": "🏥",
+  "sentences": [
+    {"id": 1, "en": "Exercise is important for health.", "zh": "運動對健康很重要。", "words": [{"en": "exercise", "zh": "運動"}, {"en": "important", "zh": "重要"}]},
+    {"id": 2, "en": "Eating vegetables is good for you.", "zh": "吃蔬菜對你有好處。", "words": [{"en": "vegetables", "zh": "蔬菜"}, {"en": "good for you", "zh": "對你好"}]},
+    {"id": 3, "en": "People need enough sleep every night.", "zh": "人們每晚需要充足的睡眠。", "words": [{"en": "enough sleep", "zh": "充足的睡眠"}, {"en": "every night", "zh": "每晚"}]},
+    {"id": 4, "en": "Drinking water keeps you healthy.", "zh": "喝水讓你保持健康。", "words": [{"en": "drinking water", "zh": "喝水"}, {"en": "healthy", "zh": "健康的"}]},
+    {"id": 5, "en": "Regular checkups are necessary.", "zh": "定期檢查是必要的。", "words": [{"en": "checkups", "zh": "檢查"}, {"en": "necessary", "zh": "必要的"}]},
+    {"id": 6, "en": "Walking is good exercise.", "zh": "走路是很好的運動。", "words": [{"en": "walking", "zh": "走路"}]},
+    {"id": 7, "en": "Fruits provide vitamins.", "zh": "水果提供維生素。", "words": [{"en": "fruits", "zh": "水果"}, {"en": "vitamins", "zh": "維生素"}]},
+    {"id": 8, "en": "Stress can affect your health.", "zh": "壓力會影響你的健康。", "words": [{"en": "stress", "zh": "壓力"}, {"en": "affect", "zh": "影響"}]},
+    {"id": 9, "en": "Washing hands prevents illness.", "zh": "洗手可以預防疾病。", "words": [{"en": "washing hands", "zh": "洗手"}, {"en": "prevents", "zh": "預防"}]},
+    {"id": 10, "en": "A healthy mind needs a healthy body.", "zh": "健康的心靈需要健康的身體。", "words": [{"en": "mind", "zh": "心靈"}, {"en": "body", "zh": "身體"}]}
+  ]
+}

@@ -1,142 +1,50 @@
 {
   "fairyTales": [
-    {
-      "id": "three-little-pigs",
-      "title": "三隻小豬",
-      "titleEn": "The Three Little Pigs",
-      "level": "A1",
-      "description": "經典童話，三隻小豬建造房子的故事",
-      "image": "🐷",
-      "sentencesCount": 23
-    },
-    {
-      "id": "little-mermaid",
-      "title": "小美人魚",
-      "titleEn": "The Little Mermaid",
-      "level": "A1-A2",
-      "description": "迪士尼經典，小美人魚愛麗兒的故事",
-      "image": "🧜‍♀️",
-      "sentencesCount": 25
-    }
+    {"id": "three-little-pigs", "title": "三隻小豬", "titleEn": "The Three Little Pigs", "level": "A1", "description": "經典童話，三隻小豬建造房子的故事", "image": "🐷"},
+    {"id": "little-mermaid", "title": "小美人魚", "titleEn": "The Little Mermaid", "level": "A1-A2", "description": "迪士尼經典，小美人魚愛麗兒的故事", "image": "🧜‍♀️"},
+    {"id": "cinderella", "title": "灰姑娘", "titleEn": "Cinderella", "level": "A1", "description": "經典童話，灰姑娘的奇幻故事", "image": "👗"},
+    {"id": "snow-white", "title": "白雪公主", "titleEn": "Snow White", "level": "A1", "description": "經典童話，白雪公主與七矮人的故事", "image": "❄️"},
+    {"id": "sleeping-beauty", "title": "睡美人", "titleEn": "Sleeping Beauty", "level": "A1", "description": "經典童話，睡美人的故事", "image": "👸"},
+    {"id": "pinocchio", "title": "木偶奇遇記", "titleEn": "Pinocchio", "level": "A1-A2", "description": "經典童話，木偶變成真人的故事", "image": "🪵"},
+    {"id": "little-red-riding-hood", "title": "小紅帽", "titleEn": "Little Red Riding Hood", "level": "A1", "description": "經典童話，小紅帽與大野狼的故事", "image": "🧣"},
+    {"id": "jack-beanstalk", "title": "傑克與魔豆", "titleEn": "Jack and the Beanstalk", "level": "A1-A2", "description": "經典童話，傑克與神奇豆子的故事", "image": "🫘"},
+    {"id": "ugly-duckling", "title": "醜小鴨", "titleEn": "The Ugly Duckling", "level": "A1", "description": "經典童話，醜小鴨變天鵝的故事", "image": "🦢"},
+    {"id": "hansel-gretel", "title": "糖果屋", "titleEn": "Hansel and Gretel", "level": "A1-A2", "description": "經典童話，糖果屋的故事", "image": "🏠"},
+    {"id": "emperor-new-clothes", "title": "國王的新衣", "titleEn": "The Emperor's New Clothes", "level": "A1-A2", "description": "經典童話，國王的新衣故事", "image": "👑"},
+    {"id": "tortoise-hare", "title": "龜兔賽跑", "titleEn": "The Tortoise and the Hare", "level": "A1", "description": "經典寓言，龜兔賽跑的故事", "image": "🐢"}
   ],
   "movies": [
-    {
-      "id": "lion-king",
-      "title": "獅子王",
-      "titleEn": "The Lion King",
-      "level": "A1-A2",
-      "description": "迪士尼經典，辛巴的成長故事",
-      "image": "🦁",
-      "sentencesCount": 10
-    },
-    {
-      "id": "frozen",
-      "title": "冰雪奇緣",
-      "titleEn": "Frozen",
-      "level": "A1",
-      "description": "迪士尼經典，艾莎與安娜的冒險",
-      "image": "❄️",
-      "sentencesCount": 8
-    },
-    {
-      "id": "forest-gump",
-      "title": "阿甘正傳",
-      "titleEn": "Forrest Gump",
-      "level": "A2-B1",
-      "description": "經典勵志電影，阿甘的奇妙人生",
-      "image": "🏃",
-      "sentencesCount": 10
-    }
+    {"id": "lion-king", "title": "獅子王", "titleEn": "The Lion King", "level": "A1-A2", "description": "迪士尼經典，辛巴的成長故事", "image": "🦁"},
+    {"id": "frozen", "title": "冰雪奇緣", "titleEn": "Frozen", "level": "A1", "description": "迪士尼經典，艾莎與安娜的冒險", "image": "❄️"},
+    {"id": "forest-gump", "title": "阿甘正傳", "titleEn": "Forrest Gump", "level": "A2-B1", "description": "經典勵志電影，阿甘的奇妙人生", "image": "🏃"},
+    {"id": "harry-potter", "title": "哈利波特", "titleEn": "Harry Potter", "level": "A2-B1", "description": "經典奇幻電影，哈利波特的魔法冒險", "image": "🪄"},
+    {"id": "titanic", "title": "鐵達尼號", "titleEn": "Titanic", "level": "A2-B1", "description": "經典浪漫電影，鐵達尼號的愛情故事", "image": "🚢"},
+    {"id": "avengers", "title": "復仇者聯盟", "titleEn": "The Avengers", "level": "A2-B1", "description": "漫威超級英雄電影，超級英雄集結", "image": "🦸"},
+    {"id": "spider-man", "title": "蜘蛛人", "titleEn": "Spider-Man", "level": "A2-B1", "description": "漫威超級英雄電影，蜘蛛人的故事", "image": "🕷️"},
+    {"id": "finding-nemo", "title": "海底總動員", "titleEn": "Finding Nemo", "level": "A1-A2", "description": "皮克斯動畫，小丑魚找兒子的故事", "image": "🐠"},
+    {"id": "toy-story", "title": "玩具總動員", "titleEn": "Toy Story", "level": "A1-A2", "description": "皮克斯動畫，玩具的冒險故事", "image": "🤖"},
+    {"id": "matrix", "title": "駭客任務", "titleEn": "The Matrix", "level": "B1-B2", "description": "經典科幻電影，虛擬與現實的故事", "image": "💊"},
+    {"id": "jurassic-park", "title": "侏羅紀公園", "titleEn": "Jurassic Park", "level": "A2-B1", "description": "經典科幻電影，恐龍主題樂園", "image": "🦖"}
   ],
   "news": [
-    {
-      "id": "voa-daily-routine",
-      "title": "日常生活",
-      "titleEn": "Daily Routine",
-      "source": "VOA Learning English",
-      "level": "A1",
-      "description": "學習描述日常生活用語",
-      "image": "📅"
-    },
-    {
-      "id": "voa-shopping",
-      "title": "購物英語",
-      "titleEn": "Shopping English",
-      "source": "VOA Learning English",
-      "level": "A1-A2",
-      "description": "購物時的常用英語",
-      "image": "🛒"
-    },
-    {
-      "id": "voa-travel",
-      "title": "旅行英語",
-      "titleEn": "Travel English",
-      "source": "VOA Learning English",
-      "level": "A2",
-      "description": "出國旅行常用英語",
-      "image": "✈️"
-    },
-    {
-      "id": "voa-sports-news",
-      "title": "籃球新聞",
-      "titleEn": "Basketball News",
-      "source": "VOA Learning English",
-      "level": "A2",
-      "description": "簡單的運動新聞",
-      "duration": "2 min"
-    },
-    {
-      "id": "voa-weather",
-      "title": "天氣報導",
-      "titleEn": "Weather Report",
-      "source": "VOA Learning English",
-      "level": "A1",
-      "description": "簡單的天氣報導",
-      "duration": "2 min"
-    }
+    {"id": "voa-daily-routine", "title": "日常生活", "titleEn": "Daily Routine", "source": "VOA Learning English", "level": "A1", "description": "學習描述日常生活用語", "image": "📅"},
+    {"id": "voa-shopping", "title": "購物英語", "titleEn": "Shopping English", "source": "VOA Learning English", "level": "A1-A2", "description": "購物時的常用英語", "image": "🛒"},
+    {"id": "voa-travel", "title": "旅行英語", "titleEn": "Travel English", "source": "VOA Learning English", "level": "A2", "description": "出國旅行常用英語", "image": "✈️"},
+    {"id": "voa-sports-news", "title": "籃球新聞", "titleEn": "Basketball News", "source": "VOA Learning English", "level": "A2", "description": "簡單的運動新聞", "image": "🏀"},
+    {"id": "voa-weather", "title": "天氣報導", "titleEn": "Weather Report", "source": "VOA Learning English", "level": "A1", "description": "簡單的天氣報導", "image": "🌤️"},
+    {"id": "voa-technology", "title": "科技新聞", "titleEn": "Technology News", "source": "VOA Learning English", "level": "A2-B1", "description": "簡單的科技新聞報導", "image": "💻"},
+    {"id": "voa-health", "title": "健康新聞", "titleEn": "Health News", "source": "VOA Learning English", "level": "A2", "description": "簡單的健康新聞報導", "image": "🏥"},
+    {"id": "voa-business", "title": "商業新聞", "titleEn": "Business News", "source": "VOA Learning English", "level": "A2-B1", "description": "簡單的商業新聞報導", "image": "💼"},
+    {"id": "voa-science", "title": "科學新聞", "titleEn": "Science News", "source": "VOA Learning English", "level": "A2-B1", "description": "簡單的科學新聞報導", "image": "🔬"},
+    {"id": "voa-entertainment", "title": "娛樂新聞", "titleEn": "Entertainment News", "source": "VOA Learning English", "level": "A2", "description": "簡單的娛樂新聞報導", "image": "🎬"}
   ],
   "exams": [
-    {
-      "id": "toeic",
-      "title": "多益測驗",
-      "titleEn": "TOEIC Practice",
-      "level": "B1-B2",
-      "description": "模擬多益聽力與閱讀題型",
-      "image": "📝"
-    },
-    {
-      "id": "ielts",
-      "title": "雅思測驗",
-      "titleEn": "IELTS Practice",
-      "level": "B2-C1",
-      "description": "雅思聽力與閱讀練習",
-      "image": "🎓"
-    }
+    {"id": "toeic", "title": "多益測驗", "titleEn": "TOEIC Practice", "level": "B1-B2", "description": "模擬多益聽力與閱讀題型", "image": "📝"},
+    {"id": "ielts", "title": "雅思測驗", "titleEn": "IELTS Practice", "level": "B2-C1", "description": "雅思聽力與閱讀練習", "image": "🎓"}
   ],
   "oral": [
-    {
-      "id": "contractions",
-      "title": "口語縮寫",
-      "titleEn": "Spoken Contractions",
-      "level": "A2-B1",
-      "description": "gonna, wanna, gotta 等口語縮寫",
-      "image": "🗣️"
-    },
-    {
-      "id": "connected-speech",
-      "title": "連音練習",
-      "titleEn": "Connected Speech",
-      "level": "B1-B2",
-      "description": "練習連讀技巧，讓口語更自然",
-      "image": "🔗"
-    },
-    {
-      "id": "scenarios",
-      "title": "情境對話",
-      "titleEn": "Real-life Scenarios",
-      "level": "A1-B1",
-      "description": "餐廳、購物、問路等實際對話",
-      "image": "🎭"
-    }
+    {"id": "contractions", "title": "口語縮寫", "titleEn": "Spoken Contractions", "level": "A2-B1", "description": "gonna, wanna, gotta 等口語縮寫", "image": "🗣️"},
+    {"id": "connected-speech", "title": "連音練習", "titleEn": "Connected Speech", "level": "B1-B2", "description": "練習連讀技巧，讓口語更自然", "image": "🔗"},
+    {"id": "scenarios", "title": "情境對話", "titleEn": "Real-life Scenarios", "level": "A1-B1", "description": "餐廳、購物、問路等實際對話", "image": "🎭"}
   ]
 }

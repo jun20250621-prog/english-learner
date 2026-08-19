@@ -1,0 +1,20 @@
+{
+  "id": "titanic",
+  "title": "鐵達尼號",
+  "titleEn": "Titanic",
+  "level": "A2-B1",
+  "description": "經典浪漫電影，鐵達尼號的愛情故事",
+  "image": "🚢",
+  "sentences": [
+    {"id": 1, "en": "Titanic was the largest ship ever built.", "zh": "鐵達尼號是當時最大的船。", "words": [{"en": "largest", "zh": "最大的"}, {"en": "ship", "zh": "船"}]},
+    {"id": 2, "en": "It was called unsinkable.", "zh": "它被稱為永不沉沒。", "words": [{"en": "unsinkable", "zh": "永不沉沒"}]},
+    {"id": 3, "en": "Jack won a ticket in a card game.", "zh": "傑克在紙牌遊戲中贏了一張票。", "words": [{"en": "ticket", "zh": "票"}, {"en": "card game", "zh": "紙牌遊戲"}]},
+    {"id": 4, "en": "He met Rose on the ship.", "zh": "他在船上遇到了蘿絲。", "words": [{"en": "met", "zh": "遇見"}]},
+    {"id": 5, "en": "They fell in love.", "zh": "他們戀愛了。", "words": [{"en": "fell in love", "zh": "戀愛"}]},
+    {"id": 6, "en": "The ship hit an iceberg.", "zh": "船撞到了冰山。", "words": [{"en": "hit", "zh": "撞"}, {"en": "iceberg", "zh": "冰山"}]},
+    {"id": 7, "en": "The ship started to sink.", "zh": "船開始下沉。", "words": [{"en": "sink", "zh": "下沉"}]},
+    {"id": 8, "en": "There were not enough lifeboats.", "zh": "救生艇不夠。", "words": [{"en": "lifeboats", "zh": "救生艇"}]},
+    {"id": 9, "en": "Jack stayed on the door with Rose.", "zh": "傑克和蘿絲待在門上。", "words": [{"en": "door", "zh": "門"}]},
+    {"id": 10, "en": "Jack died in the cold water.", "zh": "傑克死在冰冷的水裡。", "words": [{"en": "died", "zh": "死亡"}, {"en": "cold water", "zh": "冷水"}]}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "harry-potter",
+  "title": "哈利波特",
+  "titleEn": "Harry Potter",
+  "level": "A2-B1",
+  "description": "經典奇幻電影，哈利波特的魔法冒險",
+  "image": "🪄",
+  "sentences": [
+    {"id": 1, "en": "Harry Potter was an orphan.", "zh": "哈利波特是個孤兒。", "words": [{"en": "orphan", "zh": "孤兒"}]},
+    {"id": 2, "en": "He lived with his aunt and uncle.", "zh": "他和阿姨叔叔住在一起。", "words": [{"en": "aunt", "zh": "阿姨"}, {"en": "uncle", "zh": "叔叔"}]},
+    {"id": 3, "en": "On his birthday, he got a letter.", "zh": "在他生日那天，他收到了一封信。", "words": [{"en": "birthday", "zh": "生日"}, {"en": "letter", "zh": "信"}]},
+    {"id": 4, "en": "He was accepted to Hogwarts School.", "zh": "他被霍格華茲學院錄取了。", "words": [{"en": "accepted", "zh": "錄取"}, {"en": "school", "zh": "學校"}]},
+    {"id": 5, "en": "Hogwarts is a magic school.", "zh": "霍格華茲是一所魔法學校。", "words": [{"en": "magic", "zh": "魔法"}]},
+    {"id": 6, "en": "He learned to cast spells.", "zh": "他學會了施魔法。", "words": [{"en": "cast spells", "zh": "施魔法"}]},
+    {"id": 7, "en": "He made two best friends.", "zh": "他交了兩個最好的朋友。", "words": [{"en": "best friends", "zh": "最好的朋友"}]},
+    {"id": 8, "en": "Ron and Hermione helped him a lot.", "zh": "榮恩和妙麗幫了他很多。", "words": [{"en": "helped", "zh": "幫助"}]},
+    {"id": 9, "en": "Voldemort was a dark wizard.", "zh": "佛地魔是個黑暗巫師。", "words": [{"en": "dark wizard", "zh": "黑暗巫師"}]},
+    {"id": 10, "en": "Harry fought against evil.", "zh": "哈利對抗邪惡。", "words": [{"en": "fought", "zh": "對抗"}, {"en": "evil", "zh": "邪惡"}]}
+  ]
+}

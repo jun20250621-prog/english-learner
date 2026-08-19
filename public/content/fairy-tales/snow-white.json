@@ -1,0 +1,22 @@
+{
+  "id": "snow-white",
+  "title": "白雪公主",
+  "titleEn": "Snow White",
+  "level": "A1",
+  "description": "經典童話，白雪公主與七矮人的故事",
+  "image": "❄️",
+  "sentences": [
+    {"id": 1, "en": "Snow White had skin as white as snow.", "zh": "白雪公主有像雪一樣白的肌膚。", "words": [{"en": "skin", "zh": "肌膚"}, {"en": "as white as", "zh": "像...一樣白"}]},
+    {"id": 2, "en": "Her stepmother was very jealous.", "zh": "她的後母非常嫉妒。", "words": [{"en": "jealous", "zh": "嫉妒的"}]},
+    {"id": 3, "en": "The evil queen asked a hunter to kill her.", "zh": "邪惡的皇后命令獵人殺了她。", "words": [{"en": "evil", "zh": "邪惡的"}, {"en": "hunter", "zh": "獵人"}]},
+    {"id": 4, "en": "The hunter let Snow White go.", "zh": "獵人放了白雪公主。", "words": [{"en": "let go", "zh": "放了"}]},
+    {"id": 5, "en": "She found a small house in the forest.", "zh": "她在森林裡找到了一間小房子。", "words": [{"en": "found", "zh": "找到"}, {"en": "forest", "zh": "森林"}]},
+    {"id": 6, "en": "Seven dwarfs lived in that house.", "zh": "七個小矮人住在那間房子裡。", "words": [{"en": "dwarfs", "zh": "小矮人"}]},
+    {"id": 7, "en": "Snow White stayed with them.", "zh": "白雪公主和他們住在一起。", "words": [{"en": "stayed", "zh": "待"}]},
+    {"id": 8, "en": "The queen gave her a poisonous apple.", "zh": "皇后給了她一顆毒蘋果。", "words": [{"en": "poisonous", "zh": "有毒的"}, {"en": "apple", "zh": "蘋果"}]},
+    {"id": 9, "en": "Snow White fell into a deep sleep.", "zh": "白雪公主陷入了沉睡。", "words": [{"en": "deep sleep", "zh": "沉睡"}]},
+    {"id": 10, "en": "A prince found her and woke her up.", "zh": "一位王子找到她並喚醒了她。", "words": [{"en": "woke up", "zh": "喚醒"}]},
+    {"id": 11, "en": "The evil queen was punished.", "zh": "邪惡的皇后受到了懲罰。", "words": [{"en": "punished", "zh": "受懲罰"}]},
+    {"id": 12, "en": "Snow White and the prince got married.", "zh": "白雪公主和王子結婚了。", "words": [{"en": "got married", "zh": "結婚"}]}
+  ]
+}

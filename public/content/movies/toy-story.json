@@ -1,0 +1,20 @@
+{
+  "id": "toy-story",
+  "title": "玩具總動員",
+  "titleEn": "Toy Story",
+  "level": "A1-A2",
+  "description": "皮克斯動畫，玩具的冒險故事",
+  "image": "🤖",
+  "sentences": [
+    {"id": 1, "en": "Woody was Andy's favorite toy.", "zh": "胡迪是安迪最喜歡的玩具。", "words": [{"en": "favorite", "zh": "最喜歡的"}, {"en": "toy", "zh": "玩具"}]},
+    {"id": 2, "en": "Buzz Lightyear was a new toy.", "zh": "巴斯光年是新玩具。", "words": [{"en": "new", "zh": "新的"}]},
+    {"id": 3, "en": "Buzz thought he was a real space ranger.", "zh": "巴斯以為他是真正的太空騎警。", "words": [{"en": "space ranger", "zh": "太空騎警"}]},
+    {"id": 4, "en": "Woody was jealous of Buzz.", "zh": "胡迪嫉妒巴斯。", "words": [{"en": "jealous", "zh": "嫉妒的"}]},
+    {"id": 5, "en": "They got lost in the real world.", "zh": "他們在真實世界中迷路了。", "words": [{"en": "lost", "zh": "迷路"}, {"en": "real world", "zh": "真實世界"}]},
+    {"id": 6, "en": "They had to work together.", "zh": "他們必須合作。", "words": [{"en": "work together", "zh": "合作"}]},
+    {"id": 7, "en": "They met Sid, a bad kid.", "zh": "他們遇到 Syd，一個壞小孩。", "words": [{"en": "bad kid", "zh": "壞小孩"}]},
+    {"id": 8, "en": "The toys came to life.", "zh": "玩具們動了起來。", "words": [{"en": "came to life", "zh": "動了起來"}]},
+    {"id": 9, "en": "They escaped from Sid's house.", "zh": "他們從 Syd 的房子逃走了。", "words": [{"en": "escaped", "zh": "逃走"}]},
+    {"id": 10, "en": "They returned to Andy.", "zh": "他們回到了安迪身邊。", "words": [{"en": "returned", "zh": "回到"}]}
+  ]
+}

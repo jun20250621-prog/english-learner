@@ -1,0 +1,21 @@
+{
+  "id": "voa-technology",
+  "title": "科技新聞",
+  "titleEn": "Technology News",
+  "source": "VOA Learning English",
+  "level": "A2-B1",
+  "description": "簡單的科技新聞報導",
+  "image": "💻",
+  "sentences": [
+    {"id": 1, "en": "New smartphones are released every year.", "zh": "新手機每年都會發布。", "words": [{"en": "released", "zh": "發布"}, {"en": "every year", "zh": "每年"}]},
+    {"id": 2, "en": "Artificial intelligence is growing fast.", "zh": "人工智慧發展迅速。", "words": [{"en": "artificial intelligence", "zh": "人工智慧"}, {"en": "growing", "zh": "發展"}]},
+    {"id": 3, "en": "Electric cars are becoming popular.", "zh": "電動車越來越受歡迎。", "words": [{"en": "electric cars", "zh": "電動車"}, {"en": "popular", "zh": "受歡迎"}]},
+    {"id": 4, "en": "Many people work from home now.", "zh": "現在很多人居家工作。", "words": [{"en": "work from home", "zh": "居家工作"}]},
+    {"id": 5, "en": "Video calls replaced face-to-face meetings.", "zh": "視訊通話取代了面對面會議。", "words": [{"en": "video calls", "zh": "視訊通話"}, {"en": "replaced", "zh": "取代"}]},
+    {"id": 6, "en": "Social media connects people worldwide.", "zh": "社群媒體連接全世界的人。", "words": [{"en": "social media", "zh": "社群媒體"}, {"en": "worldwide", "zh": "全世界"}]},
+    {"id": 7, "en": "Online shopping is very convenient.", "zh": "網路購物非常方便。", "words": [{"en": "online shopping", "zh": "網路購物"}, {"en": "convenient", "zh": "方便的"}]},
+    {"id": 8, "en": "Robots are used in many factories.", "zh": "機器人在很多工廠使用。", "words": [{"en": "robots", "zh": "機器人"}, {"en": "factories", "zh": "工廠"}]},
+    {"id": 9, "en": "The internet makes information easy to find.", "zh": "網路讓資訊容易取得。", "words": [{"en": "information", "zh": "資訊"}, {"en": "easy to find", "zh": "容易取得"}]},
+    {"id": 10, "en": "Technology changes our daily lives.", "zh": "科技改變我們的日常生活。", "words": [{"en": "changes", "zh": "改變"}, {"en": "daily lives", "zh": "日常生活"}]}
+  ]
+}

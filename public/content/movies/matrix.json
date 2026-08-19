@@ -1,0 +1,20 @@
+{
+  "id": "matrix",
+  "title": "駭客任務",
+  "titleEn": "The Matrix",
+  "level": "B1-B2",
+  "description": "經典科幻電影，虛擬與現實的故事",
+  "image": "💊",
+  "sentences": [
+    {"id": 1, "en": "Neo worked as a computer programmer.", "zh": "尼歐是電腦程式設計師。", "words": [{"en": "programmer", "zh": "程式設計師"}]},
+    {"id": 2, "en": "He felt something was wrong with the world.", "zh": "他覺得世界有些不对劲。", "words": [{"en": "wrong", "zh": "不對"}]},
+    {"id": 3, "en": "Morpheus showed him the truth.", "zh": "摩菲斯向他展示了真相。", "words": [{"en": "truth", "zh": "真相"}]},
+    {"id": 4, "en": "The world was a simulation.", "zh": "世界是一個模擬世界。", "words": [{"en": "simulation", "zh": "模擬世界"}]},
+    {"id": 5, "en": "Humans were controlled by machines.", "zh": "人類被機器控制。", "words": [{"en": "controlled", "zh": "控制"}, {"en": "machines", "zh": "機器"}]},
+    {"id": 6, "en": "Neo took a red pill.", "zh": "尼歐吃了紅色藥丸。", "words": [{"en": "pill", "zh": "藥丸"}]},
+    {"id": 7, "en": "He woke up in the real world.", "zh": "他在真實世界中醒來。", "words": [{"en": "woke up", "zh": "醒來"}]},
+    {"id": 8, "en": "He learned martial arts.", "zh": "他學會了武術。", "words": [{"en": "martial arts", "zh": "武術"}]},
+    {"id": 9, "en": "He became The One.", "zh": "他成為了救世主。", "words": [{"en": "The One", "zh": "救世主"}]},
+    {"id": 10, "en": "He could dodge bullets.", "zh": "他可以躲避子彈。", "words": [{"en": "dodge bullets", "zh": "躲避子彈"}]}
+  ]
+}

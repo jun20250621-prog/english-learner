@@ -1,0 +1,20 @@
+{
+  "id": "finding-nemo",
+  "title": "海底總動員",
+  "titleEn": "Finding Nemo",
+  "level": "A1-A2",
+  "description": "皮克斯動畫，小丑魚找兒子的故事",
+  "image": "🐠",
+  "sentences": [
+    {"id": 1, "en": "Nemo was a little clownfish.", "zh": "尼莫是一隻小丑魚。", "words": [{"en": "clownfish", "zh": "小丑魚"}]},
+    {"id": 2, "en": "His father was very protective.", "zh": "他爸爸非常保護他。", "words": [{"en": "protective", "zh": "保護的"}]},
+    {"id": 3, "en": "Nemo was captured by a diver.", "zh": "尼莫被潛水夫抓住了。", "words": [{"en": "captured", "zh": "抓住"}, {"en": "diver", "zh": "潛水夫"}]},
+    {"id": 4, "en": "He was taken to a dentist's office.", "zh": "他被帶到牙醫診所。", "words": [{"en": "dentist", "zh": "牙醫"}, {"en": "office", "zh": "辦公室"}]},
+    {"id": 5, "en": "His father went to find him.", "zh": "他爸爸去找他。", "words": [{"en": "went to find", "zh": "去找"}]},
+    {"id": 6, "en": "He met a forgetful fish named Dory.", "zh": "他遇到一隻叫多莉的健忘魚。", "words": [{"en": "forgetful", "zh": "健忘的"}]},
+    {"id": 7, "en": "Dory helped him along the way.", "zh": "多莉一路幫助他。", "words": [{"en": "helped", "zh": "幫助"}]},
+    {"id": 8, "en": "They faced many dangers.", "zh": "他們面對很多危險。", "words": [{"en": "dangers", "zh": "危險"}]},
+    {"id": 9, "en": "Nemo escaped from the tank.", "zh": "尼莫從魚缸逃走了。", "words": [{"en": "escaped", "zh": "逃走"}, {"en": "tank", "zh": "魚缸"}]},
+    {"id": 10, "en": "Father and son were reunited.", "zh": "父子團聚了。", "words": [{"en": "reunited", "zh": "團聚"}]}
+  ]
+}

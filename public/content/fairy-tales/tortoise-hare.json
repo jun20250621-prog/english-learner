@@ -1,0 +1,22 @@
+{
+  "id": "tortoise-hare",
+  "title": "龜兔賽跑",
+  "titleEn": "The Tortoise and the Hare",
+  "level": "A1",
+  "description": "經典寓言，龜兔賽跑的故事",
+  "image": "🐢",
+  "sentences": [
+    {"id": 1, "en": "A hare laughed at a tortoise.", "zh": "一隻兔子嘲笑烏龜。", "words": [{"en": "hare", "zh": "兔子"}, {"en": "laughed at", "zh": "嘲笑"}]},
+    {"id": 2, "en": "You are so slow!", "zh": "你真是太慢了！", "words": [{"en": "slow", "zh": "慢的"}]},
+    {"id": 3, "en": "Let's have a race!", "zh": "我們來比賽吧！", "words": [{"en": "race", "zh": "比賽"}]},
+    {"id": 4, "en": "The tortoise agreed.", "zh": "烏龜同意了。", "words": [{"en": "agreed", "zh": "同意"}]},
+    {"id": 5, "en": "They started the race.", "zh": "他們開始比賽。", "words": [{"en": "started", "zh": "開始"}]},
+    {"id": 6, "en": "The hare ran very fast.", "zh": "兔子跑得非常快。", "words": [{"en": "ran", "zh": "跑"}, {"en": "fast", "zh": "快的"}]},
+    {"id": 7, "en": "The hare was so confident.", "zh": "兔子非常有信心。", "words": [{"en": "confident", "zh": "有信心的"}]},
+    {"id": 8, "en": "He took a nap under a tree.", "zh": "他在樹下睡覺。", "words": [{"en": "nap", "zh": "小睡"}, {"en": "tree", "zh": "樹"}]},
+    {"id": 9, "en": "The tortoise kept walking.", "zh": "烏龜繼續走著。", "words": [{"en": "kept", "zh": "繼續"}, {"en": "walking", "zh": "走路"}]},
+    {"id": 10, "en": "The hare woke up too late.", "zh": "兔子醒來太晚了。", "words": [{"en": "woke up", "zh": "醒來"}, {"en": "too late", "zh": "太晚"}]},
+    {"id": 11, "en": "The tortoise won the race.", "zh": "烏龜贏了比賽。", "words": [{"en": "won", "zh": "贏了"}, {"en": "race", "zh": "比賽"}]},
+    {"id": 12, "en": "Slow and steady wins the race.", "zh": "慢而穩健才能贏得比賽。", "words": [{"en": "slow and steady", "zh": "慢而穩健"}, {"en": "wins", "zh": "贏"}]}
+  ]
+}

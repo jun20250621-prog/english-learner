@@ -1,0 +1,25 @@
+{
+  "id": "cinderella",
+  "title": "灰姑娘",
+  "titleEn": "Cinderella",
+  "level": "A1",
+  "description": "經典童話，灰姑娘的奇幻故事",
+  "image": "👗",
+  "sentences": [
+    {"id": 1, "en": "Once upon a time, there lived a beautiful girl named Cinderella.", "zh": "從前，有一個美麗的女孩叫仙杜瑞拉。", "words": [{"en": "once upon a time", "zh": "從前"}, {"en": "beautiful", "zh": "美麗的"}, {"en": "named", "zh": "名為"}]},
+    {"id": 2, "en": "Her stepmother was very cruel to her.", "zh": "她的後母對她很殘忍。", "words": [{"en": "stepmother", "zh": "後母"}, {"en": "cruel", "zh": "殘忍的"}]},
+    {"id": 3, "en": "Cinderella had to do all the housework.", "zh": "仙杜瑞拉必須做所有的家務。", "words": [{"en": "housework", "zh": "家務"}]},
+    {"id": 4, "en": "One day, an invitation came to the palace.", "zh": "一天，一張邀請函送到了皇宮。", "words": [{"en": "invitation", "zh": "邀請函"}, {"en": "palace", "zh": "皇宮"}]},
+    {"id": 5, "en": "The stepmother wouldn't let Cinderella go.", "zh": "後母不讓仙杜瑞拉去。", "words": [{"en": "wouldn't", "zh": "不會"}]},
+    {"id": 6, "en": "A fairy godmother appeared with magic.", "zh": "一位仙女教母帶著魔法出現了。", "words": [{"en": "fairy godmother", "zh": "仙女教母"}, {"en": "magic", "zh": "魔法"}]},
+    {"id": 7, "en": "She turned a pumpkin into a golden carriage.", "zh": "她把南瓜變成了金色馬車。", "words": [{"en": "pumpkin", "zh": "南瓜"}, {"en": "carriage", "zh": "馬車"}]},
+    {"id": 8, "en": "Cinderella wore a beautiful glass shoe.", "zh": "仙杜瑞拉穿著美麗的玻璃鞋。", "words": [{"en": "glass shoe", "zh": "玻璃鞋"}]},
+    {"id": 9, "en": "At the ball, she met the prince.", "zh": "在舞會上，她遇到了王子。", "words": [{"en": "ball", "zh": "舞會"}, {"en": "prince", "zh": "王子"}]},
+    {"id": 10, "en": "She ran away before midnight.", "zh": "她在午夜前跑走了。", "words": [{"en": "midnight", "zh": "午夜"}, {"en": "ran away", "zh": "跑走"}]},
+    {"id": 11, "en": "The prince found the glass shoe.", "zh": "王子找到了那只玻璃鞋。", "words": [{"en": "found", "zh": "找到"}]},
+    {"id": 12, "en": "He searched for the girl who fit the shoe.", "zh": "他尋找適合這雙鞋的女孩。", "words": [{"en": "fit", "zh": "適合"}, {"en": "searched", "zh": "尋找"}]},
+    {"id": 13, "en": "Cinderella tried on the shoe.", "zh": "仙杜瑞拉試穿那雙鞋。", "words": [{"en": "tried on", "zh": "試穿"}]},
+    {"id": 14, "en": "It fit perfectly!", "zh": "完全合腳！", "words": [{"en": "perfectly", "zh": "完美地"}]},
+    {"id": 15, "en": "They got married and lived happily ever after.", "zh": "他們結婚了，從此過著幸福的生活。", "words": [{"en": "got married", "zh": "結婚"}, {"en": "happily ever after", "zh": "從此幸福地"}]}
+  ]
+}

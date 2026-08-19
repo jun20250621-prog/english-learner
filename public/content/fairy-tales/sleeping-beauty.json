@@ -1,0 +1,22 @@
+{
+  "id": "sleeping-beauty",
+  "title": "睡美人",
+  "titleEn": "Sleeping Beauty",
+  "level": "A1",
+  "description": "經典童話，睡美人的故事",
+  "image": "👸",
+  "sentences": [
+    {"id": 1, "en": "A king and queen had a beautiful baby girl.", "zh": "國王和王后有一個美麗的寶寶女孩。", "words": [{"en": "king and queen", "zh": "國王和王后"}, {"en": "baby girl", "zh": "女嬰"}]},
+    {"id": 2, "en": "They invited all the fairies to the party.", "zh": "他們邀請了所有仙女參加派對。", "words": [{"en": "fairies", "zh": "仙女"}, {"en": "party", "zh": "派對"}]},
+    {"id": 3, "en": "One evil fairy was not invited.", "zh": "一個邪惡的仙女沒有被邀請。", "words": [{"en": "evil fairy", "zh": "邪惡的仙女"}]},
+    {"id": 4, "en": "The evil fairy put a curse on the baby.", "zh": "邪惡的仙女對嬰兒下了詛咒。", "words": [{"en": "curse", "zh": "詛咒"}]},
+    {"id": 5, "en": "The baby would prick her finger and die.", "zh": "嬰兒會刺到手指而死。", "words": [{"en": "prick", "zh": "刺"}, {"en": "finger", "zh": "手指"}]},
+    {"id": 6, "en": "A good fairy changed the curse to sleep.", "zh": "一個好仙女把詛咒改成睡眠。", "words": [{"en": "changed", "zh": "改變"}, {"en": "sleep", "zh": "睡眠"}]},
+    {"id": 7, "en": "The princess slept for a hundred years.", "zh": "公主沈睡了一百年。", "words": [{"en": "hundred years", "zh": "一百年"}]},
+    {"id": 8, "en": "A prince came to wake her up.", "zh": "一位王子來喚醒她。", "words": [{"en": "wake up", "zh": "喚醒"}]},
+    {"id": 9, "en": "He fought through the thorns.", "zh": "他穿過荊棘作戰。", "words": [{"en": "fought", "zh": "戰鬥"}, {"en": "thorns", "zh": "荊棘"}]},
+    {"id": 10, "en": "The prince kissed the princess.", "zh": "王子親了公主。", "words": [{"en": "kissed", "zh": "親吻"}]},
+    {"id": 11, "en": "She woke up and smiled.", "zh": "她醒來並微笑。", "words": [{"en": "woke up", "zh": "醒來"}, {"en": "smiled", "zh": "微笑"}]},
+    {"id": 12, "en": "They got married and lived happily.", "zh": "他們結婚並幸福地生活。", "words": [{"en": "got married", "zh": "結婚"}]}
+  ]
+}

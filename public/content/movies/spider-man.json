@@ -1,0 +1,20 @@
+{
+  "id": "spider-man",
+  "title": "蜘蛛人",
+  "titleEn": "Spider-Man",
+  "level": "A2-B1",
+  "description": "漫威超級英雄電影，蜘蛛人的故事",
+  "image": "🕷️",
+  "sentences": [
+    {"id": 1, "en": "Peter Parker was a student.", "zh": "彼得帕克是個學生。", "words": [{"en": "student", "zh": "學生"}]},
+    {"id": 2, "en": "A spider bit him.", "zh": "一隻蜘蛛咬了他。", "words": [{"en": "spider", "zh": "蜘蛛"}, {"en": "bit", "zh": "咬"}]},
+    {"id": 3, "en": "He got superpowers.", "zh": "他得到了超能力。", "words": [{"en": "superpowers", "zh": "超能力"}]},
+    {"id": 4, "en": "He could climb walls.", "zh": "他能爬牆。", "words": [{"en": "climb walls", "zh": "爬牆"}]},
+    {"id": 5, "en": "He could shoot webs.", "zh": "他能射出蜘蛛絲。", "words": [{"en": "shoot webs", "zh": "射蜘蛛絲"}]},
+    {"id": 6, "en": "His uncle died because of him.", "zh": "他的叔叔因為他而死。", "words": [{"en": "uncle", "zh": "叔叔"}, {"en": "died", "zh": "死亡"}]},
+    {"id": 7, "en": "He became Spider-Man.", "zh": "他成為了蜘蛛人。", "words": [{"en": "became", "zh": "成為"}]},
+    {"id": 8, "en": "He fights criminals.", "zh": "他打擊罪犯。", "words": [{"en": "fights", "zh": "打擊"}, {"en": "criminals", "zh": "罪犯"}]},
+    {"id": 9, "en": "He loves Mary Jane.", "zh": "他愛瑪麗珍。", "words": [{"en": "loves", "zh": "愛"}]},
+    {"id": 10, "en": "With great power comes great responsibility.", "zh": "能力越大，責任越大。", "words": [{"en": "responsibility", "zh": "責任"}]}
+  ]
+}

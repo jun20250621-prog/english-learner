@@ -1,0 +1,20 @@
+{
+  "id": "jurassic-park",
+  "title": "侏羅紀公園",
+  "titleEn": "Jurassic Park",
+  "level": "A2-B1",
+  "description": "經典科幻電影，恐龍主題樂園",
+  "image": "🦖",
+  "sentences": [
+    {"id": 1, "en": "Scientists cloned dinosaurs.", "zh": "科學家複製了恐龍。", "words": [{"en": "cloned", "zh": "複製"}, {"en": "dinosaurs", "zh": "恐龍"}]},
+    {"id": 2, "en": "A theme park was built on an island.", "zh": "主題樂園建在島上。", "words": [{"en": "theme park", "zh": "主題樂園"}, {"en": "island", "zh": "島"}]},
+    {"id": 3, "en": "Visitors came to see the dinosaurs.", "zh": "遊客來看恐龍。", "words": [{"en": "visitors", "zh": "遊客"}]},
+    {"id": 4, "en": "The park had many different dinosaurs.", "zh": "公園有很多不同種類的恐龍。", "words": [{"en": "different", "zh": "不同的"}]},
+    {"id": 5, "en": "T-Rex was the most dangerous.", "zh": "暴龍是最危險的。", "words": [{"en": "dangerous", "zh": "危險的"}]},
+    {"id": 6, "en": "The security system failed.", "zh": "安全系統失靈了。", "words": [{"en": "security", "zh": "安全"}, {"en": "failed", "zh": "失敗"}]},
+    {"id": 7, "en": "The dinosaurs escaped.", "zh": "恐龍逃走了。", "words": [{"en": "escaped", "zh": "逃走"}]},
+    {"id": 8, "en": "People ran for their lives.", "zh": "人們為了生命奔跑。", "words": [{"en": "ran", "zh": "跑"}, {"en": "lives", "zh": "生命"}]},
+    {"id": 9, "en": "They learned to respect nature.", "zh": "他們學會了尊重自然。", "words": [{"en": "respect", "zh": "尊重"}, {"en": "nature", "zh": "自然"}]},
+    {"id": 10, "en": "Nature cannot be controlled.", "zh": "自然無法被控制。", "words": [{"en": "controlled", "zh": "控制"}]}
+  ]
+}

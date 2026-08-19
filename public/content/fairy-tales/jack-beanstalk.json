@@ -1,0 +1,22 @@
+{
+  "id": "jack-beanstalk",
+  "title": "傑克與魔豆",
+  "titleEn": "Jack and the Beanstalk",
+  "level": "A1-A2",
+  "description": "經典童話，傑克與神奇豆子的故事",
+  "image": "🫘",
+  "sentences": [
+    {"id": 1, "en": "Jack and his mother were very poor.", "zh": "傑克和他媽媽非常貧窮。", "words": [{"en": "poor", "zh": "貧窮的"}]},
+    {"id": 2, "en": "They sold their cow for magic beans.", "zh": "他們把牛換成了魔豆。", "words": [{"en": "sold", "zh": "賣"}, {"en": "magic beans", "zh": "魔豆"}]},
+    {"id": 3, "en": "The beans grew into a huge beanstalk.", "zh": "豆子長成了巨大的豆蔓。", "words": [{"en": "grew", "zh": "生長"}, {"en": "huge", "zh": "巨大的"}, {"en": "beanstalk", "zh": "豆蔓"}]},
+    {"id": 4, "en": "Jack climbed up the beanstalk.", "zh": "傑克爬上了豆蔓。", "words": [{"en": "climbed", "zh": "爬"}]},
+    {"id": 5, "en": "He found a giant's castle.", "zh": "他發現了一座巨人的城堡。", "words": [{"en": "giant", "zh": "巨人"}, {"en": "castle", "zh": "城堡"}]},
+    {"id": 6, "en": "The giant had a lot of gold.", "zh": "巨人有很多黃金。", "words": [{"en": "gold", "zh": "黃金"}]},
+    {"id": 7, "en": "Jack stole some gold.", "zh": "傑克偷了一些黃金。", "words": [{"en": "stole", "zh": "偷"}]},
+    {"id": 8, "en": "The giant chased him down.", "zh": "巨人追了下來。", "words": [{"en": "chased", "zh": "追趕"}]},
+    {"id": 9, "en": "Jack cut down the beanstalk.", "zh": "傑克砍斷了豆蔓。", "words": [{"en": "cut down", "zh": "砍斷"}]},
+    {"id": 10, "en": "The giant fell and died.", "zh": "巨人摔了下來死了。", "words": [{"en": "fell", "zh": "摔下"}, {"en": "died", "zh": "死了"}]},
+    {"id": 11, "en": "Jack and his mother were rich.", "zh": "傑克和他媽媽變有錢了。", "words": [{"en": "rich", "zh": "有錢的"}]},
+    {"id": 12, "en": "They lived happily ever after.", "zh": "他們從此幸福地生活。", "words": [{"en": "happily", "zh": "幸福地"}]}
+  ]
+}

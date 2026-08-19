@@ -1,0 +1,20 @@
+{
+  "id": "avengers",
+  "title": "復仇者聯盟",
+  "titleEn": "The Avengers",
+  "level": "A2-B1",
+  "description": "漫威超級英雄電影，超級英雄集結",
+  "image": "🦸",
+  "sentences": [
+    {"id": 1, "en": "The Avengers are a team of superheroes.", "zh": "復仇者聯盟是一個超級英雄團隊。", "words": [{"en": "superheroes", "zh": "超級英雄"}]},
+    {"id": 2, "en": "Iron Man is the leader.", "zh": "鋼鐵人是隊長。", "words": [{"en": "leader", "zh": "領袖"}]},
+    {"id": 3, "en": "Thor is the god of thunder.", "zh": "索爾是雷神。", "words": [{"en": "god of thunder", "zh": "雷神"}]},
+    {"id": 4, "en": "Hulk is very strong.", "zh": "浩克非常強壯。", "words": [{"en": "strong", "zh": "強壯的"}]},
+    {"id": 5, "en": "Black Widow is a spy.", "zh": "黑寡婦是間諜。", "words": [{"en": "spy", "zh": "間諜"}]},
+    {"id": 6, "en": "Hawkeye is a master archer.", "zh": "鷹眼是神箭手。", "words": [{"en": "archer", "zh": "弓箭手"}]},
+    {"id": 7, "en": "Loki is Thor's brother.", "zh": "洛基是索爾的弟弟。", "words": [{"en": "brother", "zh": "兄弟"}]},
+    {"id": 8, "en": "Loki wants to rule the world.", "zh": "洛基想要統治世界。", "words": [{"en": "rule the world", "zh": "統治世界"}]},
+    {"id": 9, "en": "The Avengers stopped Loki.", "zh": "復仇者聯盟阻止了洛基。", "words": [{"en": "stopped", "zh": "阻止"}]},
+    {"id": 10, "en": "They saved New York City.", "zh": "他們拯救了紐約市。", "words": [{"en": "saved", "zh": "拯救"}, {"en": "city", "zh": "城市"}]}
+  ]
+}

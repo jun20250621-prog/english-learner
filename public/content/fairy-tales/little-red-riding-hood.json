@@ -1,0 +1,22 @@
+{
+  "id": "little-red-riding-hood",
+  "title": "小紅帽",
+  "titleEn": "Little Red Riding Hood",
+  "level": "A1",
+  "description": "經典童話，小紅帽與大野狼的故事",
+  "image": "🧣",
+  "sentences": [
+    {"id": 1, "en": "A little girl wore a red hood.", "zh": "小女孩戴著紅色的帽子。", "words": [{"en": "hood", "zh": "帽子"}, {"en": "wore", "zh": "戴著"}]},
+    {"id": 2, "en": "Her grandmother lived in the forest.", "zh": "她奶奶住在森林裡。", "words": [{"en": "grandmother", "zh": "奶奶"}, {"en": "forest", "zh": "森林"}]},
+    {"id": 3, "en": "Her mother asked her to bring food.", "zh": "她媽媽叫她帶食物去。", "words": [{"en": "bring", "zh": "帶"}, {"en": "food", "zh": "食物"}]},
+    {"id": 4, "en": "A wolf met her on the way.", "zh": "一隻狼在路上遇到她。", "words": [{"en": "wolf", "zh": "狼"}, {"en": "on the way", "zh": "在路上"}]},
+    {"id": 5, "en": "The wolf asked where her grandmother lived.", "zh": "狼問她奶奶住在哪里。", "words": [{"en": "asked", "zh": "問"}, {"en": "lived", "zh": "住"}]},
+    {"id": 6, "en": "The wolf went to the grandmother's house.", "zh": "狼去了奶奶家。", "words": [{"en": "went", "zh": "去"}]},
+    {"id": 7, "en": "The wolf ate the grandmother.", "zh": "狼吃了奶奶。", "words": [{"en": "ate", "zh": "吃"}]},
+    {"id": 8, "en": "The wolf dressed as the grandmother.", "zh": "狼假扮成奶奶。", "words": [{"en": "dressed as", "zh": "假扮成"}]},
+    {"id": 9, "en": "Little Red Riding Hood came in.", "zh": "小紅帽走了進來。", "words": [{"en": "came in", "zh": "走進來"}]},
+    {"id": 10, "en": "The wolf jumped at her.", "zh": "狼向她跳過來。", "words": [{"en": "jumped", "zh": "跳"}]},
+    {"id": 11, "en": "A hunter saved them.", "zh": "獵人救了她們。", "words": [{"en": "hunter", "zh": "獵人"}, {"en": "saved", "zh": "救了"}]},
+    {"id": 12, "en": "They lived happily ever after.", "zh": "他們從此幸福地生活。", "words": [{"en": "happily", "zh": "幸福地"}]}
+  ]
+}

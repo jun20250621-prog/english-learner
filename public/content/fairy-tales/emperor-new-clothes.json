@@ -1,0 +1,22 @@
+{
+  "id": "emperor-new-clothes",
+  "title": "國王的新衣",
+  "titleEn": "The Emperor's New Clothes",
+  "level": "A1-A2",
+  "description": "經典童話，國王的新衣故事",
+  "image": "👑",
+  "sentences": [
+    {"id": 1, "en": "The emperor loved new clothes.", "zh": "國王喜歡新衣服。", "words": [{"en": "emperor", "zh": "國王"}, {"en": "loved", "zh": "喜歡"}]},
+    {"id": 2, "en": "Two swindlers came to the city.", "zh": "兩個騙子來到了城市。", "words": [{"en": "swindlers", "zh": "騙子"}, {"en": "city", "zh": "城市"}]},
+    {"id": 3, "en": "They could make beautiful clothes.", "zh": "他們可以做美麗的衣服。", "words": [{"en": "beautiful", "zh": "美麗的"}, {"en": "clothes", "zh": "衣服"}]},
+    {"id": 4, "en": "The clothes were invisible to stupid people.", "zh": "那些衣服對愚笨的人是看不見的。", "words": [{"en": "invisible", "zh": "看不見的"}, {"en": "stupid", "zh": "愚笨的"}]},
+    {"id": 5, "en": "The emperor gave them gold and silk.", "zh": "國王給了他們金子和絲綢。", "words": [{"en": "gold", "zh": "金子"}, {"en": "silk", "zh": "絲綢"}]},
+    {"id": 6, "en": "The swindlers pretended to work.", "zh": "騙子們假裝在工作。", "words": [{"en": "pretended", "zh": "假裝"}, {"en": "work", "zh": "工作"}]},
+    {"id": 7, "en": "The emperor wore the invisible clothes.", "zh": "國王穿著那件看不見的衣服。", "words": [{"en": "wore", "zh": "穿著"}, {"en": "invisible", "zh": "看不見的"}]},
+    {"id": 8, "en": "Everyone said the clothes were beautiful.", "zh": "每個人都說衣服很美。", "words": [{"en": "everyone", "zh": "每個人"}, {"en": "beautiful", "zh": "美麗的"}]},
+    {"id": 9, "en": "A child shouted the truth.", "zh": "一個孩子大聲說出真相。", "words": [{"en": "child", "zh": "孩子"}, {"en": "truth", "zh": "真相"}]},
+    {"id": 10, "en": "The emperor had no clothes!", "zh": "國王沒有穿衣服！", "words": [{"en": "no clothes", "zh": "沒有衣服"}]},
+    {"id": 11, "en": "He walked through the parade anyway.", "zh": "他還是走過了遊行隊伍。", "words": [{"en": "parade", "zh": "遊行"}, {"en": "anyway", "zh": "仍然"}]},
+    {"id": 12, "en": "He learned to be honest.", "zh": "他學會了誠實。", "words": [{"en": "honest", "zh": "誠實的"}]}
+  ]
+}

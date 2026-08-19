@@ -1,0 +1,21 @@
+{
+  "id": "voa-business",
+  "title": "商業新聞",
+  "titleEn": "Business News",
+  "source": "VOA Learning English",
+  "level": "A2-B1",
+  "description": "簡單的商業新聞報導",
+  "image": "💼",
+  "sentences": [
+    {"id": 1, "en": "The company hired new employees.", "zh": "這家公司雇用了新員工。", "words": [{"en": "company", "zh": "公司"}, {"en": "hired", "zh": "雇用"}]},
+    {"id": 2, "en": "Stock markets went up today.", "zh": "今天股市上漲了。", "words": [{"en": "stock markets", "zh": "股市"}, {"en": "went up", "zh": "上漲"}]},
+    {"id": 3, "en": "The boss gave a presentation.", "zh": "老闆做了簡報。", "words": [{"en": "boss", "zh": "老闆"}, {"en": "presentation", "zh": "簡報"}]},
+    {"id": 4, "en": "We need to meet the deadline.", "zh": "我們需要在截止日前完成。", "words": [{"en": "deadline", "zh": "截止日"}]},
+    {"id": 5, "en": "The project was successful.", "zh": "這個專案成功了。", "words": [{"en": "project", "zh": "專案"}, {"en": "successful", "zh": "成功的"}]},
+    {"id": 6, "en": "The team worked together.", "zh": "團隊一起工作。", "words": [{"en": "team", "zh": "團隊"}, {"en": "worked together", "zh": "一起工作"}]},
+    {"id": 7, "en": "Sales increased this quarter.", "zh": "這季銷售增加了。", "words": [{"en": "sales", "zh": "銷售"}, {"en": "increased", "zh": "增加"}]},
+    {"id": 8, "en": "The budget is very tight.", "zh": "預算非常緊張。", "words": [{"en": "budget", "zh": "預算"}, {"en": "tight", "zh": "緊張"}]},
+    {"id": 9, "en": "We signed a new contract.", "zh": "我們簽了新合約。", "words": [{"en": "contract", "zh": "合約"}, {"en": "signed", "zh": "簽署"}]},
+    {"id": 10, "en": "The meeting ended on time.", "zh": "會議準時結束。", "words": [{"en": "ended", "zh": "結束"}, {"en": "on time", "zh": "準時"}]}
+  ]
+}

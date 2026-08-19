@@ -1,0 +1,21 @@
+{
+  "id": "voa-entertainment",
+  "title": "娛樂新聞",
+  "titleEn": "Entertainment News",
+  "source": "VOA Learning English",
+  "level": "A2",
+  "description": "簡單的娛樂新聞報導",
+  "image": "🎬",
+  "sentences": [
+    {"id": 1, "en": "A new movie was released last week.", "zh": "上週上映了一部新電影。", "words": [{"en": "released", "zh": "上映"}, {"en": "last week", "zh": "上週"}]},
+    {"id": 2, "en": "The singer performed at the concert.", "zh": "歌手在演唱會上表演。", "words": [{"en": "singer", "zh": "歌手"}, {"en": "concert", "zh": "演唱會"}]},
+    {"id": 3, "en": "The actor won an award.", "zh": "演員獲獎了。", "words": [{"en": "actor", "zh": "演員"}, {"en": "award", "zh": "獎"}]},
+    {"id": 4, "en": "The TV show is very popular.", "zh": "這個電視節目很受歡迎。", "words": [{"en": "TV show", "zh": "電視節目"}, {"en": "popular", "zh": "受歡迎"}]},
+    {"id": 5, "en": "The album sold millions of copies.", "zh": "專輯賣出了數百萬張。", "words": [{"en": "album", "zh": "專輯"}, {"en": "millions", "zh": "數百萬"}]},
+    {"id": 6, "en": "The game is fun to play.", "zh": "這個遊戲很好玩。", "words": [{"en": "game", "zh": "遊戲"}, {"en": "fun", "zh": "有趣"}]},
+    {"id": 7, "en": "The book became a bestseller.", "zh": "這本書成了暢銷書。", "words": [{"en": "bestseller", "zh": "暢銷書"}]},
+    {"id": 8, "en": "The artist painted a beautiful picture.", "zh": "藝術家畫了一幅美麗的畫。", "words": [{"en": "artist", "zh": "藝術家"}, {"en": "picture", "zh": "畫"}]},
+    {"id": 9, "en": "The play was very emotional.", "zh": "這齣戲非常感人。", "words": [{"en": "play", "zh": "戲劇"}, {"en": "emotional", "zh": "感人的"}]},
+    {"id": 10, "en": "Everyone enjoyed the show.", "zh": "每個人都享受這場表演。", "words": [{"en": "enjoyed", "zh": "享受"}, {"en": "show", "zh": "表演"}]}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "hansel-gretel",
+  "title": "糖果屋",
+  "titleEn": "Hansel and Gretel",
+  "level": "A1-A2",
+  "description": "經典童話，糖果屋的故事",
+  "image": "🏠",
+  "sentences": [
+    {"id": 1, "en": "A poor family lived in the forest.", "zh": "一個貧困的家庭住在森林裡。", "words": [{"en": "poor", "zh": "貧困的"}, {"en": "family", "zh": "家庭"}]},
+    {"id": 2, "en": "The father left the children in the woods.", "zh": "父親把孩子留在森林裡。", "words": [{"en": "left", "zh": "留下"}, {"en": "woods", "zh": "樹林"}]},
+    {"id": 3, "en": "Hansel left breadcrumbs to find the way.", "zh": "漢塞爾留下麵包屑來找路。", "words": [{"en": "breadcrumbs", "zh": "麵包屑"}, {"en": "find the way", "zh": "找路"}]},
+    {"id": 4, "en": "They found a house made of candy.", "zh": "他們發現了一間用糖果做的房子。", "words": [{"en": "candy", "zh": "糖果"}, {"en": "made of", "zh": "由...做成"}]},
+    {"id": 5, "en": "A witch lived in the candy house.", "zh": "一個女巫住在糖果屋裡。", "words": [{"en": "witch", "zh": "女巫"}]},
+    {"id": 6, "en": "The witch wanted to eat the children.", "zh": "女巫想吃孩子們。", "words": [{"en": "wanted to", "zh": "想要"}]},
+    {"id": 7, "en": "Gretel pushed the witch into the oven.", "zh": "葛麗泰把女巫推進了烤爐。", "words": [{"en": "pushed", "zh": "推"}, {"en": "oven", "zh": "烤爐"}]},
+    {"id": 8, "en": "The children escaped.", "zh": "孩子們逃走了。", "words": [{"en": "escaped", "zh": "逃走"}]},
+    {"id": 9, "en": "They found their way home.", "zh": "他們找到了回家的路。", "words": [{"en": "way home", "zh": "回家的路"}]},
+    {"id": 10, "en": "Their father was happy to see them.", "zh": "他們的父親很高見到他們。", "words": [{"en": "happy", "zh": "高興的"}]},
+    {"id": 11, "en": "They lived together happily.", "zh": "他們幸福地生活在一起。", "words": [{"en": "together", "zh": "一起"}]}
+  ]
+}

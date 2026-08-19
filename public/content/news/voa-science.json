@@ -1,0 +1,21 @@
+{
+  "id": "voa-science",
+  "title": "科學新聞",
+  "titleEn": "Science News",
+  "source": "VOA Learning English",
+  "level": "A2-B1",
+  "description": "簡單的科學新聞報導",
+  "image": "🔬",
+  "sentences": [
+    {"id": 1, "en": "Scientists discovered a new species.", "zh": "科學家發現了新物種。", "words": [{"en": "scientists", "zh": "科學家"}, {"en": "discovered", "zh": "發現"}]},
+    {"id": 2, "en": "The space mission was successful.", "zh": "太空任務成功了。", "words": [{"en": "space mission", "zh": "太空任務"}, {"en": "successful", "zh": "成功的"}]},
+    {"id": 3, "en": "The moon landing happened years ago.", "zh": "登陸月球是多年前發生的。", "words": [{"en": "moon landing", "zh": "登陸月球"}, {"en": "years ago", "zh": "多年前"}]},
+    {"id": 4, "en": "Climate change is a serious problem.", "zh": "氣候變遷是嚴重的問題。", "words": [{"en": "climate change", "zh": "氣候變遷"}, {"en": "serious", "zh": "嚴重的"}]},
+    {"id": 5, "en": "New energy sources are being developed.", "zh": "正在開發新的能源。", "words": [{"en": "energy sources", "zh": "能源"}, {"en": "developed", "zh": "開發"}]},
+    {"id": 6, "en": "The experiment gave important results.", "zh": "實驗給出了重要的結果。", "words": [{"en": "experiment", "zh": "實驗"}, {"en": "results", "zh": "結果"}]},
+    {"id": 7, "en": "Research takes a lot of time.", "zh": "研究需要很多時間。", "words": [{"en": "research", "zh": "研究"}, {"en": "takes time", "zh": "需要時間"}]},
+    {"id": 8, "en": "The telescope sees far into space.", "zh": "望遠鏡可以看到很遠的太空。", "words": [{"en": "telescope", "zh": "望遠鏡"}, {"en": "space", "zh": "太空"}]},
+    {"id": 9, "en": "DNA tests can find answers.", "zh": "DNA 測試可以找到答案。", "words": [{"en": "DNA tests", "zh": "DNA 測試"}, {"en": "answers", "zh": "答案"}]},
+    {"id": 10, "en": "Science helps us understand the world.", "zh": "科學幫助我們了解世界。", "words": [{"en": "understand", "zh": "了解"}, {"en": "world", "zh": "世界"}]}
+  ]
+}

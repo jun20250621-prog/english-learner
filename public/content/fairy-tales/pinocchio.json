@@ -1,0 +1,22 @@
+{
+  "id": "pinocchio",
+  "title": "木偶奇遇記",
+  "titleEn": "Pinocchio",
+  "level": "A1-A2",
+  "description": "經典童話，木偶變成真人的故事",
+  "image": "🪵",
+  "sentences": [
+    {"id": 1, "en": "A woodcarver made a wooden puppet.", "zh": "木雕師傅做了一個木偶。", "words": [{"en": "woodcarver", "zh": "木雕師傅"}, {"en": "wooden puppet", "zh": "木偶"}]},
+    {"id": 2, "en": "He named the puppet Pinocchio.", "zh": "他給木偶取名為皮諾丘。", "words": [{"en": "named", "zh": "命名"}, {"en": "puppet", "zh": "木偶"}]},
+    {"id": 3, "en": "The puppet could move and talk.", "zh": "木偶可以移動和說話。", "words": [{"en": "move", "zh": "移動"}, {"en": "talk", "zh": "說話"}]},
+    {"id": 4, "en": "Pinocchio wanted to be a real boy.", "zh": "皮諾丘想要成為一個真正的男孩。", "words": [{"en": "real boy", "zh": "真正的男孩"}]},
+    {"id": 5, "en": "He went to school to learn.", "zh": "他去上學學習。", "words": [{"en": "school", "zh": "學校"}, {"en": "learn", "zh": "學習"}]},
+    {"id": 6, "en": "He met some bad friends.", "zh": "他遇到了一些壞朋友。", "words": [{"en": "bad friends", "zh": "壞朋友"}]},
+    {"id": 7, "en": "His nose grew longer when he lied.", "zh": "他說謊時鼻子會變長。", "words": [{"en": "nose", "zh": "鼻子"}, {"en": "grew", "zh": "變長"}, {"en": "lied", "zh": "說謊"}]},
+    {"id": 8, "en": "A whale swallowed Pinocchio.", "zh": "一條鯨魚吞了皮諾丘。", "words": [{"en": "whale", "zh": "鯨魚"}, {"en": "swallowed", "zh": "吞"}]},
+    {"id": 9, "en": "His father was inside the whale.", "zh": "他爸爸在鯨魚裡面。", "words": [{"en": "father", "zh": "爸爸"}]},
+    {"id": 10, "en": "They escaped from the whale.", "zh": "他們從鯨魚裡逃了出來。", "words": [{"en": "escaped", "zh": "逃脫"}]},
+    {"id": 11, "en": "Pinocchio became a real boy.", "zh": "皮諾丘變成了一個真正的男孩。", "words": [{"en": "became", "zh": "變成"}]},
+    {"id": 12, "en": "He was finally a good boy.", "zh": "他終於是一個好男孩了。", "words": [{"en": "finally", "zh": "終於"}]}
+  ]
+}
