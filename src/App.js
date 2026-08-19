@@ -101,18 +101,27 @@ function App() {
   const renderClickableWords = (text) => text.split(/(\s+)/).filter(Boolean).map((word, idx) => (word.trim() === '' || /^[^\w\s]+$/.test(word.trim())) ? <span key={idx}>{word}</span> : <WordTooltip key={idx} word={word.trim()} onSpeak={speakWord} darkMode={darkMode} />);
 
   const loadContent = async (type, id) => {
+    console.log('Loading content:', type, id);
     try {
       let url = `/content/${type}/${id}.json`;
       // 考試題庫和口語練習直接用 id 作為檔名
       if (type === 'exams' || type === 'oral') {
         url = `/content/${id}.json`;
       }
+      console.log('Fetching URL:', url);
       const res = await fetch(url);
+      if (!res.ok) {
+        console.error('載入失敗:', res.status);
+        return;
+      }
       const data = await res.json();
+      console.log('Content loaded:', data.title);
       setSelectedContent(data);
       setContentType(type);
       setCurrentPage('player');
-    } catch (err) { console.error('載入內容失敗', err); }
+    } catch (err) { 
+      console.error('載入內容失敗', err); 
+    }
   };
 
   const theme = darkMode ? { bg: '#121212', cardBg: '#1e1e1e', text: '#e0e0e0', textSecondary: '#aaa', accent: '#4CAF50', accentBg: '#1b5e20', button: '#2196F3', border: '#333' } : { bg: '#f5f5f5', cardBg: 'white', text: '#333', textSecondary: '#666', accent: '#4CAF50', accentBg: '#e8f5e9', button: '#2196F3', border: '#ddd' };
