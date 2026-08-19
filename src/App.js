@@ -8,6 +8,8 @@ import { AIChatbot } from './components/AIChatbot';
 import { PronunciationPractice } from './components/PronunciationPractice';
 import { GrammarAnalyzer } from './components/GrammarAnalyzer';
 import { FillInBlank, Dictation, Flashcard } from './components/LearningTools';
+import { EnhancedPronunciation } from './components/EnhancedPronunciation';
+import { Community } from './components/Community';
 
 const getStoredData = (key, defaultValue) => { try { const stored = localStorage.getItem(key); return stored ? JSON.parse(stored) : defaultValue; } catch { return defaultValue; } };
 const saveData = (key, value) => localStorage.setItem(key, JSON.stringify(value));
@@ -52,6 +54,8 @@ function App() {
   const [showFillInBlank, setShowFillInBlank] = useState(false);
   const [showDictation, setShowDictation] = useState(false);
   const [showFlashcard, setShowFlashcard] = useState(false);
+  const [showEnhancedPronunciation, setShowEnhancedPronunciation] = useState(false);
+  const [showCommunity, setShowCommunity] = useState(false);
   
   const categories = ['all', 'greeting', 'daily', 'work', 'tech', 'business'];
 
@@ -189,6 +193,7 @@ function App() {
         <div style={styles.headerButtons}>
           <button style={styles.iconBtn} onClick={() => setDarkMode(!darkMode)}>{darkMode ? '☀️' : '🌙'}</button>
           <button style={styles.iconBtn} onClick={() => setShowDashboard(true)}>📊</button>
+          <button style={styles.iconBtn} onClick={() => setShowCommunity(true)}>👤</button>
         </div>
       </header>
 
@@ -268,7 +273,7 @@ function App() {
       {/* 學習工具 */}
       <div style={styles.contentSection}>
         <div style={styles.contentTitle}>📝 學習工具</div>
-        <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(3, 1fr)'}}>
+        <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(4, 1fr)'}}>
           <div onClick={() => current && setShowFillInBlank(true)} style={styles.contentCard}>
             <div style={styles.contentEmoji}>📝</div>
             <div style={styles.contentCardTitle}>克漏字</div>
@@ -280,6 +285,10 @@ function App() {
           <div onClick={() => selectedContent && setShowFlashcard(true)} style={styles.contentCard}>
             <div style={styles.contentEmoji}>📇</div>
             <div style={styles.contentCardTitle}>單字卡</div>
+          </div>
+          <div onClick={() => current && setShowEnhancedPronunciation(true)} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>🎤</div>
+            <div style={styles.contentCardTitle}>發音加強</div>
           </div>
         </div>
       </div>
@@ -346,6 +355,8 @@ function App() {
       {showFillInBlank && current && <FillInBlank sentence={current} darkMode={darkMode} onClose={() => setShowFillInBlank(false)} />}
       {showDictation && current && <Dictation sentence={current} darkMode={darkMode} onClose={() => setShowDictation(false)} />}
       {showFlashcard && selectedContent && <Flashcard content={selectedContent} darkMode={darkMode} onClose={() => setShowFlashcard(false)} />}
+      {showEnhancedPronunciation && current && <EnhancedPronunciation sentence={current} darkMode={darkMode} onClose={() => setShowEnhancedPronunciation(false)} />}
+      {showCommunity && <Community darkMode={darkMode} onClose={() => setShowCommunity(false)} />}
     </div>
   );
 }
