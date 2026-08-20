@@ -314,27 +314,20 @@ function App() {
       {/* YouTube 影片學習 */}
       <div style={styles.contentSection}>
         <div style={styles.contentTitle}>🎬 YouTube 影片學習</div>
-        <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(2, 1fr)'}}>
-          <a 
-            href="https://www.youtube.com/watch?v=Xi15AW3u2RI" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            style={{...styles.contentCard, textDecoration: 'none', display: 'block'}}
-          >
-            <div style={styles.contentEmoji}>📺</div>
-            <div style={styles.contentCardTitle}>基礎會話</div>
-            <span style={styles.contentLevel}>A1-A2</span>
-          </a>
-          <a 
-            href="https://www.youtube.com/watch?v=S1gG8G4xLhE" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            style={{...styles.contentCard, textDecoration: 'none', display: 'block'}}
-          >
-            <div style={styles.contentEmoji}>💼</div>
-            <div style={styles.contentCardTitle}>商業英文</div>
-            <span style={styles.contentLevel}>B1-B2</span>
-          </a>
+        <a 
+          href="https://www.youtube.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{...styles.contentCard, textDecoration: 'none', display: 'block', textAlign: 'center'}}
+        >
+          <div style={styles.contentEmoji}>🔗</div>
+          <div style={styles.contentCardTitle}>自行輸入影片連結</div>
+          <span style={styles.contentLevel}>點擊前往 YouTube 搜尋</span>
+        </a>
+        <div style={{...styles.contentCard, marginTop: '10px', backgroundColor: darkMode ? '#333' : '#f0f0f0'}}>
+          <div style={{fontSize: '13px', color: theme.textSecondary}}>
+            💡 未來會支援輸入自己的 YouTube 連結
+          </div>
         </div>
       </div>
 
