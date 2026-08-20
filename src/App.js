@@ -315,12 +315,12 @@ function App() {
       <div style={styles.contentSection}>
         <div style={styles.contentTitle}>🎬 YouTube 影片學習</div>
         <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(2, 1fr)'}}>
-          <div onClick={() => setShowYouTube({ videoId: 'hI7Oy0gGbcI', title: '基礎英文會話' })} style={styles.contentCard}>
+          <div onClick={() => setShowYouTube({ videoId: 'OcWsNHQbWiQ', title: '基礎英文會話' })} style={styles.contentCard}>
             <div style={styles.contentEmoji}>📺</div>
             <div style={styles.contentCardTitle}>基礎會話</div>
             <span style={styles.contentLevel}>A1-A2</span>
           </div>
-          <div onClick={() => setShowYouTube({ videoId: 'ftcJ8fht5lQ', title: '商業英文' })} style={styles.contentCard}>
+          <div onClick={() => setShowYouTube({ videoId: 'gB5L9nGdUQE', title: '商業英文' })} style={styles.contentCard}>
             <div style={styles.contentEmoji}>💼</div>
             <div style={styles.contentCardTitle}>商業英文</div>
             <span style={styles.contentLevel}>B1-B2</span>

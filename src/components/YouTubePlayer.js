@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export function YouTubePlayer({ videoId, title, onBack, darkMode }) {
   const [showSubtitles, setShowSubtitles] = useState(true);
@@ -37,16 +37,17 @@ export function YouTubePlayer({ videoId, title, onBack, darkMode }) {
     header: { display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px' },
     backBtn: { background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: theme.text },
     title: { fontSize: '18px', fontWeight: 'bold' },
-    videoWrapper: { position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', marginBottom: '20px' },
-    video: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' },
-    controls: { display: 'flex', gap: '10px', marginBottom: '20px', flexWrap: 'wrap' },
+    videoCard: { backgroundColor: theme.cardBg, borderRadius: '16px', padding: '30px', marginBottom: '20px', textAlign: 'center' },
+    videoEmoji: { fontSize: '80px', marginBottom: '20px' },
+    videoTitle: { fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' },
+    videoDesc: { fontSize: '14px', color: theme.text + '80', marginBottom: '20px' },
+    playBtn: { display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '15px 30px', borderRadius: '30px', border: 'none', backgroundColor: '#FF0000', color: 'white', cursor: 'pointer', fontSize: '16px', fontWeight: 'bold' },
+    controls: { display: 'flex', gap: '10px', marginBottom: '20px', flexWrap: 'wrap', justifyContent: 'center' },
     controlBtn: { padding: '10px 16px', borderRadius: '8px', border: '1px solid ' + theme.border, backgroundColor: theme.cardBg, color: theme.text, cursor: 'pointer', fontSize: '14px' },
     activeBtn: { backgroundColor: theme.accent, color: 'white', borderColor: theme.accent },
     subtitleBox: { backgroundColor: theme.cardBg, borderRadius: '12px', padding: '20px', marginBottom: '20px' },
-    subtitleEn: { fontSize: '20px', marginBottom: '10px', lineHeight: '1.6' },
-    subtitleZh: { fontSize: '16px', color: theme.text + '99' },
     subtitleList: { maxHeight: '300px', overflowY: 'auto' },
-    subtitleItem: { padding: '12px', borderRadius: '8px', marginBottom: '8px', cursor: 'pointer' },
+    subtitleItem: { padding: '12px', borderRadius: '8px', marginBottom: '8px', cursor: 'pointer', borderBottom: '1px solid ' + theme.border },
     hint: { fontSize: '12px', color: theme.text + '80', marginTop: '10px', textAlign: 'center' }
   };
 
@@ -57,15 +58,13 @@ export function YouTubePlayer({ videoId, title, onBack, darkMode }) {
         <div style={styles.title}>{title || 'YouTube 影片學習'}</div>
       </div>
 
-      <div style={styles.videoWrapper}>
-        <iframe 
-          src={`https://www.youtube.com/embed/${videoId}?rel=0`}
-          style={styles.video}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="YouTube video"
-        ></iframe>
+      <div style={styles.videoCard}>
+        <div style={styles.videoEmoji}>📺</div>
+        <div style={styles.videoTitle}>{title || '英文學習影片'}</div>
+        <div style={styles.videoDesc}>點擊下方按鈕前往 YouTube 觀看影片</div>
+        <button style={styles.playBtn} onClick={openInYouTube}>
+          ▶️ 在 YouTube 播放
+        </button>
       </div>
 
       <div style={styles.controls}>
@@ -75,19 +74,13 @@ export function YouTubePlayer({ videoId, title, onBack, darkMode }) {
         >
           📝 {showSubtitles ? '隱藏字幕' : '顯示字幕'}
         </button>
-        <button 
-          style={styles.controlBtn}
-          onClick={openInYouTube}
-        >
-          🔗 YouTube 開啟
-        </button>
       </div>
 
       {showSubtitles && (
         <div style={styles.subtitleBox}>
           <div style={{textAlign: 'center', marginBottom: '15px', padding: '10px', backgroundColor: theme.bg, borderRadius: '8px'}}>
             <div style={{fontSize: '14px', color: theme.text + '80'}}>
-              💡 對照字幕練習聽力
+              💡 對照字幕練習聽力（可在 YouTube 同步觀看）
             </div>
           </div>
 
@@ -111,7 +104,7 @@ export function YouTubePlayer({ videoId, title, onBack, darkMode }) {
       )}
 
       <div style={styles.hint}>
-        💡 點擊字幕可朗讀，在 YouTube 開啟可看更多功能
+        💡 點擊字幕可朗讀，在 YouTube 可看影片並練習
       </div>
     </div>
   );
