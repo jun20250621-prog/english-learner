@@ -34,9 +34,9 @@ export function YouTubeInput({ darkMode, onClose }) {
   };
 
   const quickLinks = [
-    { name: '英文採訪', id: 'rPIQmqgZlvY', desc: '進階' },
-    { name: '日常對話', id: 'JQXbtG1lO8k', desc: '中級' },
-    { name: '商業英文', id: 'S1gG8G4xLhE', desc: '中級' },
+    { name: 'Learn English Daily', url: 'https://www.youtube.com/@LearnEnglishDailyStories', desc: '頻道首頁' },
+    { name: 'ESL 課程', url: 'https://www.youtube.com/results?search_query=ESL+English+lesson', desc: '搜尋結果' },
+    { name: '商業英文', url: 'https://www.youtube.com/results?search_query=business+English+conversation', desc: '搜尋結果' },
   ];
 
   const styles = {
@@ -81,15 +81,15 @@ export function YouTubeInput({ darkMode, onClose }) {
       </div>
 
       <div style={styles.card}>
-        <div style={styles.quickTitle}>或選擇以下推薦影片</div>
+        <div style={styles.quickTitle}>或前往 YouTube 搜尋</div>
         <div style={styles.quickGrid}>
           {quickLinks.map((link, idx) => (
             <button 
               key={idx}
               style={styles.quickBtn}
-              onClick={() => window.open(`https://www.youtube.com/watch?v=${link.id}`, '_blank')}
+              onClick={() => window.open(link.url, '_blank')}
             >
-              <div>📺 {link.name}</div>
+              <div>▶️ {link.name}</div>
               <div style={{fontSize: '10px', opacity: 0.7}}>{link.desc}</div>
             </button>
           ))}
