@@ -34,9 +34,9 @@ export function YouTubeInput({ darkMode, onClose }) {
   };
 
   const quickLinks = [
-    { name: '基礎會話', id: 'Xi15AW3u2RI' },
-    { name: '商業英文', id: 'gB5L9nGdUQE' },
-    { name: '面試技巧', id: 'abc123' },
+    { name: '英文採訪', id: 'rPIQmqgZlvY', desc: '進階' },
+    { name: '日常對話', id: 'JQXbtG1lO8k', desc: '中級' },
+    { name: '商業英文', id: 'S1gG8G4xLhE', desc: '中級' },
   ];
 
   const styles = {
@@ -81,7 +81,7 @@ export function YouTubeInput({ darkMode, onClose }) {
       </div>
 
       <div style={styles.card}>
-        <div style={styles.quickTitle}>或選擇以下影片</div>
+        <div style={styles.quickTitle}>或選擇以下推薦影片</div>
         <div style={styles.quickGrid}>
           {quickLinks.map((link, idx) => (
             <button 
@@ -89,7 +89,8 @@ export function YouTubeInput({ darkMode, onClose }) {
               style={styles.quickBtn}
               onClick={() => window.open(`https://www.youtube.com/watch?v=${link.id}`, '_blank')}
             >
-              📺 {link.name}
+              <div>📺 {link.name}</div>
+              <div style={{fontSize: '10px', opacity: 0.7}}>{link.desc}</div>
             </button>
           ))}
         </div>
