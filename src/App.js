@@ -10,6 +10,9 @@ import { GrammarAnalyzer } from './components/GrammarAnalyzer';
 import { FillInBlank, Dictation, Flashcard } from './components/LearningTools';
 import { EnhancedPronunciation } from './components/EnhancedPronunciation';
 import { Community } from './components/Community';
+import { YouTubePlayer } from './components/YouTubePlayer';
+import { WrongAnswerBook } from './components/WrongAnswerBook';
+import { ExamSimulation } from './components/ExamSimulation';
 
 const getStoredData = (key, defaultValue) => { try { const stored = localStorage.getItem(key); return stored ? JSON.parse(stored) : defaultValue; } catch { return defaultValue; } };
 const saveData = (key, value) => localStorage.setItem(key, JSON.stringify(value));
@@ -56,6 +59,9 @@ function App() {
   const [showFlashcard, setShowFlashcard] = useState(false);
   const [showEnhancedPronunciation, setShowEnhancedPronunciation] = useState(false);
   const [showCommunity, setShowCommunity] = useState(false);
+  const [showYouTube, setShowYouTube] = useState(false);
+  const [showWrongAnswers, setShowWrongAnswers] = useState(false);
+  const [showExam, setShowExam] = useState(null); // 'toeic' or 'ielts'
   
   const categories = ['all', 'greeting', 'daily', 'work', 'tech', 'business'];
 
@@ -305,6 +311,54 @@ function App() {
         </div>
       </div>
 
+      {/* YouTube 影片學習 */}
+      <div style={styles.contentSection}>
+        <div style={styles.contentTitle}>🎬 YouTube 影片學習</div>
+        <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(2, 1fr)'}}>
+          <div onClick={() => setShowYouTube({ videoId: 'dQw4w9WgXcQ', title: '基礎英文會話' })} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>📺</div>
+            <div style={styles.contentCardTitle}>基礎會話</div>
+            <span style={styles.contentLevel}>A1-A2</span>
+          </div>
+          <div onClick={() => setShowYouTube({ videoId: 'someVideoId', title: '商業英文' })} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>💼</div>
+            <div style={styles.contentCardTitle}>商業英文</div>
+            <span style={styles.contentLevel}>B1-B2</span>
+          </div>
+        </div>
+      </div>
+
+      {/* 模擬測驗 */}
+      <div style={styles.contentSection}>
+        <div style={styles.contentTitle}>🎯 模擬測驗</div>
+        <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(2, 1fr)'}}>
+          <div onClick={() => setShowExam('toeic')} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>📝</div>
+            <div style={styles.contentCardTitle}>多益模擬</div>
+            <span style={styles.contentLevel}>B1-B2</span>
+          </div>
+          <div onClick={() => setShowExam('ielts')} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>🎓</div>
+            <div style={styles.contentCardTitle}>雅思模擬</div>
+            <span style={styles.contentLevel}>B2-C1</span>
+          </div>
+        </div>
+      </div>
+
+      {/* 錯題本 */}
+      <div style={styles.contentSection}>
+        <div style={styles.contentTitle}>📕 錯題本</div>
+        <div style={{...styles.contentGrid, gridTemplateColumns: '1fr'}}>
+          <div onClick={() => setShowWrongAnswers(true)} style={{...styles.contentCard, display: 'flex', alignItems: 'center', gap: '15px', textAlign: 'left'}}>
+            <div style={styles.contentEmoji}>📕</div>
+            <div>
+              <div style={styles.contentCardTitle}>查看錯題</div>
+              <span style={styles.contentLevel}>複習答錯的題目</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {!showQuiz && (filteredSentences.length === 0 ? <div style={{ textAlign: 'center', padding: '40px', color: theme.textSecondary }}>No favorites yet! ❤️ Click heart to add.</div> : (
         <div style={styles.card}>
           <div style={styles.cardHeader}>
@@ -369,6 +423,9 @@ function App() {
       {showFlashcard && <Flashcard content={selectedContent || { title: '基本句子', sentences: filteredSentences.map(s => ({ en: s.en, zh: s.zh, words: s.en.split(' ').map(w => ({ en: w, zh: '' })) })) }} darkMode={darkMode} onClose={() => setShowFlashcard(false)} />}
       {showEnhancedPronunciation && current && <EnhancedPronunciation sentence={current} darkMode={darkMode} onClose={() => setShowEnhancedPronunciation(false)} />}
       {showCommunity && <Community darkMode={darkMode} onClose={() => setShowCommunity(false)} />}
+      {showYouTube && <YouTubePlayer videoId={showYouTube.videoId} title={showYouTube.title} onBack={() => setShowYouTube(null)} darkMode={darkMode} />}
+      {showWrongAnswers && <WrongAnswerBook darkMode={darkMode} onClose={() => setShowWrongAnswers(false)} />}
+      {showExam && <ExamSimulation examType={showExam} darkMode={darkMode} onClose={() => setShowExam(null)} />}
     </div>
   );
 }
