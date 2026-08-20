@@ -15,6 +15,11 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
   const isNews = type === 'news';
   const isOral = type === 'oral';
   const isExam = type === 'exams';
+  const isFairyTale = type === 'fairy-tales';
+  const isMovie = type === 'movies';
+  
+  // Debug: 顯示收到的內容
+  console.log('ContentPlayer received:', { type, content: content?.title, segments: content?.sentences?.length });
   
   // 不同類型使用不同的數據結構
   let segments = [];
@@ -22,14 +27,17 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
     // 考試題庫：sections 包含多個 Part，每個 Part 有 questions
     segments = content.sections;
   } else if (isNews) {
-    segments = content.segments;
+    segments = content.segments || content.sentences || [];
   } else if (isOral) {
     segments = content.categories || content.rules || content.scenarios || [];
   } else {
+    // 童話、電影、基本句子都使用 sentences
     segments = content.sentences || [];
   }
+  
+  console.log('Segments:', segments.length, segments[0]);
   const current = segments[index];
-  const isWordList = isNews && current && current.title === '預考單字';
+  const isWordList = isNews && current && current.title === '預習單字';
 
   const speak = useCallback((text) => { 
     speechSynthesis.cancel(); 
