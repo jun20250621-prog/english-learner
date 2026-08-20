@@ -7,8 +7,10 @@ const saveData = (key, value) => localStorage.setItem(key, JSON.stringify(value)
 const toeicQuestions = {
   listening: {
     photos: [
-      { id: 1, image: '🏢', question: 'What is happening in the photo?', options: ['A building', 'A meeting', 'A party', 'A concert'], correct: 0 },
-      { id: 2, image: '✈️', question: 'Where might this be?', options: ['Airport', 'Hotel', 'Restaurant', 'Hospital'], correct: 0 },
+      { id: 1, image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop', question: 'What is happening in the photo?', options: ['People in an office', 'A meeting', 'A party', 'A concert'], correct: 0 },
+      { id: 2, image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=300&fit=crop', question: 'Where might this be?', options: ['At an airport', 'At a hotel', 'At a restaurant', 'At a hospital'], correct: 0 },
+      { id: 3, image: 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=400&h=300&fit=crop', question: 'What are they doing?', options: ['Having a meeting', 'Eating lunch', 'Playing sports', 'Shopping'], correct: 0 },
+      { id: 4, image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop', question: 'What building is this?', options: ['A hospital', 'A school', 'An office building', 'A factory'], correct: 2 },
     ],
     conversations: [
       {
@@ -117,11 +119,13 @@ export function ExamSimulation({ examType, darkMode, onClose }) {
     : { bg: '#f5f5f5', cardBg: 'white', text: '#333', accent: '#4CAF50', border: '#ddd', wrong: '#f44336' };
 
   const questions = examType === 'toeic' ? toeicQuestions : ieltsQuestions;
-  const currentQuestions = questions[section]?.conversations?.[0]?.questions || 
-                          questions[section]?.texts?.[0]?.questions ||
-                          questions[section]?.sections?.[0]?.questions ||
-                          questions[section]?.sentences ||
-                          [];
+  const currentQuestions = section === 'photos' 
+    ? questions.listening?.photos || []
+    : questions[section]?.conversations?.[0]?.questions || 
+      questions[section]?.texts?.[0]?.questions ||
+      questions[section]?.sections?.[0]?.questions ||
+      questions[section]?.sentences ||
+      [];
 
   const handleAnswer = (idx) => {
     setAnswers({ ...answers, [currentQ]: idx });
@@ -213,15 +217,29 @@ export function ExamSimulation({ examType, darkMode, onClose }) {
       </div>
 
       <div style={styles.tabs}>
-        {['listening', 'reading'].map(tab => (
-          <button 
-            key={tab}
-            style={{...styles.tab, ...(section === tab ? styles.activeTab : {})}}
-            onClick={() => { setSection(tab); setCurrentQ(0); setAnswers({}); }}
-          >
-            {tab === 'listening' ? '👂 聽力' : '📖 閱讀'}
-          </button>
-        ))}
+        {examType === 'toeic' ? (
+          <>
+            {['photos', 'listening', 'reading'].map(tab => (
+              <button 
+                key={tab}
+                style={{...styles.tab, ...(section === tab ? styles.activeTab : {})}}
+                onClick={() => { setSection(tab); setCurrentQ(0); setAnswers({}); }}
+              >
+                {tab === 'photos' ? '🖼️ 看圖' : tab === 'listening' ? '👂 聽力' : '📖 閱讀'}
+              </button>
+            ))}
+          </>
+        ) : (
+          ['listening', 'reading'].map(tab => (
+            <button 
+              key={tab}
+              style={{...styles.tab, ...(section === tab ? styles.activeTab : {})}}
+              onClick={() => { setSection(tab); setCurrentQ(0); setAnswers({}); }}
+            >
+              {tab === 'listening' ? '👂 聽力' : '📖 閱讀'}
+            </button>
+          ))
+        )}
       </div>
 
       <div style={styles.progress}>
@@ -229,6 +247,16 @@ export function ExamSimulation({ examType, darkMode, onClose }) {
       </div>
 
       <div style={styles.card}>
+        {section === 'photos' && q.image && (
+          <div style={{marginBottom: '20px', textAlign: 'center'}}>
+            <img 
+              src={q.image} 
+              alt="Question" 
+              style={{maxWidth: '100%', maxHeight: '250px', borderRadius: '12px', objectFit: 'cover'}}
+              onError={(e) => {e.target.style.display = 'none'}}
+            />
+          </div>
+        )}
         <div style={styles.questionNum}>問題 {currentQ + 1} / {currentQuestions.length}</div>
         <div style={styles.question}>{q.q || q.question}</div>
         
