@@ -118,14 +118,19 @@ function App() {
     console.log('Loading content:', type, id);
     try {
       let url = `/content/${type}/${id}.json`;
-      // 考試題庫和口語練習直接用 id 作為檔名
-      if (type === 'exams' || type === 'oral') {
+      // 童話和電影使用不同路徑
+      if (type === 'fairy-tales') {
+        url = `/content/fairy-tales/${id}.json`;
+      } else if (type === 'movies') {
+        url = `/content/movies/${id}.json`;
+      } else if (type === 'exams' || type === 'oral') {
         url = `/content/${id}.json`;
       }
       console.log('Fetching URL:', url);
       const res = await fetch(url);
       if (!res.ok) {
         console.error('載入失敗:', res.status);
+        alert('載入失敗，請稍後再試');
         return;
       }
       const data = await res.json();
@@ -134,7 +139,8 @@ function App() {
       setContentType(type);
       setCurrentPage('player');
     } catch (err) { 
-      console.error('載入內容失敗', err); 
+      console.error('載入內容失敗', err);
+      alert('載入內容失敗，請稍後再試');
     }
   };
 

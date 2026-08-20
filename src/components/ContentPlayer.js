@@ -11,6 +11,15 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
   const [imageLoading, setImageLoading] = useState(false);
   const timerRef = useRef(null);
   
+  // 防禦性檢查
+  if (!content) {
+    return (
+      <div style={{ padding: '20px', textAlign: 'center', backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
+        <p>載入中...</p>
+        <button onClick={onBack} style={{ padding: '10px 20px' }}>返回</button>
+      </div>
+    );
+  }
   // 檢測內容類型
   const isNews = type === 'news';
   const isOral = type === 'oral';
