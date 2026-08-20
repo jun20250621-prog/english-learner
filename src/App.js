@@ -316,7 +316,7 @@ function App() {
         <div style={styles.contentTitle}>🎬 YouTube 影片學習</div>
         <div style={{...styles.contentGrid, gridTemplateColumns: 'repeat(2, 1fr)'}}>
           <a 
-            href="https://www.youtube.com/watch?v= OcWsNHQbWiQ" 
+            href="https://www.youtube.com/watch?v=Xi15AW3u2RI" 
             target="_blank" 
             rel="noopener noreferrer"
             style={{...styles.contentCard, textDecoration: 'none', display: 'block'}}
@@ -326,7 +326,7 @@ function App() {
             <span style={styles.contentLevel}>A1-A2</span>
           </a>
           <a 
-            href="https://www.youtube.com/watch?v= gB5L9nGdUQE" 
+            href="https://www.youtube.com/watch?v=S1gG8G4xLhE" 
             target="_blank" 
             rel="noopener noreferrer"
             style={{...styles.contentCard, textDecoration: 'none', display: 'block'}}
