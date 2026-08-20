@@ -32,7 +32,7 @@
       "zh": "在她十五歲生日時，她可以浮出水面。",
       "words": [
         {"en": "fifteenth", "zh": "十五歲"},
-        "birthday", "zh": "生日"},
+        {"en": "birthday", "zh": "生日"},
         {"en": "surface", "zh": "水面"}
       ]
     },

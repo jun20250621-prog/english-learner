@@ -10,42 +10,31 @@ export const ContentPlayer = ({ content, type, onBack, darkMode }) => {
   const [imageUrl, setImageUrl] = useState(null);
   const [imageLoading, setImageLoading] = useState(false);
   const timerRef = useRef(null);
-  
-  // 防禦性檢查
-  if (!content) {
-    return (
-      <div style={{ padding: '20px', textAlign: 'center', backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
-        <p>載入中...</p>
-        <button onClick={onBack} style={{ padding: '10px 20px' }}>返回</button>
-      </div>
-    );
-  }
-  // 檢測內容類型
+
+  // 初始化 vars before hooks - 防禦性檢查
   const isNews = type === 'news';
   const isOral = type === 'oral';
   const isExam = type === 'exams';
   const isFairyTale = type === 'fairy-tales';
   const isMovie = type === 'movies';
   
-  // Debug: 顯示收到的內容
-  console.log('ContentPlayer received:', { type, content: content?.title, segments: content?.sentences?.length });
-  
-  // 不同類型使用不同的數據結構
+  // Different content types use different data structures
   let segments = [];
-  if (isExam && content.sections) {
-    // 考試題庫：sections 包含多個 Part，每個 Part 有 questions
+  if (isExam && content?.sections) {
     segments = content.sections;
-  } else if (isNews) {
-    segments = content.segments || content.sentences || [];
+  } else if (isNews && content?.segments) {
+    segments = content.segments || [];
   } else if (isOral) {
-    segments = content.categories || content.rules || content.scenarios || [];
+    segments = content?.categories || content?.rules || content?.scenarios || [];
   } else {
-    // 童話、電影、基本句子都使用 sentences
-    segments = content.sentences || [];
+    // Fairy tales, movies, basic sentences all use sentences
+    segments = content?.sentences || [];
   }
   
-  console.log('Segments:', segments.length, segments[0]);
   const current = segments[index];
+  
+  // Debug: 顯示收到的內容
+  console.log('ContentPlayer received:', { type, content: content?.title, segments: content?.sentences?.length });
   const isWordList = isNews && current && current.title === '預習單字';
 
   const speak = useCallback((text) => { 
