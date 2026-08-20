@@ -13,6 +13,7 @@ import { Community } from './components/Community';
 import { YouTubePlayer } from './components/YouTubePlayer';
 import { WrongAnswerBook } from './components/WrongAnswerBook';
 import { ExamSimulation } from './components/ExamSimulation';
+import { AdvancedLearning } from './components/AdvancedLearning';
 
 const getStoredData = (key, defaultValue) => { try { const stored = localStorage.getItem(key); return stored ? JSON.parse(stored) : defaultValue; } catch { return defaultValue; } };
 const saveData = (key, value) => localStorage.setItem(key, JSON.stringify(value));
@@ -62,6 +63,7 @@ function App() {
   const [showYouTube, setShowYouTube] = useState(false);
   const [showWrongAnswers, setShowWrongAnswers] = useState(false);
   const [showExam, setShowExam] = useState(null); // 'toeic' or 'ielts'
+  const [showAdvanced, setShowAdvanced] = useState(false);
   
   const categories = ['all', 'greeting', 'daily', 'work', 'tech', 'business'];
 
@@ -315,20 +317,15 @@ function App() {
       <div style={styles.contentSection}>
         <div style={styles.contentTitle}>🎬 YouTube 影片學習</div>
         <a 
-          href="https://www.youtube.com" 
+          href="https://youtu.be/rPIQmqgZlvY" 
           target="_blank" 
           rel="noopener noreferrer"
           style={{...styles.contentCard, textDecoration: 'none', display: 'block', textAlign: 'center'}}
         >
-          <div style={styles.contentEmoji}>🔗</div>
-          <div style={styles.contentCardTitle}>自行輸入影片連結</div>
-          <span style={styles.contentLevel}>點擊前往 YouTube 搜尋</span>
+          <div style={styles.contentEmoji}>📺</div>
+          <div style={styles.contentCardTitle}>英文採訪練習</div>
+          <span style={styles.contentLevel}>進階 - 即時中英字幕</span>
         </a>
-        <div style={{...styles.contentCard, marginTop: '10px', backgroundColor: darkMode ? '#333' : '#f0f0f0'}}>
-          <div style={{fontSize: '13px', color: theme.textSecondary}}>
-            💡 未來會支援輸入自己的 YouTube 連結
-          </div>
-        </div>
       </div>
 
       {/* 模擬測驗 */}
@@ -344,6 +341,18 @@ function App() {
             <div style={styles.contentEmoji}>🎓</div>
             <div style={styles.contentCardTitle}>雅思模擬</div>
             <span style={styles.contentLevel}>B2-C1</span>
+          </div>
+        </div>
+      </div>
+
+      {/* 進階學習 */}
+      <div style={styles.contentSection}>
+        <div style={styles.contentTitle}>📚 進階學習</div>
+        <div style={{...styles.contentGrid, gridTemplateColumns: '1fr'}}>
+          <div onClick={() => setShowAdvanced(true)} style={styles.contentCard}>
+            <div style={styles.contentEmoji}>💼</div>
+            <div style={styles.contentCardTitle}>商業書信 & 考試技巧</div>
+            <span style={styles.contentLevel}>進階 C1</span>
           </div>
         </div>
       </div>
@@ -429,6 +438,7 @@ function App() {
       {showYouTube && <YouTubePlayer videoId={showYouTube.videoId} title={showYouTube.title} onBack={() => setShowYouTube(null)} darkMode={darkMode} />}
       {showWrongAnswers && <WrongAnswerBook darkMode={darkMode} onClose={() => setShowWrongAnswers(false)} />}
       {showExam && <ExamSimulation examType={showExam} darkMode={darkMode} onClose={() => setShowExam(null)} />}
+      {showAdvanced && <AdvancedLearning darkMode={darkMode} onClose={() => setShowAdvanced(false)} />}
     </div>
   );
 }
