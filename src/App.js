@@ -14,6 +14,7 @@ import { YouTubePlayer } from './components/YouTubePlayer';
 import { WrongAnswerBook } from './components/WrongAnswerBook';
 import { ExamSimulation } from './components/ExamSimulation';
 import { AdvancedLearning } from './components/AdvancedLearning';
+import { YouTubeInput } from './components/YouTubeInput';
 
 const getStoredData = (key, defaultValue) => { try { const stored = localStorage.getItem(key); return stored ? JSON.parse(stored) : defaultValue; } catch { return defaultValue; } };
 const saveData = (key, value) => localStorage.setItem(key, JSON.stringify(value));
@@ -64,6 +65,7 @@ function App() {
   const [showWrongAnswers, setShowWrongAnswers] = useState(false);
   const [showExam, setShowExam] = useState(null); // 'toeic' or 'ielts'
   const [showAdvanced, setShowAdvanced] = useState(false);
+  const [showYouTubeInput, setShowYouTubeInput] = useState(false);
   
   const categories = ['all', 'greeting', 'daily', 'work', 'tech', 'business'];
 
@@ -316,16 +318,13 @@ function App() {
       {/* YouTube 影片學習 */}
       <div style={styles.contentSection}>
         <div style={styles.contentTitle}>🎬 YouTube 影片學習</div>
-        <a 
-          href="https://youtu.be/rPIQmqgZlvY" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          style={{...styles.contentCard, textDecoration: 'none', display: 'block', textAlign: 'center'}}
-        >
-          <div style={styles.contentEmoji}>📺</div>
-          <div style={styles.contentCardTitle}>英文採訪練習</div>
-          <span style={styles.contentLevel}>進階 - 即時中英字幕</span>
-        </a>
+        <div style={{...styles.contentGrid, gridTemplateColumns: '1fr'}}>
+          <div onClick={() => setShowYouTubeInput(true)} style={{...styles.contentCard, textAlign: 'center'}}>
+            <div style={styles.contentEmoji}>🔗</div>
+            <div style={styles.contentCardTitle}>輸入影片連結</div>
+            <span style={styles.contentLevel}>自訂學習內容</span>
+          </div>
+        </div>
       </div>
 
       {/* 模擬測驗 */}
@@ -439,6 +438,7 @@ function App() {
       {showWrongAnswers && <WrongAnswerBook darkMode={darkMode} onClose={() => setShowWrongAnswers(false)} />}
       {showExam && <ExamSimulation examType={showExam} darkMode={darkMode} onClose={() => setShowExam(null)} />}
       {showAdvanced && <AdvancedLearning darkMode={darkMode} onClose={() => setShowAdvanced(false)} />}
+      {showYouTubeInput && <YouTubeInput darkMode={darkMode} onClose={() => setShowYouTubeInput(false)} />}
     </div>
   );
 }
